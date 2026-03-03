@@ -1,0 +1,138 @@
+name: Atualizar Dados Media Monitoring
+
+on:
+  schedule:
+    # Diario as 7h BRT (10h UTC) - apos fechamento do dia anterior
+    - cron: '0 10 * * *'
+  workflow_dispatch:
+
+env:
+  PYTHON_VERSION: '3.11'
+
+permissions:
+  contents: write
+
+jobs:
+  extrair-dados:
+    runs-on: ubuntu-latest
+
+    env:
+      # Google Ads
+      GOOGLE_ADS_DEVELOPER_TOKEN: ${{ secrets.GOOGLE_ADS_DEVELOPER_TOKEN }}
+      GOOGLE_ADS_CLIENT_ID: ${{ secrets.GOOGLE_ADS_CLIENT_ID }}
+      GOOGLE_ADS_CLIENT_SECRET: ${{ secrets.GOOGLE_ADS_CLIENT_SECRET }}
+      GOOGLE_ADS_REFRESH_TOKEN: ${{ secrets.GOOGLE_ADS_REFRESH_TOKEN }}
+      GOOGLE_ADS_LOGIN_CUSTOMER_ID: ${{ secrets.GOOGLE_ADS_LOGIN_CUSTOMER_ID }}
+      GOOGLE_ADS_CUSTOMER_ID: ${{ secrets.GOOGLE_ADS_CUSTOMER_ID }}
+      # Meta Ads
+      META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+      META_AD_ACCOUNT_ID: ${{ secrets.META_AD_ACCOUNT_ID }}
+      META_APP_ID: ${{ secrets.META_APP_ID }}
+      META_APP_SECRET: ${{ secrets.META_APP_SECRET }}
+      # TikTok Ads
+      TIKTOK_ACCESS_TOKEN: ${{ secrets.TIKTOK_ACCESS_TOKEN }}
+      TIKTOK_ADVERTISER_ID: ${{ secrets.TIKTOK_ADVERTISER_ID }}
+      # GA4 + Search Console
+      GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
+      GA4_SERVICE_ACCOUNT_JSON: ${{ secrets.GA4_SERVICE_ACCOUNT_JSON }}
+      SEARCH_CONSOLE_SITE_URL: ${{ secrets.SEARCH_CONSOLE_SITE_URL }}
+
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+
+      - name: Instalar dependencias
+        run: |
+          pip install --upgrade pip
+          pip install pandas numpy requests
+          pip install google-ads>=24.0.0
+          pip install facebook-business>=19.0.0
+          pip install google-analytics-data>=0.18.0
+          pip install google-api-python-client>=2.100.0
+          pip install google-auth>=2.25.0
+
+      # Cada extrator e independente - falha de um nao impede os outros
+      - name: Extrair Google Ads
+        continue-on-error: true
+        run: python scripts/extrair_google_ads.py --dias 90
+
+      - name: Extrair Meta Ads
+        continue-on-error: true
+        run: python scripts/extrair_meta_ads.py --dias 90
+
+      - name: Extrair TikTok Ads
+        continue-on-error: true
+        run: python scripts/extrair_tiktok_ads.py --dias 90
+
+      - name: Extrair GA4
+        continue-on-error: true
+        run: python scripts/extrair_ga4.py --dias 90
+
+      - name: Extrair Search Console
+        continue-on-error: true
+        run: python scripts/extrair_search_console.py --dias 90
+
+      - name: Consolidar dados cross-platform
+        run: python scripts/consolidar_cross_platform.py
+
+      - name: Gerar recomendacoes
+        run: python scripts/gerar_recomendacoes.py
+
+      - name: Commit e Push
+        id: commit
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+
+          DATA_HORA=$(TZ='America/Sao_Paulo' date '+%Y-%m-%d %H:%M')
+
+          git add Dados/ || true
+
+          if git diff --cached --quiet; then
+            echo "changes=false" >> "$GITHUB_OUTPUT"
+            echo "Sem alteracoes nos dados"
+            exit 0
+          fi
+
+          echo "changes=true" >> "$GITHUB_OUTPUT"
+
+          git commit -m "data: atualizacao automatica midia - $DATA_HORA
+
+          Co-Authored-By: GitHub Actions <actions@github.com>"
+          git push origin main
+
+  # Job de notificacao WhatsApp (roda no self-hosted onde esta o gateway)
+  notificar-whatsapp:
+    runs-on: self-hosted
+    needs: extrair-dados
+    if: always()
+
+    env:
+      WA_GATEWAY_URL: "http://localhost:3001"
+      WA_GROUP_ID: "120363408855201409@g.us"
+
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v4
+
+      - name: Notificar sucesso
+        if: needs.extrair-dados.result == 'success'
+        shell: powershell
+        run: |
+          pip install requests --quiet 2>$null
+          python scripts/notificar_whatsapp.py --dashboard "Media Monitoring" --status sucesso --detalhes "Dados de Google Ads, Meta Ads, TikTok Ads, GA4 e Search Console atualizados"
+
+      - name: Notificar erro
+        if: needs.extrair-dados.result == 'failure'
+        shell: powershell
+        run: |
+          pip install requests --quiet 2>$null
+          python scripts/notificar_whatsapp.py --dashboard "Media Monitoring" --status erro

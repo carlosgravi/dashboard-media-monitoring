@@ -1,0 +1,14 @@
+streamlit>=1.32.0
+pandas>=2.0.0
+numpy>=1.24.0
+plotly>=5.24.0
+bcrypt>=4.0.0
+gspread>=5.12.0
+google-auth>=2.25.0
+requests>=2.31.0
+
+# Extratores (instalar localmente / no CI)
+# google-ads>=24.0.0
+# facebook-business>=19.0.0
+# google-analytics-data>=0.18.0
+# google-api-python-client>=2.100.0
