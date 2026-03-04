@@ -1,10 +1,10 @@
 """
-Extrator TikTok Ads Marketing API
-Gera 5 CSVs em Dados/TikTok_Ads/
+Extrator TikTok Ads Marketing API — Multi-Shopping
+Gera 5 CSVs em Dados/TikTok_Ads/ (todos com coluna 'shopping')
 
 Requer:
   - requests
-  - Access Token + Advertiser ID do TikTok Business Center
+  - TIKTOK_ADS_CONFIG (JSON): {"BS": {"token": "x", "advertiser_id": "y"}, ...}
 
 Uso:
   python scripts/extrair_tiktok_ads.py [--dias 90]
@@ -12,6 +12,7 @@ Uso:
 
 import os
 import sys
+import json
 import argparse
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -25,19 +26,34 @@ OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 API_BASE = "https://business-api.tiktok.com/open_api/v1.3"
 
+SHOPPING_NOMES = {
+    "CS": "Continente Shopping",
+    "BS": "Balneario Shopping",
+    "NK": "Neumarkt Shopping",
+    "NR": "Norte Shopping",
+    "GS": "Garten Shopping",
+    "NS": "Nacoes Shopping",
+}
 
-def get_headers():
-    return {"Access-Token": os.environ["TIKTOK_ACCESS_TOKEN"]}
+
+def get_config():
+    """Carrega configuracao multi-shopping do env."""
+    config_json = os.environ.get("TIKTOK_ADS_CONFIG", "")
+    if not config_json:
+        # Fallback: token + advertiser_id unicos (retrocompativel)
+        token = os.environ.get("TIKTOK_ACCESS_TOKEN", "")
+        adv_id = os.environ.get("TIKTOK_ADVERTISER_ID", "")
+        if token and adv_id:
+            return {"GERAL": {"token": token, "advertiser_id": adv_id}}
+        print("[ERRO] TIKTOK_ADS_CONFIG ou TIKTOK_ACCESS_TOKEN nao configurados")
+        sys.exit(1)
+    return json.loads(config_json)
 
 
-def get_advertiser_id():
-    return os.environ["TIKTOK_ADVERTISER_ID"]
-
-
-def fetch_report(data_inicio, data_fim, dimensions, metrics, nome_arquivo):
-    """Busca relatorio via TikTok Reporting API."""
+def fetch_report(token, advertiser_id, data_inicio, data_fim, dimensions, metrics, shopping_sigla):
+    """Busca relatorio via TikTok Reporting API para 1 conta."""
     url = f"{API_BASE}/report/integrated/get/"
-    advertiser_id = get_advertiser_id()
+    headers = {"Access-Token": token}
 
     all_rows = []
     page = 1
@@ -57,11 +73,11 @@ def fetch_report(data_inicio, data_fim, dimensions, metrics, nome_arquivo):
             "lifetime": False,
         }
 
-        resp = requests.get(url, headers=get_headers(), params=params, timeout=60)
+        resp = requests.get(url, headers=headers, params=params, timeout=60)
         data = resp.json()
 
         if data.get("code") != 0:
-            print(f"  [TikTok] Erro em {nome_arquivo}: {data.get('message', 'Desconhecido')}")
+            print(f"  [TikTok/{shopping_sigla}] Erro: {data.get('message', 'Desconhecido')}")
             break
 
         rows = data.get("data", {}).get("list", [])
@@ -71,7 +87,10 @@ def fetch_report(data_inicio, data_fim, dimensions, metrics, nome_arquivo):
         for row in rows:
             dims = row.get("dimensions", {})
             mets = row.get("metrics", {})
-            all_rows.append({**dims, **mets})
+            registro = {**dims, **mets}
+            registro['shopping'] = SHOPPING_NOMES.get(shopping_sigla, shopping_sigla)
+            registro['shopping_sigla'] = shopping_sigla
+            all_rows.append(registro)
 
         page_info = data.get("data", {}).get("page_info", {})
         total = page_info.get("total_number", 0)
@@ -83,26 +102,25 @@ def fetch_report(data_inicio, data_fim, dimensions, metrics, nome_arquivo):
 
     # Converter colunas numericas
     for col in df.columns:
-        if col not in ['campaign_name', 'campaign_id', 'stat_time_day', 'gender', 'age', 'ac']:
+        if col not in ['campaign_name', 'campaign_id', 'stat_time_day', 'gender', 'age', 'ac', 'shopping', 'shopping_sigla']:
             try:
                 df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0)
             except (ValueError, TypeError):
                 pass
 
-    df.to_csv(OUTPUT_DIR / f"{nome_arquivo}.csv", index=False, encoding='utf-8-sig')
-    print(f"  [TikTok] {nome_arquivo}.csv: {len(df)} linhas")
     return df
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Extrator TikTok Ads")
+    parser = argparse.ArgumentParser(description="Extrator TikTok Ads (Multi-Shopping)")
     parser.add_argument("--dias", type=int, default=90, help="Dias para extrair (default 90)")
     args = parser.parse_args()
 
     data_fim = (datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')
     data_inicio = (datetime.now() - timedelta(days=args.dias)).strftime('%Y-%m-%d')
 
-    print(f"[TikTok Ads] Extraindo de {data_inicio} a {data_fim}...")
+    config = get_config()
+    print(f"[TikTok Ads] Extraindo de {data_inicio} a {data_fim} para {len(config)} conta(s)...")
 
     metrics_base = [
         "spend", "impressions", "clicks", "ctr", "cpc", "cpm",
@@ -120,45 +138,32 @@ def main():
         "clicks_on_music_disc", "profile_visits",
     ]
 
-    # 1. Campanhas diarias
-    fetch_report(
-        data_inicio, data_fim,
-        dimensions=["campaign_id", "stat_time_day"],
-        metrics=metrics_base + metrics_engagement,
-        nome_arquivo="campanhas",
-    )
+    # Relatorios a extrair
+    relatorios = [
+        ("campanhas", ["campaign_id", "stat_time_day"], metrics_base + metrics_engagement),
+        ("video_engagement", ["campaign_id", "stat_time_day"], metrics_base + metrics_video),
+        ("demografico_idade", ["campaign_id", "age"], metrics_base),
+        ("demografico_genero", ["campaign_id", "gender"], metrics_base),
+        ("diario", ["stat_time_day"], metrics_base + metrics_video + metrics_engagement),
+    ]
 
-    # 2. Video engagement
-    fetch_report(
-        data_inicio, data_fim,
-        dimensions=["campaign_id", "stat_time_day"],
-        metrics=metrics_base + metrics_video,
-        nome_arquivo="video_engagement",
-    )
+    for nome_arquivo, dimensions, metrics in relatorios:
+        dfs = []
+        for sigla, creds in config.items():
+            token = creds["token"]
+            adv_id = creds["advertiser_id"]
+            print(f"  [TikTok/{sigla}] Extraindo {nome_arquivo}...")
+            df = fetch_report(token, adv_id, data_inicio, data_fim, dimensions, metrics, sigla)
+            if not df.empty:
+                dfs.append(df)
 
-    # 3. Demografico por idade
-    fetch_report(
-        data_inicio, data_fim,
-        dimensions=["campaign_id", "age"],
-        metrics=metrics_base,
-        nome_arquivo="demografico_idade",
-    )
+        if dfs:
+            df_final = pd.concat(dfs, ignore_index=True)
+        else:
+            df_final = pd.DataFrame()
 
-    # 4. Demografico por genero
-    fetch_report(
-        data_inicio, data_fim,
-        dimensions=["campaign_id", "gender"],
-        metrics=metrics_base,
-        nome_arquivo="demografico_genero",
-    )
-
-    # 5. Diario agregado (sem campaign_id para totais)
-    fetch_report(
-        data_inicio, data_fim,
-        dimensions=["stat_time_day"],
-        metrics=metrics_base + metrics_video + metrics_engagement,
-        nome_arquivo="diario",
-    )
+        df_final.to_csv(OUTPUT_DIR / f"{nome_arquivo}.csv", index=False, encoding='utf-8-sig')
+        print(f"  [TikTok] {nome_arquivo}.csv: {len(df_final)} linhas ({len(config)} shoppings)")
 
     print("[TikTok Ads] Extracao concluida!")
 
