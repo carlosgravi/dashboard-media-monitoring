@@ -153,6 +153,14 @@ def injetar_css():
     [data-testid="stSidebar"] [data-testid="stExpander"] details {
         background-color: transparent !important;
     }
+    [data-testid="stSidebar"] [data-testid="stExpander"] summary {
+        background-color: rgba(255,255,255,0.1) !important;
+        border-radius: 8px;
+        padding: 8px 12px !important;
+    }
+    [data-testid="stSidebar"] [data-testid="stExpander"] summary:hover {
+        background-color: rgba(255,255,255,0.15) !important;
+    }
     [data-testid="stSidebar"] [data-testid="stExpanderDetails"] button {
         background-color: transparent !important;
         border: 1px solid rgba(255,255,255,0.2) !important;
