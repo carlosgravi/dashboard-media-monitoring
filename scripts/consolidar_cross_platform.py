@@ -277,11 +277,149 @@ def consolidar_demografico():
     return df_demo
 
 
+def consolidar_por_shopping():
+    """Consolida metricas diarias agrupadas por shopping e plataforma."""
+    registros = []
+
+    # Google Ads (campanhas tem shopping_sigla)
+    df = carregar_csv_seguro(DADOS_DIR / "Google_Ads" / "campanhas.csv")
+    if not df.empty and 'shopping_sigla' in df.columns:
+        for (data, sigla), grupo in df.groupby(['data', 'shopping_sigla']):
+            registros.append({
+                'data': data,
+                'shopping': grupo['shopping'].iloc[0] if 'shopping' in grupo.columns else sigla,
+                'shopping_sigla': sigla,
+                'plataforma': 'Google Ads',
+                'impressoes': grupo['impressoes'].sum(),
+                'cliques': grupo['cliques'].sum(),
+                'custo': grupo['custo'].sum(),
+                'conversoes': grupo['conversoes'].sum(),
+                'receita': grupo['valor_conversoes'].sum(),
+            })
+
+    # Meta Ads (campanhas tem shopping)
+    df = carregar_csv_seguro(DADOS_DIR / "Meta_Ads" / "campanhas.csv")
+    if not df.empty and 'shopping' in df.columns:
+        for (data, sigla), grupo in df.groupby(['data', 'shopping']):
+            registros.append({
+                'data': data,
+                'shopping': sigla,
+                'shopping_sigla': sigla,
+                'plataforma': 'Meta Ads',
+                'impressoes': grupo['impressoes'].sum(),
+                'cliques': grupo['cliques'].sum(),
+                'custo': grupo['custo'].sum(),
+                'conversoes': grupo.get('purchase', pd.Series([0])).sum(),
+                'receita': grupo.get('valor_purchase', pd.Series([0])).sum(),
+            })
+
+    # TikTok Ads (campanhas tem shopping)
+    df = carregar_csv_seguro(DADOS_DIR / "TikTok_Ads" / "campanhas.csv")
+    if not df.empty and 'shopping' in df.columns:
+        col_data = 'stat_time_day' if 'stat_time_day' in df.columns else 'data'
+        for (data, sigla), grupo in df.groupby([col_data, 'shopping']):
+            registros.append({
+                'data': data,
+                'shopping': sigla,
+                'shopping_sigla': sigla,
+                'plataforma': 'TikTok Ads',
+                'impressoes': grupo.get('impressions', pd.Series([0])).sum(),
+                'cliques': grupo.get('clicks', pd.Series([0])).sum(),
+                'custo': grupo.get('spend', pd.Series([0])).sum(),
+                'conversoes': grupo.get('conversion', pd.Series([0])).sum(),
+                'receita': 0,
+            })
+
+    df_shopping = pd.DataFrame(registros)
+    if df_shopping.empty:
+        print("  [Consolidar] Nenhum dado por shopping encontrado")
+        return df_shopping
+
+    df_shopping['data'] = pd.to_datetime(df_shopping['data'])
+    df_shopping = df_shopping.sort_values('data')
+    df_shopping['roas'] = np.where(df_shopping['custo'] > 0, df_shopping['receita'] / df_shopping['custo'], 0)
+    df_shopping['cpa'] = np.where(df_shopping['conversoes'] > 0, df_shopping['custo'] / df_shopping['conversoes'], 0)
+    df_shopping['ctr'] = np.where(df_shopping['impressoes'] > 0, df_shopping['cliques'] / df_shopping['impressoes'] * 100, 0)
+
+    # Diario por shopping
+    df_shopping.to_csv(OUTPUT_DIR / "cross_platform_shopping_diario.csv", index=False, encoding='utf-8-sig')
+    print(f"  [Consolidar] cross_platform_shopping_diario.csv: {len(df_shopping)} linhas")
+
+    # Mensal por shopping
+    df_shopping['mes'] = df_shopping['data'].dt.to_period('M').astype(str)
+    df_mensal = df_shopping.groupby(['mes', 'shopping', 'shopping_sigla', 'plataforma']).agg({
+        'impressoes': 'sum', 'cliques': 'sum', 'custo': 'sum',
+        'conversoes': 'sum', 'receita': 'sum',
+    }).reset_index()
+    df_mensal['roas'] = np.where(df_mensal['custo'] > 0, df_mensal['receita'] / df_mensal['custo'], 0)
+    df_mensal['cpa'] = np.where(df_mensal['conversoes'] > 0, df_mensal['custo'] / df_mensal['conversoes'], 0)
+    df_mensal['ctr'] = np.where(df_mensal['impressoes'] > 0, df_mensal['cliques'] / df_mensal['impressoes'] * 100, 0)
+    df_mensal.to_csv(OUTPUT_DIR / "cross_platform_shopping_mensal.csv", index=False, encoding='utf-8-sig')
+    print(f"  [Consolidar] cross_platform_shopping_mensal.csv: {len(df_mensal)} linhas")
+
+    return df_shopping
+
+
+def consolidar_dispositivos():
+    """Consolida dados de dispositivos de todas as plataformas."""
+    registros = []
+
+    # Google Ads
+    df = carregar_csv_seguro(DADOS_DIR / "Google_Ads" / "dispositivos.csv")
+    if not df.empty:
+        for _, r in df.iterrows():
+            registros.append({
+                'plataforma': 'Google Ads',
+                'dispositivo': r.get('dispositivo', ''),
+                'impressoes': r.get('impressoes', 0),
+                'cliques': r.get('cliques', 0),
+                'custo': r.get('custo', 0),
+                'conversoes': r.get('conversoes', 0),
+            })
+
+    # Meta Ads
+    df = carregar_csv_seguro(DADOS_DIR / "Meta_Ads" / "dispositivo.csv")
+    if not df.empty:
+        for _, r in df.iterrows():
+            registros.append({
+                'plataforma': 'Meta Ads',
+                'dispositivo': r.get('device_platform', ''),
+                'impressoes': r.get('impressoes', 0),
+                'cliques': r.get('cliques', 0),
+                'custo': r.get('custo', 0),
+                'conversoes': r.get('purchase', 0),
+            })
+
+    # GA4
+    df = carregar_csv_seguro(DADOS_DIR / "GA4" / "dispositivos.csv")
+    if not df.empty:
+        for dev, grupo in df.groupby('deviceCategory'):
+            registros.append({
+                'plataforma': 'GA4',
+                'dispositivo': dev,
+                'impressoes': 0,
+                'cliques': 0,
+                'custo': 0,
+                'conversoes': grupo['conversions'].sum(),
+                'sessoes': grupo['sessions'].sum(),
+                'usuarios': grupo['totalUsers'].sum(),
+            })
+
+    df_devices = pd.DataFrame(registros)
+    if not df_devices.empty:
+        df_devices['ctr'] = np.where(df_devices['impressoes'] > 0, df_devices['cliques'] / df_devices['impressoes'] * 100, 0)
+    df_devices.to_csv(OUTPUT_DIR / "dispositivos_cross.csv", index=False, encoding='utf-8-sig')
+    print(f"  [Consolidar] dispositivos_cross.csv: {len(df_devices)} linhas")
+    return df_devices
+
+
 def main():
     print("[Consolidar] Processando dados cross-platform...")
     consolidar_diario()
     gerar_funil()
     consolidar_demografico()
+    consolidar_por_shopping()
+    consolidar_dispositivos()
     print("[Consolidar] Concluido!")
 
 

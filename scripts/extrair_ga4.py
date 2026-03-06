@@ -128,6 +128,34 @@ def extrair_diario(client, property_id, data_inicio, data_fim):
     return df
 
 
+def extrair_dispositivos(client, property_id, data_inicio, data_fim):
+    """Sessoes por dispositivo e navegador."""
+    df = run_report(
+        client, property_id,
+        dimensions=["date", "deviceCategory", "browser", "operatingSystem"],
+        metrics=["sessions", "totalUsers", "bounceRate",
+                 "averageSessionDuration", "conversions", "totalRevenue"],
+        data_inicio=data_inicio, data_fim=data_fim,
+    )
+    df.to_csv(OUTPUT_DIR / "dispositivos.csv", index=False, encoding='utf-8-sig')
+    print(f"  [GA4] dispositivos.csv: {len(df)} linhas")
+    return df
+
+
+def extrair_geografico(client, property_id, data_inicio, data_fim):
+    """Sessoes por cidade e estado."""
+    df = run_report(
+        client, property_id,
+        dimensions=["date", "city", "region", "country"],
+        metrics=["sessions", "totalUsers", "bounceRate",
+                 "averageSessionDuration", "conversions", "totalRevenue"],
+        data_inicio=data_inicio, data_fim=data_fim,
+    )
+    df.to_csv(OUTPUT_DIR / "geografico.csv", index=False, encoding='utf-8-sig')
+    print(f"  [GA4] geografico.csv: {len(df)} linhas")
+    return df
+
+
 def main():
     parser = argparse.ArgumentParser(description="Extrator GA4")
     parser.add_argument("--dias", type=int, default=90, help="Dias para extrair (default 90)")
@@ -145,6 +173,8 @@ def main():
     extrair_conversoes(client, property_id, data_inicio, data_fim)
     extrair_landing_pages(client, property_id, data_inicio, data_fim)
     extrair_diario(client, property_id, data_inicio, data_fim)
+    extrair_dispositivos(client, property_id, data_inicio, data_fim)
+    extrair_geografico(client, property_id, data_inicio, data_fim)
 
     print("[GA4] Extracao concluida!")
 

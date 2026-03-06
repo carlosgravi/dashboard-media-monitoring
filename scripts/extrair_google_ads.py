@@ -280,6 +280,64 @@ def extrair_diario(client, customer_id, shopping_sigla, data_inicio, data_fim):
     return data
 
 
+def extrair_search_terms(client, customer_id, shopping_sigla, data_inicio, data_fim):
+    query = f"""
+        SELECT
+            search_term_view.search_term, campaign.name,
+            segments.date,
+            metrics.impressions, metrics.clicks, metrics.ctr,
+            metrics.cost_micros, metrics.conversions, metrics.conversions_value
+        FROM search_term_view
+        WHERE segments.date BETWEEN '{data_inicio}' AND '{data_fim}'
+        ORDER BY metrics.impressions DESC
+    """
+    rows = query_google_ads(client, customer_id, query)
+    data = []
+    for r in rows:
+        data.append({
+            'shopping': SHOPPING_NOMES.get(shopping_sigla, shopping_sigla),
+            'shopping_sigla': shopping_sigla,
+            'termo_busca': r.search_term_view.search_term,
+            'campanha': r.campaign.name,
+            'data': r.segments.date,
+            'impressoes': r.metrics.impressions,
+            'cliques': r.metrics.clicks,
+            'ctr': r.metrics.ctr,
+            'custo': r.metrics.cost_micros / 1_000_000,
+            'conversoes': r.metrics.conversions,
+            'valor_conversoes': r.metrics.conversions_value,
+        })
+    return data
+
+
+def extrair_hora_dia(client, customer_id, shopping_sigla, data_inicio, data_fim):
+    query = f"""
+        SELECT
+            segments.hour, segments.day_of_week,
+            metrics.impressions, metrics.clicks, metrics.ctr,
+            metrics.cost_micros, metrics.conversions, metrics.conversions_value
+        FROM campaign
+        WHERE segments.date BETWEEN '{data_inicio}' AND '{data_fim}'
+            AND campaign.status != 'REMOVED'
+    """
+    rows = query_google_ads(client, customer_id, query)
+    data = []
+    for r in rows:
+        data.append({
+            'shopping': SHOPPING_NOMES.get(shopping_sigla, shopping_sigla),
+            'shopping_sigla': shopping_sigla,
+            'hora': r.segments.hour,
+            'dia_semana': r.segments.day_of_week.name,
+            'impressoes': r.metrics.impressions,
+            'cliques': r.metrics.clicks,
+            'ctr': r.metrics.ctr,
+            'custo': r.metrics.cost_micros / 1_000_000,
+            'conversoes': r.metrics.conversions,
+            'valor_conversoes': r.metrics.conversions_value,
+        })
+    return data
+
+
 def main():
     parser = argparse.ArgumentParser(description="Extrator Google Ads (Multi-Customer)")
     parser.add_argument("--dias", type=int, default=90, help="Dias para extrair (default 90)")
@@ -300,6 +358,8 @@ def main():
         'geografico': extrair_geografico,
         'dispositivos': extrair_dispositivos,
         'diario': extrair_diario,
+        'search_terms': extrair_search_terms,
+        'hora_dia': extrair_hora_dia,
     }
 
     for nome_csv, func_extrair in extratores.items():

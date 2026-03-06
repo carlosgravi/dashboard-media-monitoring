@@ -104,7 +104,19 @@ def main():
     df.to_csv(OUTPUT_DIR / "paginas.csv", index=False, encoding='utf-8-sig')
     print(f"  [Search Console] paginas.csv: {len(df)} linhas")
 
-    # 3. Consultas agregadas (oportunidades SEO)
+    # 3. Consultas por device
+    df = fetch_search_analytics(service, site_url, data_inicio, data_fim,
+                                dimensions=['date', 'device'])
+    df.to_csv(OUTPUT_DIR / "dispositivos.csv", index=False, encoding='utf-8-sig')
+    print(f"  [Search Console] dispositivos.csv: {len(df)} linhas")
+
+    # 4. Consultas por query + device (para comparar mobile vs desktop)
+    df = fetch_search_analytics(service, site_url, data_inicio, data_fim,
+                                dimensions=['date', 'query', 'device'])
+    df.to_csv(OUTPUT_DIR / "consultas_device.csv", index=False, encoding='utf-8-sig')
+    print(f"  [Search Console] consultas_device.csv: {len(df)} linhas")
+
+    # 5. Consultas agregadas (oportunidades SEO)
     df = fetch_search_analytics(service, site_url, data_inicio, data_fim,
                                 dimensions=['query'])
     # Marcar oportunidades: alto impressoes + baixo CTR

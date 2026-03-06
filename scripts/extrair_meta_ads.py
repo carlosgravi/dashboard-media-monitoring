@@ -155,6 +155,7 @@ def extrair_todas_contas(accounts, data_inicio, data_fim):
         {"nome": "demografico_idade", "breakdowns": ['age']},
         {"nome": "demografico_genero", "breakdowns": ['gender']},
         {"nome": "demografico_cruzado", "breakdowns": ['age', 'gender']},
+        {"nome": "dispositivo", "breakdowns": ['device_platform']},
         {"nome": "video", "breakdowns": None},
     ]
 
