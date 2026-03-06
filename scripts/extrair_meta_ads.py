@@ -1,7 +1,8 @@
 """
 Extrator Meta Ads (Facebook + Instagram) Marketing API v22
-Gera 7 CSVs em Dados/Meta_Ads/
+Gera 7 CSVs em Dados/Meta_Ads/ (com coluna shopping)
 
+Multi-conta: META_ADS_CONFIG (JSON) com ad_account_id por shopping
 Requer:
   - facebook-business>=19.0.0
   - System User Token (long-lived via Business Manager)
@@ -12,6 +13,7 @@ Uso:
 
 import os
 import sys
+import json
 import argparse
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -29,18 +31,34 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 OUTPUT_DIR = BASE_DIR / "Dados" / "Meta_Ads"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
+# Mapeamento de contas por shopping/entidade
+# META_ADS_CONFIG = {"CS": "act_xxx", "BS": "act_yyy", ...}
+META_ADS_CONFIG = {
+    "CS": "act_2649388528700191",
+    "BS": "act_207729971285382",
+    "NK": "act_342862273862537",
+    "NR": "act_242349187718819",
+    "GS": "act_1431101650367906",
+    "NS": "act_570612793930568",
+    "AJ_Realty": "act_3778410928887624",
+    "CS_Residences": "act_1239656477887657",
+}
+
 
 def init_api():
-    """Inicializa a API do Meta Ads."""
+    """Inicializa a API do Meta Ads e retorna dict de accounts."""
     FacebookAdsApi.init(
-        app_id=os.environ["META_APP_ID"],
-        app_secret=os.environ["META_APP_SECRET"],
-        access_token=os.environ["META_ACCESS_TOKEN"],
+        app_id=os.environ["META_ADS_APP_ID"],
+        app_secret=os.environ["META_ADS_APP_SECRET"],
+        access_token=os.environ["META_ADS_ACCESS_TOKEN"],
     )
-    return AdAccount(os.environ["META_AD_ACCOUNT_ID"])
+    config = json.loads(os.environ.get("META_ADS_CONFIG", "{}"))
+    if not config:
+        config = META_ADS_CONFIG
+    return {sigla: AdAccount(act_id) for sigla, act_id in config.items()}
 
 
-def extrair_insights(account, data_inicio, data_fim, breakdowns=None, nome_arquivo="campanhas"):
+def extrair_insights(account, data_inicio, data_fim, breakdowns=None, nome_arquivo="campanhas", shopping=""):
     """Extrai insights generico com breakdowns opcionais."""
     fields = [
         'campaign_name', 'campaign_id', 'objective',
@@ -122,12 +140,45 @@ def extrair_insights(account, data_inicio, data_fim, breakdowns=None, nome_arqui
             for bd in breakdowns:
                 registro[bd] = row_dict.get(bd, '')
 
+        # Identificar shopping/entidade
+        registro['shopping'] = shopping
+
         data.append(registro)
 
-    df = pd.DataFrame(data)
-    df.to_csv(OUTPUT_DIR / f"{nome_arquivo}.csv", index=False, encoding='utf-8-sig')
-    print(f"  [Meta Ads] {nome_arquivo}.csv: {len(df)} linhas")
-    return df
+    return pd.DataFrame(data)
+
+
+def extrair_todas_contas(accounts, data_inicio, data_fim):
+    """Extrai insights de todas as contas e consolida por tipo de CSV."""
+    tipos_extracao = [
+        {"nome": "campanhas", "breakdowns": None},
+        {"nome": "plataforma", "breakdowns": ['publisher_platform']},
+        {"nome": "posicionamento", "breakdowns": ['publisher_platform', 'platform_position']},
+        {"nome": "demografico_idade", "breakdowns": ['age']},
+        {"nome": "demografico_genero", "breakdowns": ['gender']},
+        {"nome": "demografico_cruzado", "breakdowns": ['age', 'gender']},
+        {"nome": "video", "breakdowns": None},
+    ]
+
+    for tipo in tipos_extracao:
+        dfs = []
+        for sigla, account in accounts.items():
+            print(f"  [Meta Ads] {sigla} → {tipo['nome']}...")
+            df = extrair_insights(
+                account, data_inicio, data_fim,
+                breakdowns=tipo['breakdowns'],
+                nome_arquivo=tipo['nome'],
+                shopping=sigla,
+            )
+            if not df.empty:
+                dfs.append(df)
+
+        if dfs:
+            df_final = pd.concat(dfs, ignore_index=True)
+            df_final.to_csv(OUTPUT_DIR / f"{tipo['nome']}.csv", index=False, encoding='utf-8-sig')
+            print(f"  [Meta Ads] {tipo['nome']}.csv: {len(df_final)} linhas ({len(dfs)} contas)")
+        else:
+            print(f"  [Meta Ads] {tipo['nome']}.csv: sem dados")
 
 
 def main():
@@ -138,36 +189,10 @@ def main():
     data_fim = (datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')
     data_inicio = (datetime.now() - timedelta(days=args.dias)).strftime('%Y-%m-%d')
 
-    print(f"[Meta Ads] Extraindo de {data_inicio} a {data_fim}...")
+    print(f"[Meta Ads] Extraindo de {data_inicio} a {data_fim} (8 contas)...")
 
-    account = init_api()
-
-    # 1. Campanhas (sem breakdown)
-    extrair_insights(account, data_inicio, data_fim, nome_arquivo="campanhas")
-
-    # 2. Por plataforma (Facebook / Instagram / Messenger / Audience Network)
-    extrair_insights(account, data_inicio, data_fim,
-                     breakdowns=['publisher_platform'], nome_arquivo="plataforma")
-
-    # 3. Por posicionamento (Feed / Stories / Reels / Explore)
-    extrair_insights(account, data_inicio, data_fim,
-                     breakdowns=['publisher_platform', 'platform_position'],
-                     nome_arquivo="posicionamento")
-
-    # 4. Demografico - Faixa Etaria
-    extrair_insights(account, data_inicio, data_fim,
-                     breakdowns=['age'], nome_arquivo="demografico_idade")
-
-    # 5. Demografico - Genero
-    extrair_insights(account, data_inicio, data_fim,
-                     breakdowns=['gender'], nome_arquivo="demografico_genero")
-
-    # 6. Demografico cruzado
-    extrair_insights(account, data_inicio, data_fim,
-                     breakdowns=['age', 'gender'], nome_arquivo="demografico_cruzado")
-
-    # 7. Video performance
-    extrair_insights(account, data_inicio, data_fim, nome_arquivo="video")
+    accounts = init_api()
+    extrair_todas_contas(accounts, data_inicio, data_fim)
 
     print("[Meta Ads] Extracao concluida!")
 

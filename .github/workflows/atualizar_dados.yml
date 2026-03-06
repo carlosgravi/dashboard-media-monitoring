@@ -24,11 +24,12 @@ jobs:
       GOOGLE_ADS_REFRESH_TOKEN: ${{ secrets.GOOGLE_ADS_REFRESH_TOKEN }}
       GOOGLE_ADS_LOGIN_CUSTOMER_ID: ${{ secrets.GOOGLE_ADS_LOGIN_CUSTOMER_ID }}
       GOOGLE_ADS_CUSTOMER_IDS: ${{ secrets.GOOGLE_ADS_CUSTOMER_IDS }}
+      GOOGLE_ADS_CUSTOMER_ID: ${{ secrets.GOOGLE_ADS_CUSTOMER_ID }}
       # Meta Ads
-      META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
-      META_AD_ACCOUNT_ID: ${{ secrets.META_AD_ACCOUNT_ID }}
-      META_APP_ID: ${{ secrets.META_APP_ID }}
-      META_APP_SECRET: ${{ secrets.META_APP_SECRET }}
+      META_ADS_ACCESS_TOKEN: ${{ secrets.META_ADS_ACCESS_TOKEN }}
+      META_ADS_CONFIG: ${{ secrets.META_ADS_CONFIG }}
+      META_ADS_APP_ID: ${{ secrets.META_ADS_APP_ID }}
+      META_ADS_APP_SECRET: ${{ secrets.META_ADS_APP_SECRET }}
       # TikTok Ads (JSON multi-shopping)
       TIKTOK_ADS_CONFIG: ${{ secrets.TIKTOK_ADS_CONFIG }}
       # GA4 + Search Console
