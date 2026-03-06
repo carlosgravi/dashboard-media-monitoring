@@ -120,11 +120,35 @@ def injetar_css():
     [data-testid="stSidebar"] {
         background-color: #031835;
     }
-    [data-testid="stSidebar"] * {
+    [data-testid="stSidebar"] p,
+    [data-testid="stSidebar"] span,
+    [data-testid="stSidebar"] label,
+    [data-testid="stSidebar"] h1,
+    [data-testid="stSidebar"] h2,
+    [data-testid="stSidebar"] h3,
+    [data-testid="stSidebar"] h4,
+    [data-testid="stSidebar"] .stMarkdown,
+    [data-testid="stSidebar"] summary,
+    [data-testid="stSidebar"] summary * {
         color: white !important;
     }
     [data-testid="stSidebar"] .stSelectbox label {
         color: #dfe2e6 !important;
+    }
+    /* Botoes de navegacao no sidebar */
+    [data-testid="stSidebar"] button[kind="secondary"] {
+        background-color: transparent !important;
+        border: 1px solid rgba(255,255,255,0.2) !important;
+        color: white !important;
+    }
+    [data-testid="stSidebar"] button[kind="secondary"]:hover {
+        background-color: rgba(255,255,255,0.1) !important;
+        border-color: rgba(255,255,255,0.5) !important;
+    }
+    /* Expander no sidebar */
+    [data-testid="stSidebar"] [data-testid="stExpander"] {
+        background-color: transparent !important;
+        border: none !important;
     }
 
     /* Recomendacao cards */
