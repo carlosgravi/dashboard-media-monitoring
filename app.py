@@ -55,7 +55,7 @@ CORES_PLATAFORMA = {
 # Paginas do dashboard
 PAGINAS = {
     "Visao Geral": ["Resumo Executivo", "Tendencias"],
-    "Por Plataforma": ["Google Ads", "Meta Ads", "TikTok Ads", "GA4 / Search Console"],
+    "Por Plataforma": ["Google Ads", "Meta Ads", "TikTok Ads", "GA4 / Search Console", "Organico"],
     "Cross-Platform": ["Comparativo", "Funil Integrado", "Audiencia"],
     "Otimizacao": ["Onde Investir", "Alertas e Anomalias"],
     "Ferramentas": ["Documentacao"],
@@ -1110,6 +1110,181 @@ def pagina_ga4_search_console():
 
 
 # =============================================================================
+# PAGINA: ORGANICO
+# =============================================================================
+def pagina_organico():
+    st.title("Organico (Instagram + Facebook)")
+
+    df_posts = carregar_csv("Organico/posts.csv")
+    df_diario = carregar_csv("Organico/diario.csv")
+    df_tipo = carregar_csv("Organico/por_tipo.csv")
+    df_ig_conta = carregar_csv("Organico/instagram_conta.csv")
+
+    if df_posts.empty:
+        st.info("Sem dados organicos. Execute `scripts/extrair_organico.py`.")
+        return
+
+    # Filtro shopping
+    org_shopping_sel = None
+    if 'shopping' in df_posts.columns:
+        shoppings = sorted(df_posts['shopping'].dropna().unique().tolist())
+        if shoppings:
+            opcoes = ["Todos"] + shoppings
+            org_shopping_sel = st.sidebar.selectbox("Shopping", opcoes, index=0, key="org_shopping")
+
+    tab1, tab2, tab3, tab4 = st.tabs(["Resumo", "Por Tipo de Post", "Evolucao Diaria", "Por Shopping"])
+
+    with tab1:
+        df = _aplicar_filtro_shopping(df_posts, org_shopping_sel)
+
+        # KPIs
+        total_posts = len(df)
+        total_engajamento = df['engajamento'].sum() if 'engajamento' in df.columns else 0
+        total_likes = df['likes'].sum() if 'likes' in df.columns else 0
+        total_comentarios = df['comentarios'].sum() if 'comentarios' in df.columns else 0
+        total_salvos = df['salvos'].sum() if 'salvos' in df.columns else 0
+        total_compartilhamentos = df['compartilhamentos'].sum() if 'compartilhamentos' in df.columns else 0
+        total_alcance = df['alcance'].sum() if 'alcance' in df.columns else 0
+        taxa_eng = (total_engajamento / total_alcance * 100) if total_alcance > 0 else 0
+
+        c1, c2, c3, c4 = st.columns(4)
+        with c1:
+            render_kpi("Total de Posts", total_posts, "inteiro")
+        with c2:
+            render_kpi("Engajamento Total", total_engajamento, "inteiro")
+        with c3:
+            render_kpi("Alcance Total", total_alcance, "inteiro")
+        with c4:
+            render_kpi("Taxa Engajamento", taxa_eng, "percentual")
+
+        st.markdown("---")
+
+        # Split por plataforma
+        c1, c2 = st.columns(2)
+        with c1:
+            if 'plataforma' in df.columns:
+                df_plat = df.groupby('plataforma').agg({
+                    'likes': 'sum', 'comentarios': 'sum', 'salvos': 'sum',
+                    'compartilhamentos': 'sum', 'engajamento': 'sum',
+                }).reset_index()
+                fig = px.bar(df_plat, x='plataforma', y='engajamento',
+                             color='plataforma', color_discrete_map={'Instagram': '#E1306C', 'Facebook': '#1877F2'},
+                             title="Engajamento por Plataforma")
+                render_chart(fig, key="org_plat_eng")
+
+        with c2:
+            if 'plataforma' in df.columns:
+                df_plat_count = df.groupby('plataforma').size().reset_index(name='qtd_posts')
+                fig = px.pie(df_plat_count, values='qtd_posts', names='plataforma', hole=0.4,
+                             color='plataforma', color_discrete_map={'Instagram': '#E1306C', 'Facebook': '#1877F2'},
+                             title="Volume de Posts por Plataforma")
+                render_chart(fig, key="org_plat_vol")
+
+        # Detalhamento engajamento
+        st.subheader("Detalhamento do Engajamento")
+        eng_data = pd.DataFrame({
+            'Metrica': ['Curtidas', 'Comentarios', 'Salvamentos', 'Compartilhamentos'],
+            'Total': [total_likes, total_comentarios, total_salvos, total_compartilhamentos],
+        })
+        fig = px.bar(eng_data, x='Metrica', y='Total', color_discrete_sequence=['#34A853'],
+                     title="Composicao do Engajamento")
+        render_chart(fig, key="org_eng_comp")
+        render_explicacao(EXPLICACOES['organico']['engajamento'])
+
+    with tab2:
+        df = _aplicar_filtro_shopping(df_posts, org_shopping_sel)
+
+        if 'tipo_post' in df.columns:
+            df_tp = df.groupby('tipo_post').agg({
+                'likes': 'sum', 'comentarios': 'sum', 'salvos': 'sum',
+                'compartilhamentos': 'sum', 'engajamento': 'sum', 'alcance': 'sum',
+            }).reset_index()
+            df_tp['qtd_posts'] = df.groupby('tipo_post').size().values
+            df_tp['eng_por_post'] = np.where(df_tp['qtd_posts'] > 0,
+                                              df_tp['engajamento'] / df_tp['qtd_posts'], 0)
+            df_tp = df_tp.sort_values('engajamento', ascending=False)
+
+            c1, c2 = st.columns(2)
+            with c1:
+                fig = px.bar(df_tp, x='tipo_post', y='engajamento',
+                             color_discrete_sequence=['#34A853'],
+                             title="Engajamento Total por Tipo")
+                render_chart(fig, key="org_tipo_eng")
+            with c2:
+                fig = px.bar(df_tp, x='tipo_post', y='eng_por_post',
+                             color_discrete_sequence=[ACCENT],
+                             title="Engajamento Medio por Post")
+                render_chart(fig, key="org_tipo_medio")
+
+            st.subheader("Tabela Detalhada por Tipo")
+            st.dataframe(df_tp.style.format({
+                'eng_por_post': '{:.1f}',
+            }), use_container_width=True)
+        render_explicacao(EXPLICACOES['organico']['tipo_post'])
+
+    with tab3:
+        df = _aplicar_filtro_shopping(df_diario if not df_diario.empty else df_posts, org_shopping_sel)
+
+        if not df.empty and 'data' in df.columns:
+            df['data'] = pd.to_datetime(df['data'])
+
+            col_eng = 'engajamento' if 'engajamento' in df.columns else 'likes'
+            col_posts = 'qtd_posts' if 'qtd_posts' in df.columns else None
+
+            if 'plataforma' in df.columns:
+                df_daily = df.groupby(['data', 'plataforma']).agg({
+                    col_eng: 'sum',
+                }).reset_index()
+                fig = px.line(df_daily, x='data', y=col_eng, color='plataforma',
+                              color_discrete_map={'Instagram': '#E1306C', 'Facebook': '#1877F2'},
+                              title="Engajamento Diario por Plataforma")
+            else:
+                df_daily = df.groupby('data').agg({col_eng: 'sum'}).reset_index()
+                fig = px.line(df_daily, x='data', y=col_eng,
+                              color_discrete_sequence=['#34A853'],
+                              title="Engajamento Diario")
+
+            render_chart(fig, key="org_evo_eng")
+
+            # Volume de posts por dia
+            if col_posts and col_posts in df.columns:
+                df_vol = df.groupby('data').agg({col_posts: 'sum'}).reset_index()
+                fig2 = px.bar(df_vol, x='data', y=col_posts,
+                              color_discrete_sequence=[ACCENT],
+                              title="Volume de Posts por Dia")
+                render_chart(fig2, key="org_evo_vol")
+        render_explicacao(EXPLICACOES['organico']['evolucao'])
+
+    with tab4:
+        df = df_posts.copy()  # Sem filtro de shopping aqui
+        if 'shopping' in df.columns:
+            df_shop = df.groupby('shopping').agg({
+                'likes': 'sum', 'comentarios': 'sum', 'salvos': 'sum',
+                'compartilhamentos': 'sum', 'engajamento': 'sum', 'alcance': 'sum',
+            }).reset_index()
+            df_shop['qtd_posts'] = df.groupby('shopping').size().values
+            df_shop['eng_por_post'] = np.where(df_shop['qtd_posts'] > 0,
+                                                df_shop['engajamento'] / df_shop['qtd_posts'], 0)
+            df_shop = df_shop.sort_values('engajamento', ascending=False)
+
+            c1, c2 = st.columns(2)
+            with c1:
+                fig = px.bar(df_shop, x='shopping', y='engajamento',
+                             color_discrete_sequence=['#34A853'],
+                             title="Engajamento Total por Shopping")
+                render_chart(fig, key="org_shop_eng")
+            with c2:
+                fig = px.bar(df_shop, x='shopping', y='eng_por_post',
+                             color_discrete_sequence=[ACCENT],
+                             title="Engajamento Medio por Post")
+                render_chart(fig, key="org_shop_medio")
+
+            st.subheader("Tabela Comparativa")
+            st.dataframe(df_shop, use_container_width=True)
+        render_explicacao(EXPLICACOES['organico']['volume'])
+
+
+# =============================================================================
 # PAGINA: COMPARATIVO
 # =============================================================================
 def pagina_comparativo():
@@ -1523,6 +1698,7 @@ def pagina_documentacao():
         | TikTok Ads | Business API v1.3 | Diaria | Campanhas, video engagement, demo |
         | GA4 | Data API v1beta | Diaria | Sessoes, conversoes, landing pages |
         | Search Console | Search Console API | Diaria (3d delay) | Consultas, paginas, posicoes |
+        | Organico | Graph API v22 | Diaria | Posts IG+FB, engajamento, alcance |
         """)
 
         st.subheader("Estrutura de Arquivos")
@@ -1533,6 +1709,7 @@ Dados/
 ├── TikTok_Ads/       (5 CSVs)
 ├── GA4/              (4 CSVs)
 ├── Search_Console/   (3 CSVs)
+├── Organico/         (4 CSVs)
 └── Consolidado/      (7 CSVs)
         """)
 
@@ -1609,6 +1786,7 @@ ROTEADOR = {
     "Meta Ads": pagina_meta_ads,
     "TikTok Ads": pagina_tiktok_ads,
     "GA4 / Search Console": pagina_ga4_search_console,
+    "Organico": pagina_organico,
     "Comparativo": pagina_comparativo,
     "Funil Integrado": pagina_funil_integrado,
     "Audiencia": pagina_audiencia,

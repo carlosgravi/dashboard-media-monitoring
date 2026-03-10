@@ -288,6 +288,32 @@ ALERTAS_SATURACAO = {
 }
 
 
+# --- ORGANICO ---
+ORGANICO_VOLUME = {
+    'o_que_mostra': 'Volume total de publicacoes organicas por plataforma (Instagram e Facebook), separado por tipo (Imagem, Video, Reel, Carrossel, Story).',
+    'como_interpretar': 'Mais publicacoes nao significa necessariamente mais resultado. Compare o volume com o engajamento para entender quais tipos geram mais interacao por post.',
+    'o_que_fazer': 'Identifique os tipos de post com melhor taxa de engajamento e priorize-os. Reels e carrosseis costumam ter maior alcance organico no Instagram.',
+}
+
+ORGANICO_ENGAJAMENTO = {
+    'o_que_mostra': 'Total de engajamentos organicos (curtidas, comentarios, salvamentos, compartilhamentos) por shopping e plataforma.',
+    'como_interpretar': 'Engajamento alto indica conteudo relevante para o publico. Salvamentos e compartilhamentos sao sinais mais fortes que curtidas. Compare a taxa de engajamento (engajamento / alcance) entre shoppings.',
+    'o_que_fazer': 'Replique os formatos que geram mais salvamentos e compartilhamentos. Conteudo util (dicas, promocoes, eventos) tende a ser mais salvo. Conteudo emocional tende a ser mais compartilhado.',
+}
+
+ORGANICO_EVOLUCAO = {
+    'o_que_mostra': 'Evolucao diaria do volume de posts e engajamento ao longo do periodo selecionado.',
+    'como_interpretar': 'Observe a consistencia: dias sem post = oportunidade perdida. Picos de engajamento indicam conteudo viral ou promocional de sucesso.',
+    'o_que_fazer': 'Mantenha uma cadencia regular de postagem. Analise os picos para entender o que funcionou e replicar.',
+}
+
+ORGANICO_TIPO_POST = {
+    'o_que_mostra': 'Comparativo de performance por tipo de publicacao (Imagem, Video, Reel, Carrossel, etc.).',
+    'como_interpretar': 'A taxa de engajamento por post (engajamento / qtd_posts) revela quais formatos performam melhor. Reels costumam ter maior alcance, carrosseis maior engajamento.',
+    'o_que_fazer': 'Aloque mais esforco criativo nos formatos com melhor taxa de engajamento. Teste novos formatos em baixo volume antes de escalar.',
+}
+
+
 # Dict centralizado para acesso facil por pagina
 EXPLICACOES = {
     'resumo': {
@@ -345,5 +371,11 @@ EXPLICACOES = {
     'alertas': {
         'anomalias': ALERTAS_ANOMALIAS,
         'saturacao': ALERTAS_SATURACAO,
+    },
+    'organico': {
+        'volume': ORGANICO_VOLUME,
+        'engajamento': ORGANICO_ENGAJAMENTO,
+        'evolucao': ORGANICO_EVOLUCAO,
+        'tipo_post': ORGANICO_TIPO_POST,
     },
 }
