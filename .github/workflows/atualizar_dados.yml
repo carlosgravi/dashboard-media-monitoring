@@ -86,6 +86,10 @@ jobs:
         continue-on-error: true
         run: python scripts/extrair_google_business.py --dias 90
 
+      - name: Extrair Organico (Instagram + Facebook)
+        continue-on-error: true
+        run: python scripts/extrair_organico.py --dias 90
+
       - name: Consolidar dados cross-platform
         run: python scripts/consolidar_cross_platform.py
 

@@ -1,10 +1,10 @@
-name: Buscar IDs Organico (temporario)
+name: Testar Extrator Organico (temporario)
 
 on:
   workflow_dispatch:
 
 jobs:
-  buscar-ids:
+  testar-organico:
     runs-on: ubuntu-latest
 
     env:
@@ -20,7 +20,19 @@ jobs:
           python-version: '3.11'
 
       - name: Instalar dependencias
-        run: pip install requests
+        run: pip install requests pandas
 
-      - name: Buscar IDs
-        run: python scripts/buscar_ids_organico.py
+      - name: Extrair Organico (ultimos 90 dias)
+        run: python scripts/extrair_organico.py --dias 90
+
+      - name: Mostrar resultados
+        run: |
+          echo "=== Arquivos gerados ==="
+          ls -la Dados/Organico/ || echo "Pasta nao criada"
+          echo ""
+          echo "=== Primeiras linhas de cada CSV ==="
+          for f in Dados/Organico/*.csv; do
+            echo "--- $f ---"
+            head -5 "$f" 2>/dev/null || echo "vazio"
+            echo ""
+          done
