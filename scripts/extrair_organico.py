@@ -198,7 +198,7 @@ def extrair_facebook_posts(page_id, sigla, data_inicio, data_fim):
     """Extrai posts da Facebook Page."""
     page_token = obter_page_token(page_id)
 
-    fields = "id,message,created_time,type,shares,reactions.summary(true),comments.summary(true)"
+    fields = "id,message,created_time,shares,reactions.summary(true),comments.summary(true),attachments{type}"
     url = f"{BASE_URL}/{page_id}/published_posts"
     params = {
         "access_token": page_token,
@@ -227,15 +227,21 @@ def extrair_facebook_posts(page_id, sigla, data_inicio, data_fim):
             continue
 
         post_date = datetime.fromisoformat(ts.replace("+0000", "+00:00"))
-        post_type = post.get("type", "status")
+        # Tipo via attachments (v3.3+)
+        attachments = post.get("attachments", {}).get("data", [])
+        post_type = attachments[0].get("type", "status") if attachments else "status"
 
         tipo_map = {
             "photo": "Imagem",
+            "video_inline": "Video",
             "video": "Video",
-            "link": "Link",
+            "share": "Link",
             "status": "Texto",
             "event": "Evento",
             "offer": "Oferta",
+            "album": "Album",
+            "multi_share": "Carrossel",
+            "native_templates": "Template",
         }
         tipo = tipo_map.get(post_type, post_type)
 
@@ -286,14 +292,15 @@ def extrair_instagram_account_insights(ig_id, sigla, data_inicio, data_fim):
     """Extrai metricas de conta Instagram (seguidores, alcance diario)."""
     data = []
 
-    # Metricas diarias da conta
+    # Metricas diarias da conta (2 chamadas: time_series e total_value)
     try:
-        metrics = "reach,follower_count,profile_views,accounts_engaged"
+        # Metricas com period=day (time_series)
         url = f"{BASE_URL}/{ig_id}/insights"
         params = {
             "access_token": TOKEN,
-            "metric": metrics,
+            "metric": "reach,follower_count",
             "period": "day",
+            "metric_type": "time_series",
             "since": data_inicio,
             "until": data_fim,
         }
