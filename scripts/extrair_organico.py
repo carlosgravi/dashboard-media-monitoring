@@ -292,34 +292,41 @@ def extrair_instagram_account_insights(ig_id, sigla, data_inicio, data_fim):
     """Extrai metricas de conta Instagram (seguidores, alcance diario)."""
     data = []
 
-    # Metricas diarias da conta (2 chamadas: time_series e total_value)
+    # Metricas diarias da conta (max 30 dias por chamada)
     try:
-        # Metricas com period=day (time_series)
-        url = f"{BASE_URL}/{ig_id}/insights"
-        params = {
-            "access_token": TOKEN,
-            "metric": "reach,follower_count",
-            "period": "day",
-            "metric_type": "time_series",
-            "since": data_inicio,
-            "until": data_fim,
-        }
-        resp = requests.get(url, params=params)
-        if resp.status_code == 200:
-            insights = resp.json().get("data", [])
-            # Reorganizar por data
-            datas_dict = {}
-            for metric in insights:
-                name = metric.get("name", "")
-                for val in metric.get("values", []):
-                    end_time = val.get("end_time", "")[:10]
-                    if end_time not in datas_dict:
-                        datas_dict[end_time] = {"data": end_time, "shopping": sigla}
-                    datas_dict[end_time][name] = val.get("value", 0)
+        datas_dict = {}
+        inicio_dt = datetime.strptime(data_inicio, "%Y-%m-%d")
+        fim_dt = datetime.strptime(data_fim, "%Y-%m-%d")
 
-            data = list(datas_dict.values())
-        else:
-            print(f"  [Organico] Erro insights conta IG {sigla}: {resp.status_code} - {resp.text[:200]}")
+        # Loop em janelas de 28 dias
+        janela_inicio = inicio_dt
+        while janela_inicio < fim_dt:
+            janela_fim = min(janela_inicio + timedelta(days=28), fim_dt)
+            url = f"{BASE_URL}/{ig_id}/insights"
+            params = {
+                "access_token": TOKEN,
+                "metric": "reach,follower_count",
+                "period": "day",
+                "metric_type": "time_series",
+                "since": janela_inicio.strftime("%Y-%m-%d"),
+                "until": janela_fim.strftime("%Y-%m-%d"),
+            }
+            resp = requests.get(url, params=params)
+            if resp.status_code == 200:
+                insights = resp.json().get("data", [])
+                for metric in insights:
+                    name = metric.get("name", "")
+                    for val in metric.get("values", []):
+                        end_time = val.get("end_time", "")[:10]
+                        if end_time not in datas_dict:
+                            datas_dict[end_time] = {"data": end_time, "shopping": sigla}
+                        datas_dict[end_time][name] = val.get("value", 0)
+            else:
+                print(f"  [Organico] Erro insights conta IG {sigla} ({janela_inicio.strftime('%Y-%m-%d')}): {resp.status_code}")
+
+            janela_inicio = janela_fim
+
+        data = list(datas_dict.values())
     except Exception as e:
         print(f"  [Organico] Erro insights conta IG {sigla}: {e}")
 
