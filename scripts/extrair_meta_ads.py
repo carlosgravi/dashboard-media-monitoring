@@ -190,8 +190,8 @@ def extrair_insights(account, data_inicio, data_fim, breakdowns=None, nome_arqui
 
 def extrair_todas_contas(accounts, data_inicio, data_fim):
     """Extrai insights de todas as contas e consolida por tipo de CSV."""
-    # time_increment: 1=diario (pesado), 'monthly'=mensal (leve)
-    # Breakdowns pesados usam mensal para reduzir volume (8 contas × 90 dias)
+    # Apenas campanhas usa diario — todos os breakdowns usam mensal
+    # para reduzir volume e tempo de API (8 contas × N dias)
     tipos_extracao = [
         {"nome": "campanhas", "breakdowns": None, "increment": 1},
         {"nome": "plataforma", "breakdowns": ['publisher_platform'], "increment": 'monthly'},
@@ -199,13 +199,13 @@ def extrair_todas_contas(accounts, data_inicio, data_fim):
         {"nome": "demografico_idade", "breakdowns": ['age'], "increment": 'monthly'},
         {"nome": "demografico_genero", "breakdowns": ['gender'], "increment": 'monthly'},
         {"nome": "dispositivo", "breakdowns": ['device_platform'], "increment": 'monthly'},
-        {"nome": "video", "breakdowns": None, "increment": 1},
+        {"nome": "video", "breakdowns": None, "increment": 'monthly'},
     ]
 
     for tipo in tipos_extracao:
         dfs = []
         for sigla, account in accounts.items():
-            print(f"  [Meta Ads] {sigla} → {tipo['nome']} (inc={tipo['increment']})...")
+            print(f"  [Meta Ads] {sigla} → {tipo['nome']}...", flush=True)
             df = extrair_insights(
                 account, data_inicio, data_fim,
                 breakdowns=tipo['breakdowns'],
@@ -219,9 +219,9 @@ def extrair_todas_contas(accounts, data_inicio, data_fim):
         if dfs:
             df_final = pd.concat(dfs, ignore_index=True)
             df_final.to_csv(OUTPUT_DIR / f"{tipo['nome']}.csv", index=False, encoding='utf-8-sig')
-            print(f"  [Meta Ads] {tipo['nome']}.csv: {len(df_final)} linhas ({len(dfs)} contas)")
+            print(f"  [Meta Ads] {tipo['nome']}.csv: {len(df_final)} linhas ({len(dfs)} contas)", flush=True)
         else:
-            print(f"  [Meta Ads] {tipo['nome']}.csv: sem dados")
+            print(f"  [Meta Ads] {tipo['nome']}.csv: sem dados", flush=True)
 
 
 def main():
@@ -232,12 +232,13 @@ def main():
     data_fim = (datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')
     data_inicio = (datetime.now() - timedelta(days=args.dias)).strftime('%Y-%m-%d')
 
-    print(f"[Meta Ads] Extraindo de {data_inicio} a {data_fim} (8 contas)...")
+    print(f"[Meta Ads] Extraindo de {data_inicio} a {data_fim}...", flush=True)
 
     accounts = init_api()
+    print(f"[Meta Ads] {len(accounts)} contas inicializadas.", flush=True)
     extrair_todas_contas(accounts, data_inicio, data_fim)
 
-    print("[Meta Ads] Extracao concluida!")
+    print("[Meta Ads] Extracao concluida!", flush=True)
 
 
 if __name__ == "__main__":

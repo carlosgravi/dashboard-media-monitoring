@@ -69,8 +69,10 @@ jobs:
 
       - name: Extrair Meta Ads
         continue-on-error: true
-        timeout-minutes: 20
-        run: python scripts/extrair_meta_ads.py --dias 90
+        timeout-minutes: 30
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: python scripts/extrair_meta_ads.py --dias 30
 
       - name: Extrair TikTok Ads
         continue-on-error: true
