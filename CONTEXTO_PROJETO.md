@@ -40,7 +40,7 @@ Dashboard_Media/
 2. Tendencias - Evolucao ROAS/CPA mensal, area empilhada, dia da semana
 
 ### Grupo 2: Por Plataforma
-3. Google Ads - 5 tabs (Campanhas, Keywords, Demo, Geo, Dispositivos)
+3. Google Ads - 8 tabs (Campanhas, Keywords, Demo, Geo, Dispositivos, Search Terms, Hora/Dia, **Alcance/Frequencia**)
 4. Meta Ads - 5 tabs (Campanhas, Plataformas, Posicionamento, Video, Demo)
 5. TikTok Ads - 3 tabs (Campanhas, Video Engagement, Demo)
 6. GA4 / Search Console - 3 tabs (Fontes, Landing Pages, Consultas)
@@ -104,12 +104,16 @@ Dashboard_Media/
 - Sessao 2 (cont.): Instalacao gh CLI, criacao runner media-runner, servico Windows
 - Sessao 2 (cont.): Fix workflow (nomes secrets Meta, setup-python no job whatsapp)
 - Sessao 2 (cont.): Pipeline testado com sucesso - extracao OK + notificacao WhatsApp OK
+- Sessao 3 (11/03/2026): Alcance e frequencia Google Ads (unique_users + freq para Display/Video/Demand Gen/PMAX)
+- Sessao 3 (cont.): Nova tab "Alcance / Frequencia" no dashboard (KPIs, evolucao diaria, por campanha, CPM alcance)
+- Sessao 3 (cont.): Fix timeout Meta Ads — breakdowns mensais, 30 dias, signal.alarm, flush logs (6min vs 20min+)
+- Sessao 3 (cont.): Fix pipeline: timeout-minutes em todos os steps (10-30min)
+- Sessao 3 (cont.): Fix bug pagina Organico (Streamlit Cloud cache — reboot resolveu)
 
 ## Proximos Passos (ao retomar)
-1. **TikTok Ads:** Verificar aprovacao do app, configurar secrets
-2. **Investigar erros extratores:** Google Ads e Meta Ads retornaram erro no pipeline (credenciais podem precisar ajuste)
-3. **secrets.toml:** Criar usuarios para login no dashboard
-4. **Deploy Streamlit Cloud**
+1. **TikTok Ads:** App aprovado para 1 shopping, aguardando acesso ao email de verificacao para gerar access token
+2. **secrets.toml:** Criar usuarios para login no dashboard
+3. **Deploy Streamlit Cloud**
 
 ## Notas Tecnicas
 - TikTok: cada shopping tem BC separado → TIKTOK_ADS_CONFIG (JSON) com token+advertiser_id por shopping
@@ -118,3 +122,18 @@ Dashboard_Media/
 - GA4: 7 sites (1 principal + 1 por shopping) - por enquanto extrai so o principal
 - Service Account: projeto "dashboard-almeida-junior" no Google Cloud
 - Self-hosted runners: normas-runner (C:\actions-runner-normas) + media-runner (C:\actions-runner-media)
+
+### Alcance e Frequencia (Google Ads)
+- Metricas: `metrics.unique_users` + `metrics.average_impression_frequency_per_user`
+- Filtro: `campaign.advertising_channel_type != 'SEARCH'` (captura DEMAND_GEN, VIDEO, MULTI_CHANNEL, DISPLAY)
+- Requisito: 10k+ impressoes na campanha (senao retorna 0)
+- Max 92 dias por query, delay ~3 dias
+- Dados: 49 campanhas, 4.7M alcance, freq media 1.43 (dados atuais)
+
+### Meta Ads — Otimizacao Pipeline
+- Breakdowns (plataforma, posicionamento, idade, genero, dispositivo, video) usam `time_increment: 'monthly'`
+- Apenas `campanhas` usa `time_increment: 1` (diario)
+- Workflow roda com `--dias 30` (30 dias em vez de 90)
+- Timeout: 2min por conta via `signal.alarm` (Linux) ou ThreadPool (Windows)
+- `demografico_cruzado` removido (redundante — consolidador usa idade e genero separados)
+- Tempo de execucao: ~6 minutos (8 contas × 7 tipos)
