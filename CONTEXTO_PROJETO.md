@@ -128,6 +128,13 @@ Dashboard_Media/
 - Sessao 5 (cont.): Dashboard: Google Ads 8→10 tabs (+Ad Groups, +Conversoes), Meta Ads 5→8 tabs (+Quality Rankings, +Geografico, +Hora/Dia), GA4/SC 5→10 tabs (+Engajamento, +Novos vs Recorrentes, +Paginas, +Paises, +Search Appearance)
 - Sessao 5 (cont.): Explicacoes de graficos: +11 novas explicacoes para todos os novos graficos/tabs
 - Sessao 5 (cont.): Funil integrado corrigido: Meta fallback pixel purchase, Google source+medium match, leads/add_to_cart
+- Sessao 5 (cont.): TikTok Ads reescrito com chunking automatico (30 dias stat_time_day, 1 dia stat_time_hour, 365 dias sem temporal)
+- Sessao 5 (cont.): TikTok --dias 365 para historico completo, hora_dia limitado a min(dias, 90) para evitar excesso de requests
+- Sessao 5 (cont.): enriquecer_csv_seguro() para nao crashear em CSVs vazios
+- Sessao 5 (cont.): Fix GA4 diario — split em 2 requests (max 10 metricas por request da API)
+- Sessao 5 (cont.): Fix Google Ads conversion_actions — removidos campos incompativeis (metrics.conversions, segments.conversion_action_category)
+- Sessao 5 (cont.): Fix consolidador — pd.to_datetime com format='mixed' para aceitar datas TikTok ("2026-02-22 00:00:00") e Google/Meta ("2026-02-22")
+- Sessao 5 (cont.): Pipeline validado end-to-end — todos 7 extratores + consolidador + recomendacoes + commit com sucesso
 
 ## Proximos Passos (ao retomar)
 1. **TikTok Ads:** Aprovar app para demais shoppings (BS, CS, NK, NR, GS) e adicionar ao TIKTOK_ADS_CONFIG
@@ -154,7 +161,8 @@ Dashboard_Media/
 - Auth: OAuth2 (app_id + secret → auth_code → access_token)
 - 12 CSVs: campanhas, video_engagement, demografico_idade/genero, diario, hora_dia, geografico, plataforma, adgroup_diario, alcance_frequencia, campanhas_metadata, adgroups_metadata
 - Demograficos: report_type=AUDIENCE, data_level=AUCTION_ADVERTISER (age/gender nao suportam BASIC)
-- Hora do dia: stat_time_hour exige range max 1 dia → loop dia a dia (fetch_hourly_report)
+- Chunking automatico: _gerar_chunks() divide ranges longos (30d para stat_time_day, 1d para stat_time_hour, 365d sem temporal)
+- Hora do dia: stat_time_hour exige range max 1 dia → loop dia a dia, limitado a min(dias, 90)
 - Alcance/frequencia: metricas reach+frequency no report BASIC por campaign_id
 - Metadados: endpoints separados /campaign/get/ e /adgroup/get/ (nomes, objetivos, status)
 - Enriquecimento: merge campaign_name em campanhas.csv, video_engagement.csv e adgroup_diario.csv
