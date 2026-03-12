@@ -577,7 +577,7 @@ def pagina_google_ads():
         st.info("Sem dados do Google Ads. Execute `scripts/extrair_google_ads.py`.")
         return
 
-    # Filtro shopping unico (antes dos tabs) usando campanhas como referencia
+    # Filtros unicos (antes dos tabs) — periodo e shopping
     df_ref = dados.get('campanhas', pd.DataFrame())
     shopping_sel = None
     if not df_ref.empty and 'shopping' in df_ref.columns:
@@ -585,6 +585,22 @@ def pagina_google_ads():
         if shoppings:
             opcoes = ["Todos"] + shoppings
             shopping_sel = st.sidebar.selectbox("Shopping", opcoes, index=0, key="gads_shopping")
+
+    # Filtro periodo unico (aplicado em todas as tabs que tem coluna 'data')
+    if not df_ref.empty:
+        df_ref = filtro_periodo_sidebar(df_ref)
+        _gads_periodo_inicio = df_ref['data'].min() if 'data' in df_ref.columns and not df_ref.empty else None
+        _gads_periodo_fim = df_ref['data'].max() if 'data' in df_ref.columns and not df_ref.empty else None
+    else:
+        _gads_periodo_inicio = None
+        _gads_periodo_fim = None
+
+    def _aplicar_periodo_gads(df):
+        """Aplica o mesmo filtro de periodo selecionado no sidebar."""
+        if _gads_periodo_inicio is not None and 'data' in df.columns:
+            df['data'] = pd.to_datetime(df['data'], errors='coerce')
+            return df[(df['data'] >= _gads_periodo_inicio) & (df['data'] <= _gads_periodo_fim)]
+        return df
 
     tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs([
         "Campanhas", "Palavras-Chave", "Demografico", "Geografico", "Dispositivos",
@@ -596,7 +612,7 @@ def pagina_google_ads():
         if df.empty:
             st.info("Sem dados de campanhas.")
         else:
-            df = filtro_periodo_sidebar(df)
+            df = _aplicar_periodo_gads(df)
             df = _aplicar_filtro_shopping(df, shopping_sel)
             # KPIs
             c1, c2, c3, c4 = st.columns(4)
@@ -788,7 +804,7 @@ def pagina_google_ads():
         if df.empty:
             st.info("Sem dados de alcance e frequencia. Disponivel apenas para campanhas Display, Video e Demand Gen com 10k+ impressoes.")
         else:
-            df = filtro_periodo_sidebar(df)
+            df = _aplicar_periodo_gads(df)
             df = _aplicar_filtro_shopping(df, shopping_sel)
 
             # KPIs
