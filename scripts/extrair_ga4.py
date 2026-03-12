@@ -114,18 +114,28 @@ def extrair_landing_pages(client, property_id, data_inicio, data_fim):
 
 
 def extrair_diario(client, property_id, data_inicio, data_fim):
-    """Metricas agregadas por dia (inclui engagement)."""
-    df = run_report(
+    """Metricas agregadas por dia (inclui engagement). Split em 2 requests (max 10 metricas)."""
+    df1 = run_report(
         client, property_id,
         dimensions=["date"],
         metrics=["sessions", "totalUsers", "newUsers", "activeUsers",
                  "bounceRate", "averageSessionDuration", "screenPageViews",
-                 "conversions", "totalRevenue",
-                 "engagementRate", "engagedSessions",
-                 "userEngagementDuration", "sessionsPerUser",
-                 "eventCount"],
+                 "conversions", "totalRevenue", "eventCount"],
         data_inicio=data_inicio, data_fim=data_fim,
     )
+    df2 = run_report(
+        client, property_id,
+        dimensions=["date"],
+        metrics=["engagementRate", "engagedSessions",
+                 "userEngagementDuration", "sessionsPerUser"],
+        data_inicio=data_inicio, data_fim=data_fim,
+    )
+    if not df1.empty and not df2.empty:
+        df = df1.merge(df2, on="date", how="outer")
+    elif not df1.empty:
+        df = df1
+    else:
+        df = df2
     df.to_csv(OUTPUT_DIR / "diario.csv", index=False, encoding='utf-8-sig')
     print(f"  [GA4] diario.csv: {len(df)} linhas")
     return df

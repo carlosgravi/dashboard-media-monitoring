@@ -105,7 +105,7 @@ def consolidar_diario():
         print("  [Consolidar] Nenhum dado diario encontrado")
         return df_consolidado
 
-    df_consolidado['data'] = pd.to_datetime(df_consolidado['data'])
+    df_consolidado['data'] = pd.to_datetime(df_consolidado['data'], format='mixed')
     df_consolidado = df_consolidado.sort_values('data')
 
     # Calcular ROAS e CPA
@@ -363,7 +363,7 @@ def consolidar_por_shopping():
         print("  [Consolidar] Nenhum dado por shopping encontrado")
         return df_shopping
 
-    df_shopping['data'] = pd.to_datetime(df_shopping['data'])
+    df_shopping['data'] = pd.to_datetime(df_shopping['data'], format='mixed')
     df_shopping = df_shopping.sort_values('data')
     df_shopping['roas'] = np.where(df_shopping['custo'] > 0, df_shopping['receita'] / df_shopping['custo'], 0)
     df_shopping['cpa'] = np.where(df_shopping['conversoes'] > 0, df_shopping['custo'] / df_shopping['conversoes'], 0)

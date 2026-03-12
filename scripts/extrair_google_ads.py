@@ -435,12 +435,13 @@ def extrair_ad_groups(client, customer_id, shopping_sigla, data_inicio, data_fim
 
 
 def extrair_conversion_actions(client, customer_id, shopping_sigla, data_inicio, data_fim):
-    """Extrai conversoes por tipo de acao (purchase, lead, view, etc.)."""
+    """Extrai conversoes por tipo de acao (purchase, lead, view, etc.).
+    Nota: conversion_action resource nao suporta metrics.conversions nem
+    segments.conversion_action_category — usar all_conversions."""
     query = f"""
         SELECT
             conversion_action.name, conversion_action.category,
-            segments.date, segments.conversion_action_category,
-            metrics.conversions, metrics.conversions_value,
+            segments.date,
             metrics.all_conversions, metrics.all_conversions_value
         FROM conversion_action
         WHERE segments.date BETWEEN '{data_inicio}' AND '{data_fim}'
@@ -451,13 +452,11 @@ def extrair_conversion_actions(client, customer_id, shopping_sigla, data_inicio,
         data.append({
             'shopping': SHOPPING_NOMES.get(shopping_sigla, shopping_sigla),
             'shopping_sigla': shopping_sigla,
-            'acao_conversao': r.conversion_action.name,
+            'conversion_action_name': r.conversion_action.name,
             'categoria': r.conversion_action.category.name if r.conversion_action.category else '',
             'data': r.segments.date,
-            'conversoes': r.metrics.conversions,
-            'valor_conversoes': r.metrics.conversions_value,
-            'todas_conversoes': r.metrics.all_conversions,
-            'valor_todas_conversoes': r.metrics.all_conversions_value,
+            'conversoes': r.metrics.all_conversions,
+            'valor_conversoes': r.metrics.all_conversions_value,
         })
     return data
 
