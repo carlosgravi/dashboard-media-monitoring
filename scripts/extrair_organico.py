@@ -20,6 +20,8 @@ import argparse
 from datetime import datetime, timedelta
 from pathlib import Path
 
+import time
+
 import pandas as pd
 import requests
 
@@ -43,8 +45,8 @@ CONTAS = {
 }
 
 
-def api_get(endpoint, params=None):
-    """GET request a Graph API com paginacao."""
+def api_get(endpoint, params=None, max_retries=2):
+    """GET request a Graph API com paginacao e retry para erros 500."""
     if params is None:
         params = {}
     params["access_token"] = TOKEN
@@ -52,7 +54,13 @@ def api_get(endpoint, params=None):
     url = f"{BASE_URL}/{endpoint}"
 
     while url:
-        resp = requests.get(url, params=params)
+        resp = None
+        for attempt in range(max_retries + 1):
+            resp = requests.get(url, params=params)
+            if resp.status_code == 500 and attempt < max_retries:
+                time.sleep(2 ** attempt)  # backoff: 1s, 2s
+                continue
+            break
         if resp.status_code != 200:
             print(f"  [Organico] Erro {resp.status_code}: {resp.text[:200]}")
             break
@@ -289,16 +297,20 @@ def extrair_facebook_posts(page_id, sigla, data_inicio, data_fim):
 
 
 def extrair_instagram_account_insights(ig_id, sigla, data_inicio, data_fim):
-    """Extrai metricas de conta Instagram (seguidores, alcance diario)."""
+    """Extrai metricas de conta Instagram (seguidores, alcance diario).
+    Instagram API limita insights de conta a ~30 dias de lookback.
+    """
     data = []
 
-    # Metricas diarias da conta (max 30 dias por chamada)
     try:
         datas_dict = {}
-        inicio_dt = datetime.strptime(data_inicio, "%Y-%m-%d")
         fim_dt = datetime.strptime(data_fim, "%Y-%m-%d")
+        # Instagram API so retorna ~30 dias de insights de conta
+        max_lookback = 30
+        inicio_dt_original = datetime.strptime(data_inicio, "%Y-%m-%d")
+        inicio_dt = max(inicio_dt_original, fim_dt - timedelta(days=max_lookback))
 
-        # Loop em janelas de 28 dias
+        # Loop em janelas de 28 dias (respeitando limite da API)
         janela_inicio = inicio_dt
         while janela_inicio < fim_dt:
             janela_fim = min(janela_inicio + timedelta(days=28), fim_dt)

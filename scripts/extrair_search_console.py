@@ -133,8 +133,9 @@ def main():
     print(f"  [Search Console] paises.csv: {len(df)} linhas")
 
     # 7. Search Appearance (rich results, snippets, etc.)
+    # searchAppearance NAO pode ser combinada com outras dimensoes na API
     df = fetch_search_analytics(service, site_url, data_inicio, data_fim,
-                                dimensions=['date', 'searchAppearance'])
+                                dimensions=['searchAppearance'])
     df.to_csv(OUTPUT_DIR / "search_appearance.csv", index=False, encoding='utf-8-sig')
     print(f"  [Search Console] search_appearance.csv: {len(df)} linhas")
 
