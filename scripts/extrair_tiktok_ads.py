@@ -50,7 +50,7 @@ def get_config():
     return json.loads(config_json)
 
 
-def fetch_report(token, advertiser_id, data_inicio, data_fim, dimensions, metrics, shopping_sigla):
+def fetch_report(token, advertiser_id, data_inicio, data_fim, dimensions, metrics, shopping_sigla, data_level="AUCTION_CAMPAIGN", report_type="BASIC"):
     """Busca relatorio via TikTok Reporting API para 1 conta."""
     url = f"{API_BASE}/report/integrated/get/"
     headers = {"Access-Token": token}
@@ -62,10 +62,10 @@ def fetch_report(token, advertiser_id, data_inicio, data_fim, dimensions, metric
     while True:
         params = {
             "advertiser_id": advertiser_id,
-            "report_type": "BASIC",
-            "data_level": "AUCTION_CAMPAIGN",
-            "dimensions": str(dimensions),
-            "metrics": str(metrics),
+            "report_type": report_type,
+            "data_level": data_level,
+            "dimensions": json.dumps(dimensions),
+            "metrics": json.dumps(metrics),
             "start_date": data_inicio,
             "end_date": data_fim,
             "page": page,
@@ -127,6 +127,10 @@ def main():
         "conversion", "cost_per_conversion", "conversion_rate",
         "total_complete_payment_rate",
     ]
+    metrics_audience = [
+        "spend", "impressions", "clicks", "ctr", "cpc", "cpm",
+        "conversion", "cost_per_conversion", "conversion_rate",
+    ]
     metrics_video = [
         "video_play_actions", "video_watched_2s", "video_watched_6s",
         "average_video_play", "average_video_play_per_user",
@@ -138,22 +142,22 @@ def main():
         "clicks_on_music_disc", "profile_visits",
     ]
 
-    # Relatorios a extrair
+    # Relatorios a extrair: (nome, dimensions, metrics, data_level)
     relatorios = [
-        ("campanhas", ["campaign_id", "stat_time_day"], metrics_base + metrics_engagement),
-        ("video_engagement", ["campaign_id", "stat_time_day"], metrics_base + metrics_video),
-        ("demografico_idade", ["campaign_id", "age"], metrics_base),
-        ("demografico_genero", ["campaign_id", "gender"], metrics_base),
-        ("diario", ["stat_time_day"], metrics_base + metrics_video + metrics_engagement),
+        ("campanhas", ["campaign_id", "stat_time_day"], metrics_base + metrics_engagement, "AUCTION_CAMPAIGN", "BASIC"),
+        ("video_engagement", ["campaign_id", "stat_time_day"], metrics_base + metrics_video, "AUCTION_CAMPAIGN", "BASIC"),
+        ("demografico_idade", ["stat_time_day", "age"], metrics_audience, "AUCTION_ADVERTISER", "AUDIENCE"),
+        ("demografico_genero", ["stat_time_day", "gender"], metrics_audience, "AUCTION_ADVERTISER", "AUDIENCE"),
+        ("diario", ["stat_time_day"], metrics_base + metrics_video + metrics_engagement, "AUCTION_CAMPAIGN", "BASIC"),
     ]
 
-    for nome_arquivo, dimensions, metrics in relatorios:
+    for nome_arquivo, dimensions, metrics, data_level, report_type in relatorios:
         dfs = []
         for sigla, creds in config.items():
             token = creds["token"]
             adv_id = creds["advertiser_id"]
             print(f"  [TikTok/{sigla}] Extraindo {nome_arquivo}...")
-            df = fetch_report(token, adv_id, data_inicio, data_fim, dimensions, metrics, sigla)
+            df = fetch_report(token, adv_id, data_inicio, data_fim, dimensions, metrics, sigla, data_level, report_type)
             if not df.empty:
                 dfs.append(df)
 
