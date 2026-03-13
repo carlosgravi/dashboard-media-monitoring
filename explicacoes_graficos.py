@@ -28,9 +28,9 @@ def render_explicacao(explicacao):
 # =============================================================================
 
 RESUMO_KPIS = {
-    'o_que_mostra': 'Os principais indicadores de performance de todas as plataformas de midia (Google Ads, Meta Ads, TikTok Ads) em um unico painel.',
-    'como_interpretar': 'Compare os numeros com o periodo anterior. ROAS acima de 1.0 significa que voce ganha mais do que gasta. CPA baixo e melhor (custa menos para converter). CTR alto indica que os anuncios sao relevantes para o publico.',
-    'o_que_fazer': 'Se o ROAS esta abaixo de 1.0, reavalie as campanhas — voce esta perdendo dinheiro. Se o CPA subiu muito, verifique se o publico-alvo esta correto ou se os criativos precisam ser renovados.',
+    'o_que_mostra': 'Os 5 indicadores principais de todas as plataformas de midia: Investimento Total, Impressoes (quantas vezes os anuncios apareceram), Conversoes, ROAS (retorno sobre investimento) e CPA (custo por conversao). Abaixo, semaforos coloridos indicam a saude de cada metrica.',
+    'como_interpretar': 'ROAS acima de 1.0 = voce ganha mais do que gasta (verde acima de 4.0). CPA baixo = custa menos para converter. CTR acima de 2% = anuncios relevantes (verde). Os semaforos comparam o CPA atual com a media historica do periodo completo.',
+    'o_que_fazer': 'Se o ROAS esta abaixo de 1.0, reavalie as campanhas — voce esta perdendo dinheiro. Se o CPA subiu muito (semaforo vermelho), verifique se o publico-alvo esta correto ou se os criativos precisam ser renovados. Se o CTR esta baixo, melhore os titulos e imagens dos anuncios.',
     'alerta': 'ROAS abaixo de 1.0 por mais de 2 semanas seguidas exige acao imediata: pausar campanhas de baixo retorno ou redistribuir verba.',
 }
 
@@ -41,10 +41,17 @@ RESUMO_DISTRIBUICAO_VERBA = {
     'alerta': 'Se mais de 50% da verba esta em uma unica plataforma, voce corre risco de dependencia. Diversifique para reduzir riscos.',
 }
 
+RESUMO_INVESTIMENTO_CONVERSOES = {
+    'o_que_mostra': 'A relacao entre investimento diario (barras) e volume de conversoes (linha) ao longo do tempo.',
+    'como_interpretar': 'Quando a linha de conversoes sobe junto com as barras de investimento, os anuncios estao respondendo bem ao aumento de verba. Se o investimento sobe mas as conversoes nao acompanham, pode haver saturacao ou problema de segmentacao.',
+    'o_que_fazer': 'Identifique periodos onde o investimento cresceu sem aumento proporcional de conversoes — esses sao pontos de ineficiencia. Use para calibrar o orcamento diario ideal.',
+    'alerta': 'Se as conversoes caem enquanto o investimento sobe, pare e investigue antes de gastar mais.',
+}
+
 RESUMO_TREEMAP_CAMPANHAS = {
-    'o_que_mostra': 'Todas as campanhas ativas organizadas por tamanho (quanto gastam) e cor (performance). Quanto maior o retangulo, mais verba a campanha consome.',
-    'como_interpretar': 'Retangulos grandes com cor VERDE sao campanhas que gastam muito e performam bem (boa combinacao). Retangulos grandes com cor VERMELHA sao campanhas caras com baixo retorno — principal alvo de otimizacao.',
-    'o_que_fazer': 'Foque nas campanhas grandes e vermelhas: ou otimize-as (melhore criativos, publico, lances) ou pause-as e mova a verba para campanhas verdes.',
+    'o_que_mostra': 'Todas as campanhas ativas organizadas por tamanho (quanto gastam) e cor (plataforma). Quanto maior o retangulo, mais verba a campanha consome.',
+    'como_interpretar': 'A cor identifica a plataforma (Google Ads, Meta Ads, TikTok Ads). Retangulos grandes representam campanhas com alto investimento. Compare o tamanho relativo para entender onde a verba esta sendo alocada.',
+    'o_que_fazer': 'Identifique campanhas com alto investimento e cruze com os dados de ROAS na pagina de cada plataforma. Campanhas grandes com ROAS baixo sao o principal alvo de otimizacao.',
 }
 
 # =============================================================================
@@ -56,6 +63,13 @@ TENDENCIAS_ROAS_CPA = {
     'como_interpretar': 'ROAS subindo = campanhas melhorando. ROAS caindo = campanhas perdendo eficiencia. CPA subindo = cada conversao esta ficando mais cara. Ideal: ROAS subindo E CPA caindo ao mesmo tempo.',
     'o_que_fazer': 'Se o ROAS esta em tendencia de queda por 3+ semanas: 1) Renove os criativos (fadiga de anuncio). 2) Revise o publico-alvo. 3) Ajuste os lances. Se o CPA subiu mas o ROAS se manteve, o valor das conversoes pode ter aumentado — verifique o ticket medio.',
     'alerta': 'Quedas bruscas de ROAS geralmente indicam: sazonalidade, fadiga de criativos, ou aumento de concorrencia nos leiloes.',
+}
+
+TENDENCIAS_CPA = {
+    'o_que_mostra': 'A evolucao do CPA (Custo por Aquisicao/Conversao) ao longo dos meses, separado por plataforma.',
+    'como_interpretar': 'CPA subindo = cada conversao esta ficando mais cara. CPA caindo = campanhas estao mais eficientes. Compare entre plataformas para ver qual entrega conversoes mais baratas.',
+    'o_que_fazer': 'Se o CPA de uma plataforma esta subindo consistentemente: 1) Revise os publicos-alvo (podem estar saturados). 2) Teste novos criativos. 3) Compare com o CPA das outras plataformas e considere redistribuir verba para a mais eficiente.',
+    'alerta': 'CPA dobrando em menos de 1 mes geralmente indica saturacao de publico ou problema de configuracao de campanha.',
 }
 
 TENDENCIAS_AREA_EMPILHADA = {
@@ -419,10 +433,12 @@ EXPLICACOES = {
     'resumo': {
         'kpis': RESUMO_KPIS,
         'distribuicao_verba': RESUMO_DISTRIBUICAO_VERBA,
+        'investimento_conversoes': RESUMO_INVESTIMENTO_CONVERSOES,
         'treemap': RESUMO_TREEMAP_CAMPANHAS,
     },
     'tendencias': {
         'roas_cpa': TENDENCIAS_ROAS_CPA,
+        'cpa': TENDENCIAS_CPA,
         'area_empilhada': TENDENCIAS_AREA_EMPILHADA,
         'dia_semana': TENDENCIAS_DIA_SEMANA,
     },

@@ -395,33 +395,44 @@ def pagina_resumo_executivo():
     investimento = df['custo'].sum()
     conversoes = df['conversoes'].sum()
     receita = df['receita'].sum()
+    impressoes = df['impressoes'].sum()
+    cliques = df['cliques'].sum()
     roas_blended = receita / investimento if investimento > 0 else 0
     cpa_medio = investimento / conversoes if conversoes > 0 else 0
+    ctr_medio = (cliques / max(impressoes, 1)) * 100
 
-    c1, c2, c3, c4 = st.columns(4)
+    c1, c2, c3, c4, c5 = st.columns(5)
     with c1:
         render_kpi("Investimento Total", investimento, "moeda")
     with c2:
-        render_kpi("Conversoes", conversoes, "inteiro")
+        render_kpi("Impressoes", impressoes, "inteiro")
     with c3:
-        render_kpi("ROAS Blended", roas_blended, "multiplicador")
+        render_kpi("Conversoes", conversoes, "inteiro")
     with c4:
+        render_kpi("ROAS Blended", roas_blended, "multiplicador")
+    with c5:
         render_kpi("CPA Medio", cpa_medio, "moeda")
 
     render_explicacao(EXPLICACOES['resumo']['kpis'])
 
-    # Semaforos
+    # Semaforos — benchmark CPA usa historico completo (sem filtro de periodo)
+    cpa_benchmark = None
+    df_hist = df_diario if not df_diario.empty else df_shopping
+    if not df_hist.empty:
+        conv_total = df_hist['conversoes'].sum()
+        if conv_total > 0:
+            cpa_benchmark = df_hist['custo'].sum() / conv_total
+
     st.markdown("---")
     s1, s2, s3 = st.columns(3)
     with s1:
         cor, msg = semaforo_roas(roas_blended)
         st.markdown(render_semaforo(cor, msg), unsafe_allow_html=True)
     with s2:
-        ctr_medio = (df['cliques'].sum() / max(df['impressoes'].sum(), 1)) * 100
         cor, msg = semaforo_ctr(ctr_medio)
         st.markdown(render_semaforo(cor, msg), unsafe_allow_html=True)
     with s3:
-        cor, msg = semaforo_cpa(cpa_medio)
+        cor, msg = semaforo_cpa(cpa_medio, benchmark=cpa_benchmark)
         st.markdown(render_semaforo(cor, msg), unsafe_allow_html=True)
 
     st.markdown("---")
@@ -466,6 +477,7 @@ def pagina_resumo_executivo():
             barmode='stack',
         )
         render_chart(fig, key="invest_conv")
+        render_explicacao(EXPLICACOES['resumo']['investimento_conversoes'])
 
     # Treemap campanhas
     st.subheader("Treemap — Investimento por Campanha")
@@ -524,10 +536,6 @@ def pagina_tendencias():
 
     # CPA por plataforma
     st.subheader("CPA por Plataforma — Evolucao Mensal")
-    df_mensal['cpa'] = np.where(df_mensal['custo'] > 0,
-                                 df_mensal['custo'] / df_mensal.get('conversoes', pd.Series([1]*len(df_mensal))),
-                                 0)
-    # Recalcular com conversoes
     df_mensal_conv = df.groupby(['mes', 'plataforma']).agg(
         custo=('custo', 'sum'), conversoes=('conversoes', 'sum')
     ).reset_index()
@@ -538,6 +546,7 @@ def pagina_tendencias():
                   color_discrete_map=CORES_PLATAFORMA, markers=True)
     fig.update_layout(yaxis_title='CPA (R$)', xaxis_title='Mes')
     render_chart(fig, key="cpa_mensal")
+    render_explicacao(EXPLICACOES['tendencias']['cpa'])
 
     # Area empilhada investimento
     st.subheader("Investimento por Plataforma — Area Empilhada")
@@ -548,10 +557,14 @@ def pagina_tendencias():
     render_chart(fig, key="area_invest")
     render_explicacao(EXPLICACOES['tendencias']['area_empilhada'])
 
-    # Heatmap dia da semana x hora (se houver dados horarios)
+    # Performance por dia da semana
     st.subheader("Performance por Dia da Semana")
-    df['dia_semana'] = df['data'].dt.day_name()
-    dias_ordem = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+    dias_pt = {
+        'Monday': 'Segunda', 'Tuesday': 'Terca', 'Wednesday': 'Quarta',
+        'Thursday': 'Quinta', 'Friday': 'Sexta', 'Saturday': 'Sabado', 'Sunday': 'Domingo',
+    }
+    df['dia_semana'] = df['data'].dt.day_name().map(dias_pt)
+    dias_ordem = ['Segunda', 'Terca', 'Quarta', 'Quinta', 'Sexta', 'Sabado', 'Domingo']
     df_dia = df.groupby('dia_semana').agg(
         custo=('custo', 'sum'), conversoes=('conversoes', 'sum'), cliques=('cliques', 'sum')
     ).reindex(dias_ordem).reset_index()
