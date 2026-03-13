@@ -408,10 +408,9 @@ def pagina_resumo_executivo():
     # KPIs
     investimento = df['custo'].sum()
     conversoes = df['conversoes'].sum()
-    receita = df['receita'].sum()
     impressoes = df['impressoes'].sum()
     cliques = df['cliques'].sum()
-    roas_blended = receita / investimento if investimento > 0 else 0
+    cpm_blended = (investimento / max(impressoes, 1)) * 1000
     cpa_medio = investimento / conversoes if conversoes > 0 else 0
     ctr_medio = (cliques / max(impressoes, 1)) * 100
 
@@ -423,7 +422,7 @@ def pagina_resumo_executivo():
     with c3:
         render_kpi("Conversoes", conversoes, "inteiro")
     with c4:
-        render_kpi("ROAS Blended", roas_blended, "multiplicador")
+        render_kpi("CPM Medio", cpm_blended, "moeda")
     with c5:
         render_kpi("CPA Medio", cpa_medio, "moeda")
 
@@ -440,11 +439,17 @@ def pagina_resumo_executivo():
     st.markdown("---")
     s1, s2, s3 = st.columns(3)
     with s1:
-        cor, msg = semaforo_roas(roas_blended)
-        st.markdown(render_semaforo(cor, msg), unsafe_allow_html=True)
-    with s2:
         cor, msg = semaforo_ctr(ctr_medio)
         st.markdown(render_semaforo(cor, msg), unsafe_allow_html=True)
+    with s2:
+        # Semaforo CPM: < R$10 verde, R$10-30 amarelo, > R$30 vermelho
+        if cpm_blended < 10:
+            cor_cpm, msg_cpm = 'verde', f'CPM R$ {cpm_blended:.2f} — excelente custo de alcance'
+        elif cpm_blended < 30:
+            cor_cpm, msg_cpm = 'amarelo', f'CPM R$ {cpm_blended:.2f} — custo de alcance moderado'
+        else:
+            cor_cpm, msg_cpm = 'vermelho', f'CPM R$ {cpm_blended:.2f} — custo de alcance alto'
+        st.markdown(render_semaforo(cor_cpm, msg_cpm), unsafe_allow_html=True)
     with s3:
         cor, msg = semaforo_cpa(cpa_medio, benchmark=cpa_benchmark)
         st.markdown(render_semaforo(cor, msg), unsafe_allow_html=True)
@@ -469,12 +474,13 @@ def pagina_resumo_executivo():
         # Insight box
         if not df_verba.empty:
             maior = df_verba.loc[df_verba['custo'].idxmax()]
-            roas_maior = df[df['plataforma'] == maior['plataforma']]
-            roas_val = roas_maior['receita'].sum() / max(roas_maior['custo'].sum(), 1)
+            df_maior = df[df['plataforma'] == maior['plataforma']]
+            conv_maior = df_maior['conversoes'].sum()
+            cpa_val = df_maior['custo'].sum() / max(conv_maior, 1)
             st.markdown(gerar_insight_box('distribuicao_verba', {
                 'maior_plataforma': maior['plataforma'],
                 'pct_maior': maior['pct'],
-                'roas_maior': roas_val,
+                'cpa_maior': cpa_val,
             }))
 
     with col2:
@@ -542,22 +548,23 @@ def pagina_tendencias():
 
     df = filtro_periodo_sidebar(df_diario)
 
-    # Evolucao mensal ROAS por plataforma
-    st.subheader("ROAS por Plataforma — Evolucao Mensal")
+    # Evolucao mensal CPM por plataforma
+    st.subheader("CPM por Plataforma — Evolucao Mensal")
     df['mes'] = df['data'].dt.to_period('M').astype(str)
     df_mensal = df.groupby(['mes', 'plataforma']).agg(
-        custo=('custo', 'sum'), receita=('receita', 'sum')
+        custo=('custo', 'sum'), impressoes=('impressoes', 'sum')
     ).reset_index()
-    df_mensal['roas'] = np.where(df_mensal['custo'] > 0, df_mensal['receita'] / df_mensal['custo'], 0)
+    df_mensal['cpm'] = np.where(df_mensal['impressoes'] > 0, df_mensal['custo'] / df_mensal['impressoes'] * 1000, 0)
 
-    fig = px.line(df_mensal, x='mes', y='roas', color='plataforma',
+    fig = px.line(df_mensal, x='mes', y='cpm', color='plataforma',
                   color_discrete_map=CORES_PLATAFORMA, markers=True)
-    fig.update_layout(yaxis_title='ROAS', xaxis_title='Mes')
-    render_chart(fig, key="roas_mensal")
-    render_explicacao(EXPLICACOES['tendencias']['roas_cpa'])
+    fig.update_layout(yaxis_title='CPM (R$)', xaxis_title='Mes')
+    render_chart(fig, key="cpm_mensal")
+    render_explicacao(EXPLICACOES['tendencias']['cpm'])
 
-    # CPA por plataforma
-    st.subheader("CPA por Plataforma — Evolucao Mensal")
+    # Custo por Acao (CPA) por plataforma
+    st.subheader("Custo por Acao (CPA) — Evolucao Mensal")
+    st.caption("Google Ads: visitas a loja + acoes locais | Meta Ads: link clicks | TikTok Ads: cliques")
     df_mensal_conv = df.groupby(['mes', 'plataforma']).agg(
         custo=('custo', 'sum'), conversoes=('conversoes', 'sum')
     ).reset_index()

@@ -69,13 +69,15 @@ def consolidar_diario():
     df = carregar_csv_seguro(DADOS_DIR / "Meta_Ads" / "campanhas.csv")
     if not df.empty:
         for data, grupo in df.groupby('data'):
+            # Meta: usar link_click como conversao (campanhas awareness/trafego, sem purchase tracking)
+            conv_meta = grupo['link_click'].sum() if 'link_click' in grupo.columns else grupo.get('purchase', pd.Series([0])).sum()
             registros.append({
                 'data': data,
                 'plataforma': 'Meta Ads',
                 'impressoes': grupo['impressoes'].sum(),
                 'cliques': grupo['cliques'].sum(),
                 'custo': grupo['custo'].sum(),
-                'conversoes': grupo.get('purchase', pd.Series([0])).sum(),
+                'conversoes': conv_meta,
                 'receita': grupo.get('valor_purchase', pd.Series([0])).sum(),
                 'ctr': grupo['ctr'].mean(),
                 'cpc': grupo['cpc'].mean(),
@@ -93,7 +95,7 @@ def consolidar_diario():
                 'impressoes': r.get('impressions', 0),
                 'cliques': r.get('clicks', 0),
                 'custo': r.get('spend', 0),
-                'conversoes': r.get('conversion', 0),
+                'conversoes': r.get('clicks', 0) if r.get('conversion', 0) == 0 else r.get('conversion', 0),
                 'receita': 0,  # TikTok nao retorna receita diretamente
                 'ctr': r.get('ctr', 0),
                 'cpc': r.get('cpc', 0),
@@ -194,11 +196,10 @@ def gerar_funil():
                 impressoes = df['impressoes'].sum()
                 cliques = df['cliques'].sum()
                 lpv = df['landing_page_view'].sum() if 'landing_page_view' in df.columns else 0
-                # Conversoes: purchase (acao nativa) + pixel purchase
-                conversoes = df['purchase'].sum() if 'purchase' in df.columns else 0
-                pixel_purchase = df['offsite_conversion.fb_pixel_purchase'].sum() if 'offsite_conversion.fb_pixel_purchase' in df.columns else 0
-                if conversoes == 0 and pixel_purchase > 0:
-                    conversoes = pixel_purchase
+                # Conversoes: link_click (campanhas awareness/trafego, sem purchase tracking)
+                conversoes = df['link_click'].sum() if 'link_click' in df.columns else 0
+                if conversoes == 0:
+                    conversoes = df['purchase'].sum() if 'purchase' in df.columns else 0
                 receita = df['valor_purchase'].sum() if 'valor_purchase' in df.columns else 0
                 leads = df['lead'].sum() if 'lead' in df.columns else 0
                 add_to_cart = df['add_to_cart'].sum() if 'add_to_cart' in df.columns else 0
@@ -209,6 +210,8 @@ def gerar_funil():
                 impressoes = df.get('impressions', pd.Series([0])).sum()
                 cliques = df.get('clicks', pd.Series([0])).sum()
                 conversoes = df.get('conversion', pd.Series([0])).sum()
+                if conversoes == 0:
+                    conversoes = cliques
 
         # GA4 sessoes por fonte — match por source + medium
         if not df_ga4.empty:
@@ -269,6 +272,7 @@ def consolidar_demografico():
         if not df.empty:
             col_seg = 'age' if tipo == 'faixa_etaria' else 'gender'
             for _, r in df.iterrows():
+                conv = r.get('link_click', 0) if 'link_click' in df.columns else r.get('purchase', 0)
                 registros.append({
                     'plataforma': 'Meta Ads',
                     'tipo': tipo,
@@ -276,7 +280,7 @@ def consolidar_demografico():
                     'impressoes': r.get('impressoes', 0),
                     'cliques': r.get('cliques', 0),
                     'custo': r.get('custo', 0),
-                    'conversoes': r.get('purchase', 0),
+                    'conversoes': conv,
                 })
 
     # TikTok Ads
@@ -292,7 +296,7 @@ def consolidar_demografico():
                     'impressoes': r.get('impressions', 0),
                     'cliques': r.get('clicks', 0),
                     'custo': r.get('spend', 0),
-                    'conversoes': r.get('conversion', 0),
+                    'conversoes': r.get('clicks', 0) if r.get('conversion', 0) == 0 else r.get('conversion', 0),
                 })
 
     df_demo = pd.DataFrame(registros)
@@ -337,7 +341,7 @@ def consolidar_por_shopping():
                 'impressoes': grupo['impressoes'].sum(),
                 'cliques': grupo['cliques'].sum(),
                 'custo': grupo['custo'].sum(),
-                'conversoes': grupo.get('purchase', pd.Series([0])).sum(),
+                'conversoes': grupo['link_click'].sum() if 'link_click' in grupo.columns else grupo.get('purchase', pd.Series([0])).sum(),
                 'receita': grupo.get('valor_purchase', pd.Series([0])).sum(),
             })
 
@@ -415,7 +419,7 @@ def consolidar_dispositivos():
                 'impressoes': r.get('impressoes', 0),
                 'cliques': r.get('cliques', 0),
                 'custo': r.get('custo', 0),
-                'conversoes': r.get('purchase', 0),
+                'conversoes': r.get('link_click', 0) if 'link_click' in df.columns else r.get('purchase', 0),
             })
 
     # TikTok Ads
@@ -485,7 +489,7 @@ def consolidar_hora_dia():
                     'impressoes': grupo['impressoes'].sum(),
                     'cliques': grupo['cliques'].sum(),
                     'custo': grupo['custo'].sum(),
-                    'conversoes': grupo.get('purchase', pd.Series([0])).sum(),
+                    'conversoes': grupo['link_click'].sum() if 'link_click' in grupo.columns else grupo.get('purchase', pd.Series([0])).sum(),
                 })
 
     # TikTok Ads
@@ -546,7 +550,7 @@ def consolidar_geografico():
                 'impressoes': r.get('impressoes', 0),
                 'cliques': r.get('cliques', 0),
                 'custo': r.get('custo', 0),
-                'conversoes': r.get('purchase', 0),
+                'conversoes': r.get('link_click', 0) if 'link_click' in df.columns else r.get('purchase', 0),
             })
 
     # TikTok Ads
@@ -560,7 +564,7 @@ def consolidar_geografico():
                 'impressoes': r.get('impressions', 0),
                 'cliques': r.get('clicks', 0),
                 'custo': r.get('spend', 0),
-                'conversoes': r.get('conversion', 0),
+                'conversoes': r.get('clicks', 0) if r.get('conversion', 0) == 0 else r.get('conversion', 0),
             })
 
     # Search Console (paises)

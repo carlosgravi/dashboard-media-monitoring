@@ -28,16 +28,16 @@ def render_explicacao(explicacao):
 # =============================================================================
 
 RESUMO_KPIS = {
-    'o_que_mostra': 'Os 5 indicadores principais de todas as plataformas de midia: Investimento Total, Impressoes (quantas vezes os anuncios apareceram), Conversoes, ROAS (retorno sobre investimento) e CPA (custo por conversao). Abaixo, semaforos coloridos indicam a saude de cada metrica.',
-    'como_interpretar': 'ROAS acima de 1.0 = voce ganha mais do que gasta (verde acima de 4.0). CPA baixo = custa menos para converter. CTR acima de 2% = anuncios relevantes (verde). Os semaforos comparam o CPA atual com a media historica do periodo completo.',
-    'o_que_fazer': 'Se o ROAS esta abaixo de 1.0, reavalie as campanhas — voce esta perdendo dinheiro. Se o CPA subiu muito (semaforo vermelho), verifique se o publico-alvo esta correto ou se os criativos precisam ser renovados. Se o CTR esta baixo, melhore os titulos e imagens dos anuncios.',
-    'alerta': 'ROAS abaixo de 1.0 por mais de 2 semanas seguidas exige acao imediata: pausar campanhas de baixo retorno ou redistribuir verba.',
+    'o_que_mostra': 'Os 5 indicadores principais de todas as plataformas de midia: Investimento Total, Impressoes, Conversoes (acoes — visitas a loja, link clicks, cliques), CPM Medio (custo por mil impressoes) e CPA Medio (custo por acao). Abaixo, semaforos indicam a saude de cada metrica.',
+    'como_interpretar': 'CPM abaixo de R$10 = alcance barato (verde). CPA baixo = cada acao custa menos. CTR acima de 2% = anuncios relevantes (verde). Os semaforos comparam o CPA atual com a media historica. Nota: as campanhas sao de awareness/trafego (O2O), nao e-commerce.',
+    'o_que_fazer': 'Se o CPM esta subindo, avalie se o publico esta saturado. Se o CPA subiu muito (semaforo vermelho), revise publico-alvo e criativos. Se o CTR esta baixo, melhore titulos e imagens dos anuncios.',
+    'alerta': 'CPM acima de R$30 ou CPA em alta por 3+ semanas exigem revisao das campanhas: publicos podem estar saturados.',
 }
 
 RESUMO_DISTRIBUICAO_VERBA = {
     'o_que_mostra': 'Como o orcamento de midia esta dividido entre as plataformas (Google Ads, Meta Ads, TikTok Ads).',
-    'como_interpretar': 'Compare a fatia de cada plataforma com o retorno (ROAS) que ela entrega. Uma plataforma com muita verba e pouco retorno esta desperdicando dinheiro.',
-    'o_que_fazer': 'Redistribua verba das plataformas com menor ROAS para as com maior ROAS. Por exemplo, se Google Ads tem ROAS 5.0 e Meta tem 1.2, considere aumentar Google e reduzir Meta.',
+    'como_interpretar': 'Compare a fatia de cada plataforma com o CPA e CPM que ela entrega. Uma plataforma com muita verba e alto CPA pode estar desperdicando dinheiro.',
+    'o_que_fazer': 'Redistribua verba das plataformas com maior CPA para as com menor CPA. Compare tambem o CPM — plataformas com CPM mais baixo sao mais eficientes para gerar visibilidade.',
     'alerta': 'Se mais de 50% da verba esta em uma unica plataforma, voce corre risco de dependencia. Diversifique para reduzir riscos.',
 }
 
@@ -58,16 +58,16 @@ RESUMO_TREEMAP_CAMPANHAS = {
 # TENDENCIAS
 # =============================================================================
 
-TENDENCIAS_ROAS_CPA = {
-    'o_que_mostra': 'A evolucao do ROAS (retorno sobre investimento) e CPA (custo por conversao) ao longo do tempo, para cada plataforma.',
-    'como_interpretar': 'ROAS subindo = campanhas melhorando. ROAS caindo = campanhas perdendo eficiencia. CPA subindo = cada conversao esta ficando mais cara. Ideal: ROAS subindo E CPA caindo ao mesmo tempo.',
-    'o_que_fazer': 'Se o ROAS esta em tendencia de queda por 3+ semanas: 1) Renove os criativos (fadiga de anuncio). 2) Revise o publico-alvo. 3) Ajuste os lances. Se o CPA subiu mas o ROAS se manteve, o valor das conversoes pode ter aumentado — verifique o ticket medio.',
-    'alerta': 'Quedas bruscas de ROAS geralmente indicam: sazonalidade, fadiga de criativos, ou aumento de concorrencia nos leiloes.',
+TENDENCIAS_CPM = {
+    'o_que_mostra': 'A evolucao do CPM (Custo por Mil Impressoes) ao longo dos meses, por plataforma. Indica quanto custa alcancar 1.000 pessoas em cada plataforma.',
+    'como_interpretar': 'CPM subindo = o custo de alcance esta aumentando (mais concorrencia nos leiloes ou publico saturado). CPM caindo = alcance ficando mais barato. Compare entre plataformas para identificar qual tem melhor custo-beneficio de visibilidade.',
+    'o_que_fazer': 'Se o CPM subiu mais de 20% em relacao ao mes anterior: 1) Verifique se houve aumento de concorrencia sazonal (ex: Black Friday, Natal). 2) Teste novos publicos menos disputados. 3) Compare o CPM entre plataformas e priorize a mais eficiente para awareness.',
+    'alerta': 'CPM muito alto pode indicar publico muito restrito ou alta concorrencia. Considere ampliar o publico-alvo.',
 }
 
 TENDENCIAS_CPA = {
-    'o_que_mostra': 'A evolucao do CPA (Custo por Aquisicao/Conversao) ao longo dos meses, separado por plataforma.',
-    'como_interpretar': 'CPA subindo = cada conversao esta ficando mais cara. CPA caindo = campanhas estao mais eficientes. Compare entre plataformas para ver qual entrega conversoes mais baratas.',
+    'o_que_mostra': 'A evolucao do Custo por Acao (CPA) ao longo dos meses, por plataforma. Google Ads: custo por visita a loja/acao local. Meta Ads: custo por link click. TikTok Ads: custo por clique.',
+    'como_interpretar': 'CPA subindo = cada acao esta ficando mais cara. CPA caindo = campanhas estao mais eficientes. Compare entre plataformas para ver qual entrega acoes mais baratas. Nota: as "conversoes" variam por plataforma (visitas a loja, cliques no link, etc.).',
     'o_que_fazer': 'Se o CPA de uma plataforma esta subindo consistentemente: 1) Revise os publicos-alvo (podem estar saturados). 2) Teste novos criativos. 3) Compare com o CPA das outras plataformas e considere redistribuir verba para a mais eficiente.',
     'alerta': 'CPA dobrando em menos de 1 mes geralmente indica saturacao de publico ou problema de configuracao de campanha.',
 }
@@ -437,7 +437,7 @@ EXPLICACOES = {
         'treemap': RESUMO_TREEMAP_CAMPANHAS,
     },
     'tendencias': {
-        'roas_cpa': TENDENCIAS_ROAS_CPA,
+        'cpm': TENDENCIAS_CPM,
         'cpa': TENDENCIAS_CPA,
         'area_empilhada': TENDENCIAS_AREA_EMPILHADA,
         'dia_semana': TENDENCIAS_DIA_SEMANA,

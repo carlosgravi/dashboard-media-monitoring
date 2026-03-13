@@ -88,11 +88,11 @@ def gerar_insight_box(tipo, dados):
     if tipo == 'distribuicao_verba':
         maior = dados.get('maior_plataforma', '')
         pct = dados.get('pct_maior', 0)
-        roas = dados.get('roas_maior', 0)
+        cpa = dados.get('cpa_maior', 0)
         return (
             f"**{maior}** concentra **{pct:.0f}%** do investimento total "
-            f"com ROAS de **{roas:.1f}x**. "
-            f"{'Considere redistribuir verba se outras plataformas mostram ROAS superior.' if roas < 2.0 else 'O retorno justifica a concentracao.'}"
+            f"com CPA de **R$ {cpa:.2f}**. "
+            f"{'Compare com as demais plataformas — se o CPA for menor em outra, considere redistribuir verba.' if cpa > 1.0 else 'CPA competitivo para a plataforma dominante.'}"
         )
 
     elif tipo == 'cpa_comparativo':

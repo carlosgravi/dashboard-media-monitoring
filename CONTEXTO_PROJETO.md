@@ -136,6 +136,14 @@ Dashboard_Media/
 - Sessao 5 (cont.): Fix consolidador — pd.to_datetime com format='mixed' para aceitar datas TikTok ("2026-02-22 00:00:00") e Google/Meta ("2026-02-22")
 - Sessao 5 (cont.): Pipeline validado end-to-end — todos 7 extratores + consolidador + recomendacoes + commit com sucesso
 
+- Sessao 6 (13/03/2026): Fix hidden pipeline errors — Search Console searchAppearance dimension, Organico IG 30-day limit + retry 500s
+- Sessao 6 (cont.): Revisao pagina por pagina — Resumo Executivo (treemap per-platform, impressoes KPI, legenda spacing, modebar expand)
+- Sessao 6 (cont.): Diagnostico ROAS/CPA — campanhas O2O (awareness/trafego), sem purchase tracking em nenhuma plataforma
+- Sessao 6 (cont.): Google Ads: 428k conversoes sao store visits (310k) + rotas (102k) + app opens (10k), nao compras
+- Sessao 6 (cont.): Consolidador reescrito — Meta usa link_click como conversao, TikTok usa clicks como fallback
+- Sessao 6 (cont.): ROAS removido do Resumo/Tendencias (substituido por CPM), CPA ajustado para "Custo por Acao"
+- Sessao 6 (cont.): Explicacoes e insights atualizados para metricas O2O (CPM, CPA, CTR em vez de ROAS)
+
 ## Proximos Passos (ao retomar)
 1. **TikTok Ads:** Aprovar app para demais shoppings (BS, CS, NK, NR, GS) e adicionar ao TIKTOK_ADS_CONFIG
 2. **secrets.toml:** Criar usuarios para login no dashboard
@@ -169,6 +177,15 @@ Dashboard_Media/
 - NS Advertiser ID: 7322585255381352449
 - App ID: 7615457506518188048
 - Permissoes: ad_account_info, report_read, campaign_read (scopes 2, 4)
+
+### Modelo de Conversoes (O2O — Online to Offline)
+- Campanhas AJ sao awareness/trafego para shopping fisico, NAO e-commerce
+- ROAS nao se aplica (sem tracking de compra/receita em nenhuma plataforma)
+- KPIs primarios: CPM (custo alcance), CPA (custo por acao), CTR
+- **Google Ads**: conversoes = store visits (310k) + rotas (102k) + app opens (10k) + website visits (9k) + calls (2k)
+- **Meta Ads**: conversoes = link_click (27k) — sem purchase/pixel purchase
+- **TikTok Ads**: conversoes = clicks (52k) — sem conversion tracking
+- Consolidador: Meta usa `link_click`, TikTok usa `clicks` como fallback para `conversion`
 
 ### Meta Ads — Otimizacao Pipeline
 - Breakdowns (plataforma, posicionamento, idade, genero, dispositivo, video) usam `time_increment: 'monthly'`
