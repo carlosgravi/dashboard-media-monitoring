@@ -81,7 +81,14 @@ pio.templates.default = "plotly+dashboard_media"
 
 
 def render_chart(fig, key=None):
-    """Renderiza grafico Plotly com layout padronizado (legenda com espacamento)."""
+    """Renderiza grafico Plotly com layout padronizado, legenda e toggle expandir."""
+    expand_key = f"_exp_{key}" if key else None
+    is_expanded = False
+    if expand_key:
+        is_expanded = st.session_state.get(expand_key, False)
+
+    chart_height = 650 if is_expanded else None
+
     fig.update_layout(
         legend=dict(
             orientation='h',
@@ -94,8 +101,14 @@ def render_chart(fig, key=None):
             tracegroupgap=10,
         ),
         margin=dict(b=80),
+        height=chart_height,
     )
     st.plotly_chart(fig, use_container_width=True, config={'responsive': True, 'displayModeBar': False}, key=key)
+    if expand_key:
+        label = "🔽 Recolher" if is_expanded else "🔍 Expandir grafico"
+        if st.button(label, key=f"btn_{key}", type="tertiary"):
+            st.session_state[expand_key] = not is_expanded
+            st.rerun()
 
 
 # =============================================================================
