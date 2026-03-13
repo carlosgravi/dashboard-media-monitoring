@@ -81,6 +81,20 @@ pio.templates.default = "plotly+dashboard_media"
 
 
 def render_chart(fig, key=None):
+    """Renderiza grafico Plotly com layout padronizado (legenda com espacamento)."""
+    fig.update_layout(
+        legend=dict(
+            orientation='h',
+            yanchor='top',
+            y=-0.15,
+            xanchor='center',
+            x=0.5,
+            font=dict(size=12),
+            itemsizing='constant',
+            tracegroupgap=10,
+        ),
+        margin=dict(b=60),
+    )
     st.plotly_chart(fig, use_container_width=True, config={'responsive': True, 'displayModeBar': False}, key=key)
 
 
