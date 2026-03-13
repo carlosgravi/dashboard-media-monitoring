@@ -493,30 +493,38 @@ def pagina_resumo_executivo():
         render_chart(fig, key="invest_conv")
         render_explicacao(EXPLICACOES['resumo']['investimento_conversoes'])
 
-    # Treemap campanhas
+    # Treemap campanhas — um por plataforma
     st.subheader("Treemap — Investimento por Campanha")
-    # Combinar campanhas de todas as plataformas
-    dfs_camp = []
-    for plataforma, pasta in [('Google Ads', 'Google_Ads'), ('Meta Ads', 'Meta_Ads'), ('TikTok Ads', 'TikTok_Ads')]:
+    plataformas_treemap = [
+        ('Google Ads', 'Google_Ads', CORES_PLATAFORMA.get('Google Ads', '#4285F4')),
+        ('Meta Ads', 'Meta_Ads', CORES_PLATAFORMA.get('Meta Ads', '#1877F2')),
+        ('TikTok Ads', 'TikTok_Ads', CORES_PLATAFORMA.get('TikTok Ads', '#000000')),
+    ]
+    cols_treemap = st.columns(len(plataformas_treemap))
+    tem_treemap = False
+    for i, (plataforma, pasta, cor) in enumerate(plataformas_treemap):
         df_c = carregar_csv(f"{pasta}/campanhas.csv")
-        if not df_c.empty:
-            col_camp = 'campanha' if 'campanha' in df_c.columns else 'campaign_name'
-            col_custo = 'custo' if 'custo' in df_c.columns else 'spend'
-            if col_camp in df_c.columns and col_custo in df_c.columns:
-                df_agg = df_c.groupby(col_camp)[col_custo].sum().reset_index()
-                df_agg.columns = ['campanha', 'custo']
-                df_agg['plataforma'] = plataforma
-                dfs_camp.append(df_agg)
-
-    if dfs_camp:
-        df_treemap = pd.concat(dfs_camp)
-        df_treemap = df_treemap[df_treemap['custo'] > 0]
-        if not df_treemap.empty:
-            fig = px.treemap(df_treemap, path=['plataforma', 'campanha'], values='custo',
-                             color='plataforma', color_discrete_map=CORES_PLATAFORMA)
-            fig.update_layout(margin=dict(t=30, l=10, r=10, b=10))
-            render_chart(fig, key="treemap_camp")
-            render_explicacao(EXPLICACOES['resumo']['treemap'])
+        if df_c.empty:
+            continue
+        col_camp = 'campanha' if 'campanha' in df_c.columns else 'campaign_name'
+        col_custo = 'custo' if 'custo' in df_c.columns else 'spend'
+        if col_camp not in df_c.columns or col_custo not in df_c.columns:
+            continue
+        df_agg = df_c.groupby(col_camp)[col_custo].sum().reset_index()
+        df_agg.columns = ['campanha', 'custo']
+        df_agg = df_agg[df_agg['custo'] > 0].sort_values('custo', ascending=False)
+        if df_agg.empty:
+            continue
+        tem_treemap = True
+        with cols_treemap[i]:
+            st.markdown(f"**{plataforma}**")
+            fig = px.treemap(df_agg, path=['campanha'], values='custo',
+                             color_discrete_sequence=[cor])
+            fig.update_layout(margin=dict(t=10, l=5, r=5, b=5))
+            fig.update_traces(textinfo='label+value', texttemplate='%{label}<br>R$ %{value:,.0f}')
+            render_chart(fig, key=f"treemap_{pasta}")
+    if tem_treemap:
+        render_explicacao(EXPLICACOES['resumo']['treemap'])
     else:
         st.info("Sem dados de campanhas disponiveis.")
 
