@@ -86,14 +86,14 @@ def render_chart(fig, key=None):
         legend=dict(
             orientation='h',
             yanchor='top',
-            y=-0.15,
+            y=-0.25,
             xanchor='center',
             x=0.5,
             font=dict(size=12),
             itemsizing='constant',
             tracegroupgap=10,
         ),
-        margin=dict(b=60),
+        margin=dict(b=80),
     )
     st.plotly_chart(fig, use_container_width=True, config={'responsive': True, 'displayModeBar': False}, key=key)
 
