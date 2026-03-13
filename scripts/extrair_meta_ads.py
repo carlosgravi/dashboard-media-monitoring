@@ -60,7 +60,7 @@ def init_api():
     return {sigla: AdAccount(act_id) for sigla, act_id in config.items()}
 
 
-TIMEOUT_POR_CONTA = 120  # 2 minutos max por conta/tipo
+TIMEOUT_POR_CONTA = 180  # 3 minutos max por conta/tipo
 
 
 class TimeoutException(Exception):

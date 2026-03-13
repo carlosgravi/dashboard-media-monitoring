@@ -527,8 +527,21 @@ def main():
             cid_clean = cid.replace('-', '')
             print(f"  [Google Ads/{sigla}] Extraindo {nome_csv}...")
             try:
-                rows = func_extrair(client, cid_clean, sigla, data_inicio, data_fim)
-                all_data.extend(rows)
+                # Alcance/frequencia: max 92 dias por query → chunking
+                if nome_csv == 'alcance_frequencia':
+                    inicio_dt = datetime.strptime(data_inicio, '%Y-%m-%d')
+                    fim_dt = datetime.strptime(data_fim, '%Y-%m-%d')
+                    chunk_dias = 90
+                    current = inicio_dt
+                    while current <= fim_dt:
+                        chunk_end = min(current + timedelta(days=chunk_dias - 1), fim_dt)
+                        rows = func_extrair(client, cid_clean, sigla,
+                                            current.strftime('%Y-%m-%d'), chunk_end.strftime('%Y-%m-%d'))
+                        all_data.extend(rows)
+                        current = chunk_end + timedelta(days=1)
+                else:
+                    rows = func_extrair(client, cid_clean, sigla, data_inicio, data_fim)
+                    all_data.extend(rows)
             except Exception as e:
                 print(f"  [Google Ads/{sigla}] Erro em {nome_csv}: {e}")
 

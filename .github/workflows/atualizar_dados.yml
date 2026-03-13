@@ -5,6 +5,12 @@ on:
     # Diario as 7h BRT (10h UTC) - apos fechamento do dia anterior
     - cron: '0 10 * * *'
   workflow_dispatch:
+    inputs:
+      dias:
+        description: 'Dias de historico para extrair (default: valores padrao por extrator)'
+        required: false
+        type: string
+        default: ''
 
 env:
   PYTHON_VERSION: '3.11'
@@ -64,40 +70,40 @@ jobs:
       # Cada extrator e independente - falha de um nao impede os outros
       - name: Extrair Google Ads
         continue-on-error: true
-        timeout-minutes: 15
-        run: python scripts/extrair_google_ads.py --dias 90
+        timeout-minutes: 20
+        run: python scripts/extrair_google_ads.py --dias ${{ inputs.dias || '365' }}
 
       - name: Extrair Meta Ads
         continue-on-error: true
-        timeout-minutes: 30
+        timeout-minutes: 45
         env:
           PYTHONUNBUFFERED: "1"
-        run: python scripts/extrair_meta_ads.py --dias 30
+        run: python scripts/extrair_meta_ads.py --dias ${{ inputs.dias || '365' }}
 
       - name: Extrair TikTok Ads
         continue-on-error: true
         timeout-minutes: 20
-        run: python scripts/extrair_tiktok_ads.py --dias 365
+        run: python scripts/extrair_tiktok_ads.py --dias ${{ inputs.dias || '365' }}
 
       - name: Extrair GA4
         continue-on-error: true
-        timeout-minutes: 10
-        run: python scripts/extrair_ga4.py --dias 90
+        timeout-minutes: 15
+        run: python scripts/extrair_ga4.py --dias ${{ inputs.dias || '365' }}
 
       - name: Extrair Search Console
         continue-on-error: true
-        timeout-minutes: 10
-        run: python scripts/extrair_search_console.py --dias 90
+        timeout-minutes: 15
+        run: python scripts/extrair_search_console.py --dias ${{ inputs.dias || '480' }}
 
       - name: Extrair Google Business Profile
         continue-on-error: true
         timeout-minutes: 10
-        run: python scripts/extrair_google_business.py --dias 90
+        run: python scripts/extrair_google_business.py --dias ${{ inputs.dias || '365' }}
 
       - name: Extrair Organico (Instagram + Facebook)
         continue-on-error: true
         timeout-minutes: 20
-        run: python scripts/extrair_organico.py --dias 90
+        run: python scripts/extrair_organico.py --dias ${{ inputs.dias || '365' }}
 
       - name: Consolidar dados cross-platform
         run: python scripts/consolidar_cross_platform.py
