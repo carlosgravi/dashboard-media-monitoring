@@ -119,6 +119,11 @@ jobs:
 
           DATA_HORA=$(TZ='America/Sao_Paulo' date '+%Y-%m-%d %H:%M')
 
+          # CSVs sao completamente regenerados a cada run.
+          # Para evitar conflitos de merge com runs paralelos/anteriores,
+          # fazemos fetch + reset soft + re-add dos dados frescos.
+          git fetch origin main
+          git reset --soft origin/main
           git add Dados/ || true
 
           if git diff --cached --quiet; then
@@ -132,7 +137,6 @@ jobs:
           git commit -m "data: atualizacao automatica midia - $DATA_HORA
 
           Co-Authored-By: GitHub Actions <actions@github.com>"
-          git pull --rebase origin main || true
           git push origin main
 
   # Job de notificacao WhatsApp (roda no self-hosted onde esta o gateway)
