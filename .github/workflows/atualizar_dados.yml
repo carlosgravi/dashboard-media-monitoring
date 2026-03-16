@@ -78,7 +78,7 @@ jobs:
         timeout-minutes: 60
         env:
           PYTHONUNBUFFERED: "1"
-        run: python scripts/extrair_meta_ads.py --dias ${{ inputs.dias || '365' }}
+        run: python scripts/extrair_meta_ads.py --dias ${{ inputs.dias || '180' }}
 
       - name: Extrair TikTok Ads
         continue-on-error: true

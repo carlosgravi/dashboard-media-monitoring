@@ -144,6 +144,14 @@ Dashboard_Media/
 - Sessao 6 (cont.): ROAS removido do Resumo/Tendencias (substituido por CPM), CPA ajustado para "Custo por Acao"
 - Sessao 6 (cont.): Explicacoes e insights atualizados para metricas O2O (CPM, CPA, CTR em vez de ROAS)
 
+- Sessao 7 (13/03/2026): Fix erros persistentes de pipeline — Meta Ads + Organico
+- Sessao 7 (cont.): Meta Ads — retry 3x com backoff exponencial (30s/60s/120s) para erros transientes (rate limit, unknown error, too many rows)
+- Sessao 7 (cont.): Meta Ads — chunks de 30 dias para diario, 90 dias para mensal (antes era 90 fixo)
+- Sessao 7 (cont.): Meta Ads — delay 2s entre contas para evitar rate limiting. Timeout workflow 45→60 min
+- Sessao 7 (cont.): Organico — delay 0.3s entre chamadas de insights por post para evitar throttling Graph API
+- Sessao 7 (cont.): Organico — default workflow reduzido de 365 para 90 dias (IG account insights limitado a 30d, posts antigos nao mudam)
+- Sessao 7 (cont.): Meta Ads — default workflow reduzido de 365 para 180 dias (365d causava timeout >60min com 8 contas)
+
 ## Proximos Passos (ao retomar)
 1. **TikTok Ads:** Aprovar app para demais shoppings (BS, CS, NK, NR, GS) e adicionar ao TIKTOK_ADS_CONFIG
 2. **secrets.toml:** Criar usuarios para login no dashboard
@@ -190,7 +198,9 @@ Dashboard_Media/
 ### Meta Ads — Otimizacao Pipeline
 - Breakdowns (plataforma, posicionamento, idade, genero, dispositivo, video) usam `time_increment: 'monthly'`
 - Apenas `campanhas` usa `time_increment: 1` (diario)
-- Workflow roda com `--dias 30` (30 dias em vez de 90)
-- Timeout: 2min por conta via `signal.alarm` (Linux) ou ThreadPool (Windows)
+- Workflow roda com `--dias 180` (6 meses — 365d causa timeout com 8 contas + retry)
+- Chunking: 30 dias (diario) / 90 dias (mensal) para evitar "numero excessivo de linhas"
+- Retry: 3 tentativas com backoff exponencial (30s/60s/120s) para erros transientes
+- Delay: 2s entre contas para evitar rate limiting da API
+- Timeout: 3min por conta via `signal.alarm` (Linux) ou ThreadPool (Windows), 60min workflow total
 - `demografico_cruzado` removido (redundante — consolidador usa idade e genero separados)
-- Tempo de execucao: ~6 minutos (8 contas × 7 tipos)
