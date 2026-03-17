@@ -314,14 +314,14 @@ SEARCH_CONSOLE_OPORTUNIDADES = {
 # =============================================================================
 
 COMPARATIVO_CPA_ROAS = {
-    'o_que_mostra': 'CPA e ROAS de cada plataforma lado a lado, permitindo comparar eficiencia.',
-    'como_interpretar': 'A plataforma com menor CPA e a mais eficiente para gerar conversoes. A com maior ROAS e a que mais retorna por real investido. Nem sempre sao a mesma — CPA baixo com ticket baixo pode ter ROAS ruim.',
-    'o_que_fazer': 'Migre verba da plataforma com pior ROAS para a com melhor ROAS, mantendo um minimo em cada para nao perder aprendizado. Antes de cortar: verifique se a plataforma esta no inicio do funil (awareness) ou no final (conversao).',
+    'o_que_mostra': 'CPA (Custo por Acao) e CPM (Custo por Mil Impressoes) de cada plataforma lado a lado.',
+    'como_interpretar': 'A plataforma com menor CPA e a mais eficiente para gerar acoes (cliques, visitas, rotas). A com menor CPM alcanca mais pessoas por real investido. Em campanhas O2O (online-to-offline), CPM mede eficiencia de alcance e CPA mede eficiencia de engajamento.',
+    'o_que_fazer': 'Compare CPA entre plataformas com mesmo objetivo. CPM baixo e ideal para awareness/alcance. Para trafego ao shopping, priorize a plataforma com melhor CTR e menor CPA.',
 }
 
 COMPARATIVO_RADAR = {
-    'o_que_mostra': 'Radar com 5 dimensoes comparando as plataformas: CTR, CPA, ROAS, Alcance e Conversoes. Quanto maior a area, melhor a performance geral.',
-    'como_interpretar': 'Plataformas com area grande performam bem em multiplas dimensoes. Se uma plataforma tem CTR alto mas ROAS baixo, atrai cliques mas nao converte — problema pode estar na oferta ou na landing page.',
+    'o_que_mostra': 'Radar com 5 dimensoes comparando as plataformas: CTR, Eficiencia CPM, Conversoes, Impressoes e Investimento. Quanto maior a area, melhor a performance geral.',
+    'como_interpretar': 'Plataformas com area grande performam bem em multiplas dimensoes. Eficiencia CPM e invertida — quanto menor o CPM real, maior o score no radar. Se uma plataforma tem CTR alto mas CPM alto, atrai cliques mas com custo elevado de alcance.',
     'o_que_fazer': 'Use o radar para identificar pontos fortes e fracos de cada plataforma. Nao baseie decisoes em uma unica metrica — olhe o conjunto.',
 }
 

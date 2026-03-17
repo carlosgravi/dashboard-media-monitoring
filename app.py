@@ -2182,7 +2182,7 @@ def pagina_comparativo():
     df_plt['cpa'] = np.where(df_plt['conversoes'] > 0, df_plt['custo'] / df_plt['conversoes'], 0)
     df_plt['cpm'] = np.where(df_plt['impressoes'] > 0, df_plt['custo'] / df_plt['impressoes'] * 1000, 0)
 
-    # CPA e ROAS lado a lado
+    # CPA e CPM lado a lado (modelo O2O — sem receita/ROAS)
     col1, col2 = st.columns(2)
 
     with col1:
@@ -2193,11 +2193,11 @@ def pagina_comparativo():
         render_chart(fig, key="comp_cpa")
 
     with col2:
-        st.subheader("ROAS por Plataforma")
-        fig = px.bar(df_plt, x='plataforma', y='roas', color='plataforma',
-                     color_discrete_map=CORES_PLATAFORMA, text_auto='.1f')
-        fig.update_layout(yaxis_title='ROAS', showlegend=False)
-        render_chart(fig, key="comp_roas")
+        st.subheader("CPM por Plataforma")
+        fig = px.bar(df_plt, x='plataforma', y='cpm', color='plataforma',
+                     color_discrete_map=CORES_PLATAFORMA, text_auto='.2f')
+        fig.update_layout(yaxis_title='CPM (R$)', showlegend=False)
+        render_chart(fig, key="comp_cpm")
 
     render_explicacao(EXPLICACOES['comparativo']['cpa_roas'])
 
@@ -2212,21 +2212,30 @@ def pagina_comparativo():
             'cpa_pior': pior['cpa'],
         }))
 
-    # Radar chart 5 dimensoes
+    # Radar chart 5 dimensoes (modelo O2O — CPM em vez de ROAS)
     st.subheader("Radar — 5 Dimensoes de Performance")
     if not df_plt.empty:
         # Normalizar metricas 0-100
-        metricas = ['ctr', 'roas', 'conversoes', 'impressoes', 'custo']
+        # CPM invertido: menor CPM = melhor = maior no radar
+        metricas = ['ctr', 'cpm', 'conversoes', 'impressoes', 'custo']
+        labels = ['CTR', 'Eficiencia CPM', 'Conversoes', 'Impressoes', 'Investimento']
         df_norm = df_plt[['plataforma'] + metricas].copy()
         for m in metricas:
             max_val = df_norm[m].max()
-            df_norm[m] = df_norm[m] / max_val * 100 if max_val > 0 else 0
+            if max_val > 0:
+                if m == 'cpm':
+                    # Inverter: menor CPM = maior score no radar
+                    df_norm[m] = (1 - df_norm[m] / max_val) * 100
+                else:
+                    df_norm[m] = df_norm[m] / max_val * 100
+            else:
+                df_norm[m] = 0
 
         fig = go.Figure()
         for _, row in df_norm.iterrows():
             fig.add_trace(go.Scatterpolar(
                 r=[row[m] for m in metricas],
-                theta=['CTR', 'ROAS', 'Conversoes', 'Impressoes', 'Investimento'],
+                theta=labels,
                 fill='toself',
                 name=row['plataforma'],
                 line=dict(color=CORES_PLATAFORMA.get(row['plataforma'], '#999')),
@@ -2235,11 +2244,11 @@ def pagina_comparativo():
         render_chart(fig, key="radar_comp")
         render_explicacao(EXPLICACOES['comparativo']['radar'])
 
-    # Ranking automatico
+    # Ranking automatico (modelo O2O: CPM + CPA + CTR + Conversoes)
     st.subheader("Ranking de Plataformas")
-    df_rank = df_plt[['plataforma', 'roas', 'cpa', 'ctr', 'conversoes']].copy()
+    df_rank = df_plt[['plataforma', 'cpm', 'cpa', 'ctr', 'conversoes']].copy()
     df_rank['score'] = (
-        df_rank['roas'].rank(ascending=True) +
+        df_rank['cpm'].rank(ascending=False) +  # menor CPM = melhor
         df_rank['cpa'].rank(ascending=False) +  # menor CPA = melhor
         df_rank['ctr'].rank(ascending=True) +
         df_rank['conversoes'].rank(ascending=True)
@@ -2247,7 +2256,7 @@ def pagina_comparativo():
     df_rank = df_rank.sort_values('score', ascending=False)
     for i, (_, row) in enumerate(df_rank.iterrows()):
         medal = ['🥇', '🥈', '🥉'][i] if i < 3 else f'{i+1}.'
-        st.markdown(f"**{medal} {row['plataforma']}** — ROAS {row['roas']:.1f}x | CPA R$ {row['cpa']:.2f} | CTR {row['ctr']:.2f}%")
+        st.markdown(f"**{medal} {row['plataforma']}** — CPM R$ {row['cpm']:.2f} | CPA R$ {row['cpa']:.2f} | CTR {row['ctr']:.2f}%")
 
 
 # =============================================================================
