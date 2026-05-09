@@ -1,4 +1,6 @@
 ﻿plataforma,tipo,severidade,mensagem,metrica,valor_atual,valor_media
-Google Ads,anomalia_custo,Media,CUSTO subiu 366% vs media movel 7d,custo,2596.642257,557.3178987142854
-Google Ads,anomalia_cpa,Alta,CPA subiu 122896% vs media movel 7d,cpa,370.9488938571429,0.3015934097226022
-Meta Ads,anomalia_custo,Alta,CUSTO subiu 66% vs media movel 7d,custo,1714.41,1029.9571428571428
+Google Ads,anomalia_custo,Media,CUSTO subiu 289% vs media movel 7d,custo,2770.75335,712.2607758571427
+Google Ads,anomalia_cpa,Alta,CPA subiu 12587% vs media movel 7d,cpa,277.075335,2.184006510457406
+Meta Ads,anomalia_custo,Alta,CUSTO subiu 89% vs media movel 7d,custo,2180.57,1153.5685714285714
+Meta Ads,anomalia_cpa,Media,CPA subiu 73% vs media movel 7d,cpa,0.9934259681093393,0.5741325151181446
+Meta Ads,anomalia_ctr,Media,CTR caiu 14% vs media movel 7d,ctr,0.8187813684210525,0.9566610847762044
