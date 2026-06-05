@@ -1,6 +1,7 @@
 ﻿plataforma,tipo,severidade,mensagem,metrica,valor_atual,valor_media
-Google Ads,anomalia_custo,Alta,CUSTO caiu 100% vs media movel 7d,custo,1.712061,2678.252648142857
-Google Ads,anomalia_ctr,Alta,CTR subiu 133% vs media movel 7d,ctr,0.0577427821522309,0.02482124006044597
+Google Ads,anomalia_custo,Media,CUSTO caiu 99% vs media movel 7d,custo,16.06639,2358.912307285714
+Google Ads,anomalia_ctr,Media,CTR subiu 118% vs media movel 7d,ctr,0.0664395229982964,0.03042612815594577
+TikTok Ads,anomalia_ctr,Media,CTR subiu 30% vs media movel 7d,ctr,7.21,5.567142857142857
 Meta Ads,anomalia_custo,Alta,CUSTO subiu 89% vs media movel 7d,custo,2180.57,1153.5685714285714
 Meta Ads,anomalia_cpa,Media,CPA subiu 73% vs media movel 7d,cpa,0.9934259681093393,0.5741325151181446
 Meta Ads,anomalia_ctr,Media,CTR caiu 14% vs media movel 7d,ctr,0.8187813684210525,0.9566610847762044
