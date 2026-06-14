@@ -131,7 +131,6 @@
 2026-05-08,almeida junior,13,163,0.07975460122699386,4.889570552147239
 2026-05-28,almeida junior,13,107,0.12149532710280374,4.16822429906542
 2026-06-09,almeida junior,13,144,0.09027777777777778,3.9375
-2025-02-18,almeida junior,12,96,0.125,4.833333333333334
 2025-02-24,almeida junior shopping,12,17,0.7058823529411765,1.0
 2025-02-27,almeida junior,12,84,0.14285714285714285,5.488095238095238
 2025-03-05,almeida junior shopping,12,23,0.5217391304347826,1.1739130434782608
@@ -219,6 +218,7 @@
 2026-04-26,almeida junior,11,98,0.11224489795918367,4.846938775510204
 2026-04-27,almeida junior,11,148,0.07432432432432433,5.4391891891891895
 2026-05-21,almeida junior shopping centers,11,13,0.8461538461538461,1.0
+2026-06-11,almeida junior,11,126,0.0873015873015873,4.007936507936508
 2025-02-20,almeida junior,10,124,0.08064516129032258,5.790322580645161
 2025-02-20,almeida junior shopping,10,19,0.5263157894736842,1.0
 2025-02-21,almeida junior,10,86,0.11627906976744186,4.895348837209302
@@ -377,7 +377,7 @@
 2026-06-08,almeida junior,9,119,0.07563025210084033,3.6554621848739495
 2026-06-10,almeida junior,9,125,0.072,3.776
 2026-06-10,almeida junior shopping,9,19,0.47368421052631576,1.263157894736842
-2025-02-18,almeida junior shopping,8,9,0.8888888888888888,1.0
+2026-06-11,almeida junior shopping,9,14,0.6428571428571429,1.0714285714285714
 2025-02-19,almeida junior shopping,8,12,0.6666666666666666,1.0
 2025-02-25,almeida junior shopping centers,8,12,0.6666666666666666,1.0
 2025-02-25,grupo almeida junior,8,11,0.7272727272727273,1.0
@@ -615,6 +615,8 @@
 2026-06-03,almeida junior,7,109,0.06422018348623854,3.889908256880734
 2026-06-08,almeida junior shopping,7,21,0.3333333333333333,1.0952380952380953
 2026-06-09,almeida junior shopping centers,7,9,0.7777777777777778,1.0
+2026-06-11,ajfans,7,12,0.5833333333333334,2.0
+2026-06-11,almeida junior shopping centers,7,8,0.875,1.0
 2025-02-19,grupo almeida junior,6,7,0.8571428571428571,1.0
 2025-02-20,ajfans,6,13,0.46153846153846156,1.8461538461538463
 2025-03-03,almeida junior shopping,6,19,0.3157894736842105,1.0
@@ -807,8 +809,6 @@
 2026-06-06,almeida junior,6,67,0.08955223880597014,3.716417910447761
 2026-06-07,almeida junior shopping,6,16,0.375,4.4375
 2026-06-10,ajfans,6,12,0.5,1.5
-2025-02-18,grupo almeida junior,5,11,0.45454545454545453,1.0
-2025-02-18,shopping almeida junior,5,14,0.35714285714285715,1.0714285714285714
 2025-02-20,shopping almeida junior,5,11,0.45454545454545453,1.0
 2025-02-22,almeida junior,5,61,0.08196721311475409,5.622950819672131
 2025-02-23,almeida junior shopping,5,10,0.5,1.0
@@ -1518,9 +1518,9 @@
 2026-06-09,almeida junior shopping,4,13,0.3076923076923077,1.0
 2026-06-10,almeida junior shopping centers,4,5,0.8,1.0
 2026-06-10,jaimes almeida junior,4,11,0.36363636363636365,1.0
-2025-02-18,almeida junior ri,3,3,1.0,1.0
-2025-02-18,almeida junior shopping centers,3,6,0.5,1.0
-2025-02-18,bemall almeida junior,3,5,0.6,1.0
+2026-06-11,aj fans,4,8,0.5,1.0
+2026-06-11,ajfans sorteio,4,5,0.8,1.0
+2026-06-11,grupo almeida junior,4,8,0.5,1.0
 2025-02-19,aj fans,3,5,0.6,2.2
 2025-02-19,bemall almeida junior,3,4,0.75,1.0
 2025-02-21,aj fans,3,7,0.42857142857142855,1.8571428571428572
@@ -2135,9 +2135,7 @@
 2026-06-08,shopping almeida junior,3,8,0.375,1.0
 2026-06-09,almeida junior vagas,3,3,1.0,2.333333333333333
 2026-06-10,shopping almeida junior,3,6,0.5,1.0
-2025-02-18,aj fans,2,3,0.6666666666666666,2.666666666666667
-2025-02-18,almeida junior shoppings,2,2,1.0,1.0
-2025-02-18,almeidajunior,2,2,1.0,3.5
+2026-06-11,almeida junior shoppings,3,3,1.0,1.0
 2025-02-19,almeida jr,2,5,0.4,3.6
 2025-02-19,almeida junior shoppings,2,4,0.5,1.0
 2025-02-19,jaimes almeida junior,2,5,0.4,3.0
@@ -3571,22 +3569,7 @@
 2026-06-10,aj fans,2,5,0.4,1.0
 2026-06-10,almeida jr,2,7,0.2857142857142857,2.2857142857142856
 2026-06-10,grupo almeida junior,2,7,0.2857142857142857,1.2857142857142856
-2025-02-18,ajfans,1,7,0.14285714285714285,1.5714285714285714
-2025-02-18,almeida junior consultoria,1,6,0.16666666666666666,1.5
-2025-02-18,almeida junior empresa,1,2,0.5,2.0
-2025-02-18,app ajfans,1,2,0.5,2.5
-2025-02-18,av brigadeiro faria lima 2277,1,1,1.0,24.0
-2025-02-18,bacio di latte joinville,1,5,0.2,15.2
-2025-02-18,balneário camboriú shopping,1,84,0.011904761904761904,5.892857142857143
-2025-02-18,german quiroga,1,3,0.3333333333333333,11.0
-2025-02-18,giraffas em blumenau,1,1,1.0,2.0
-2025-02-18,jaime almeida junior,1,2,0.5,3.0
-2025-02-18,jaimes almeida junior,1,4,0.25,2.5
-2025-02-18,neumarkt shopping,1,64,0.015625,8.484375
-2025-02-18,policia federal joinville garten shopping,1,1,1.0,4.0
-2025-02-18,policia federal passaporte joinville,1,3,0.3333333333333333,6.0
-2025-02-18,shopping camboriu,1,616,0.0016233766233766235,7.670454545454546
-2025-02-18,shoppings almeida junior,1,1,1.0,1.0
+2026-06-11,almeida jr,2,6,0.3333333333333333,2.833333333333333
 2025-02-19,ajplace,1,1,1.0,1.0
 2025-02-19,almeida junior ri,1,1,1.0,1.0
 2025-02-19,almeida junior vagas,1,3,0.3333333333333333,2.0
@@ -8634,796 +8617,15 @@
 2026-06-10,lez a lez significado,1,2,0.5,6.5
 2026-06-10,promoção shopping balneario camboriu,1,5,0.2,4.8
 2026-06-10,shopping norte blumenau,1,16,0.0625,6.1875
-2025-02-18,[loja taco norte shopping],0,2,0.0,9.5
-2025-02-18,a samsung da desconto para estudantes,0,1,0.0,3.0
-2025-02-18,abl shopping,0,1,0.0,37.0
-2025-02-18,abrasce,0,1,0.0,4.0
-2025-02-18,academia no shopping continente,0,1,0.0,14.0
-2025-02-18,academia proquality premium continente shopping,0,2,0.0,13.5
-2025-02-18,academia shopping continente,0,1,0.0,12.0
-2025-02-18,adidas balneario shopping,0,1,0.0,14.0
-2025-02-18,administradora de shopping centers,0,1,0.0,73.0
-2025-02-18,administradoras de shopping centers,0,1,0.0,48.0
-2025-02-18,administradoras de shoppings centers no brasil,0,1,0.0,83.0
-2025-02-18,administradoras de shoppings rj,0,2,0.0,78.5
-2025-02-18,advb,0,1,0.0,81.0
-2025-02-18,aj,0,1,0.0,2.0
-2025-02-18,aj malls,0,1,0.0,26.0
-2025-02-18,aj shops,0,2,0.0,7.0
-2025-02-18,ajfans sorteio blumenau,0,2,0.0,2.0
-2025-02-18,allemida privacy,0,1,0.0,4.0
-2025-02-18,almeida,0,3,0.0,48.333333333333336
-2025-02-18,almeida jr,0,6,0.0,2.333333333333333
-2025-02-18,almeida junior trabalhe conosco,0,1,0.0,2.0
-2025-02-18,almeida junior vagas,0,4,0.0,3.5
-2025-02-18,almeida júnior,0,22,0.0,8.5
-2025-02-18,almeida planilhas,0,4,0.0,7.75
-2025-02-18,almeida strategic investments,0,1,0.0,7.0
-2025-02-18,almeida.junior,0,2,0.0,4.0
-2025-02-18,aluguel de franquias em shopping,0,1,0.0,17.0
-2025-02-18,amazon estudante,0,1,0.0,2.0
-2025-02-18,americanas surubim,0,1,0.0,47.0
-2025-02-18,ana capri franquia,0,1,0.0,33.0
-2025-02-18,anacapri continente shopping,0,1,0.0,7.0
-2025-02-18,app aj,0,1,0.0,2.0
-2025-02-18,app fans,0,1,0.0,11.0
-2025-02-18,apple da desconto para estudante,0,1,0.0,2.0
-2025-02-18,apple desconto estudante,0,1,0.0,2.0
-2025-02-18,aramis franquia,0,1,0.0,23.0
-2025-02-18,aramis junior,0,1,0.0,31.0
-2025-02-18,aramis park shopping,0,1,0.0,75.0
-2025-02-18,artefacto moveis,0,5,0.0,24.4
-2025-02-18,artwalk balneario camboriu,0,3,0.0,10.0
-2025-02-18,autentic feet,0,2,0.0,4.0
-2025-02-18,autentic fit,0,1,0.0,29.0
-2025-02-18,autenticfeet,0,1,0.0,29.0
-2025-02-18,autentich fit,0,1,0.0,5.0
-2025-02-18,authent feet,0,1,0.0,5.0
-2025-02-18,authenti feet,0,1,0.0,7.0
-2025-02-18,authentic feet,0,39,0.0,7.9743589743589745
-2025-02-18,authentic feet balneario camboriu,0,1,0.0,9.0
-2025-02-18,authentic feet iguatemi,0,2,0.0,14.0
-2025-02-18,authentic feet shopping,0,1,0.0,53.0
-2025-02-18,authentic fert,0,1,0.0,29.0
-2025-02-18,"av. brigadeiro faria lima, 2.277",0,2,0.0,10.0
-2025-02-18,avaliações sobre arquipélago sushi continente shopping,0,4,0.0,7.25
-2025-02-18,avaliações sobre paris 6 balneário camboriú,0,3,0.0,10.0
-2025-02-18,avatim shopping higienopolis,0,1,0.0,12.0
-2025-02-18,avenida santa catarina 1 balneário camboriú,0,1,0.0,10.0
-2025-02-18,baccio di latte franquia,0,1,0.0,8.0
-2025-02-18,bacio di latte,0,1,0.0,5.0
-2025-02-18,bacio di latte franquia,0,17,0.0,9.117647058823529
-2025-02-18,bacio di latte é franquia,0,2,0.0,11.5
-2025-02-18,bacio franquia,0,3,0.0,7.333333333333333
-2025-02-18,bagaggio balneario camboriu,0,2,0.0,14.0
-2025-02-18,bagaggio balneário shopping,0,1,0.0,9.0
-2025-02-18,bal balneario shopping,0,2,0.0,7.0
-2025-02-18,balde kfc,0,1,0.0,59.0
-2025-02-18,balne,0,2,0.0,42.0
-2025-02-18,balneareo shopping,0,1,0.0,6.0
-2025-02-18,balneari,0,1,0.0,101.0
-2025-02-18,balneario,0,3,0.0,93.66666666666667
-2025-02-18,balneario ahopping,0,2,0.0,6.0
-2025-02-18,balneario camboriu,0,1,0.0,101.0
-2025-02-18,balneario camboriu noticias,0,1,0.0,88.0
-2025-02-18,balneario camboriu shopping,0,18,0.0,5.611111111111111
-2025-02-18,balneario camboriu shopping mall,0,1,0.0,8.0
-2025-02-18,balneario camboriú,0,1,0.0,99.0
-2025-02-18,balneario camboriú shopping,0,2,0.0,7.5
-2025-02-18,balneario camburiu shopping,0,1,0.0,13.0
-2025-02-18,balneario do camburiu,0,1,0.0,83.0
-2025-02-18,balneario shooping,0,2,0.0,4.5
-2025-02-18,balneario shoping,0,4,0.0,7.25
-2025-02-18,balneario shoping camboriu,0,1,0.0,12.0
-2025-02-18,balneario shopping,0,614,0.0,6.706840390879479
-2025-02-18,balneario shopping bc,0,1,0.0,8.0
-2025-02-18,balneario shopping brasil,0,1,0.0,16.0
-2025-02-18,balneario shopping camboriu,0,25,0.0,8.76
-2025-02-18,balneario shopping camboriú,0,2,0.0,8.0
-2025-02-18,balneario shopping endereço,0,1,0.0,8.0
-2025-02-18,balneario shopping estacionamento,0,1,0.0,16.0
-2025-02-18,balneario shopping mall,0,16,0.0,5.0
-2025-02-18,balneario shopping mall - avenida santa catarina - estados balneario camboriú - santa catarina brasil,0,3,0.0,8.333333333333332
-2025-02-18,balneario shopping mall balneário camboriú - state of santa catarina,0,1,0.0,6.0
-2025-02-18,balneario shopping mall camboriu,0,3,0.0,8.0
-2025-02-18,balneario shopping photos,0,2,0.0,10.0
-2025-02-18,balnerio shopping,0,3,0.0,7.0
-2025-02-18,balneário,0,6,0.0,84.66666666666667
-2025-02-18,balneário camboriú,0,7,0.0,100.0
-2025-02-18,balneário camboriú hoje,0,1,0.0,76.0
-2025-02-18,balneário camboriú notícias,0,1,0.0,62.0
-2025-02-18,balneário camboriú onde fica,0,1,0.0,60.0
-2025-02-18,balneário camboriú tem shopping,0,1,0.0,10.0
-2025-02-18,balneário camburiu,0,1,0.0,96.0
-2025-02-18,balneário garden,0,1,0.0,44.0
-2025-02-18,balneário shopping,0,142,0.0,6.429577464788732
-2025-02-18,balneário shopping - avenida santa catarina - estados balneario camboriú - santa catarina brasil,0,1,0.0,9.0
-2025-02-18,balneário shopping - avenida santa catarina - estados balneário camboriú - sc,0,3,0.0,9.333333333333334
-2025-02-18,balneário shopping balneário camboriú,0,2,0.0,9.0
-2025-02-18,balneário shopping balneário camboriú - sc,0,3,0.0,1.0
-2025-02-18,balneário shopping camboriú,0,2,0.0,6.0
-2025-02-18,balneário shopping do proprietário,0,1,0.0,5.0
-2025-02-18,balneário shopping estacionamento,0,1,0.0,16.0
-2025-02-18,balneário shopping lojas,0,9,0.0,8.0
-2025-02-18,bar do alemao de itu,0,1,0.0,19.0
-2025-02-18,bar do alemão blumenau,0,1,0.0,6.0
-2025-02-18,bar do alemão itu cardápio preço,0,1,0.0,40.0
-2025-02-18,bb basico,0,3,0.0,19.666666666666668
-2025-02-18,bc shopping,0,4,0.0,6.0
-2025-02-18,be mall,0,1,0.0,6.0
-2025-02-18,bemall,0,9,0.0,5.555555555555555
-2025-02-18,bemall login,0,4,0.0,5.75
-2025-02-18,biacoitê,0,1,0.0,5.0
-2025-02-18,bio mundo shopping abc,0,1,0.0,17.0
-2025-02-18,biomundo,0,1,0.0,8.0
-2025-02-18,biscoite,0,2,0.0,49.0
-2025-02-18,biscoitê,0,18,0.0,4.5
-2025-02-18,biscoitê franquia,0,4,0.0,3.0
-2025-02-18,black friday xp,0,1,0.0,25.0
-2025-02-18,blue building detectives,0,3,0.0,14.0
-2025-02-18,blumenau bares,0,1,0.0,24.0
-2025-02-18,blumenau neumarkt,0,1,0.0,9.0
-2025-02-18,blumenau norte shopping,0,10,0.0,8.7
-2025-02-18,blumenau sc shopping,0,1,0.0,14.0
-2025-02-18,blumenau shopping,0,1,0.0,1.0
-2025-02-18,blumenau shopping norte,0,1,0.0,8.0
-2025-02-18,boliche balneario camboriu,0,1,0.0,15.0
-2025-02-18,boliche em balneario camboriu,0,1,0.0,15.0
-2025-02-18,botique do pao de lo,0,2,0.0,5.0
-2025-02-18,boulevard continente,0,1,0.0,3.0
-2025-02-18,boutique do pao de lo,0,41,0.0,5.658536585365853
-2025-02-18,boutique pao de lo,0,6,0.0,14.166666666666666
-2025-02-18,boutique pao de lo bc,0,1,0.0,16.0
-2025-02-18,boutique pão de ló,0,1,0.0,7.0
-2025-02-18,brigaderia,0,19,0.0,5.052631578947368
-2025-02-18,brinquedo gigante,0,1,0.0,5.0
-2025-02-18,brinquedos gigantes,0,3,0.0,10.666666666666666
-2025-02-18,bruno camara,0,1,0.0,21.0
-2025-02-18,cacau noir,0,1,0.0,24.0
-2025-02-18,camboriu balneario shopping,0,1,0.0,8.0
-2025-02-18,camboriu dinosaurios,0,1,0.0,1.0
-2025-02-18,camboriu mall,0,2,0.0,7.5
-2025-02-18,camboriu shoping,0,2,0.0,8.0
-2025-02-18,camboriu shopping,0,61,0.0,8.40983606557377
-2025-02-18,camboriu shopping mall,0,2,0.0,12.0
-2025-02-18,camboriú,0,4,0.0,85.75
-2025-02-18,camboriú shopping,0,23,0.0,8.91304347826087
-2025-02-18,camisetas de futbol en camboriu,0,1,0.0,1.0
-2025-02-18,canal concept,0,1,0.0,50.0
-2025-02-18,canal concept lojas,0,5,0.0,9.6
-2025-02-18,canal da loja,0,2,0.0,9.0
-2025-02-18,capa de chuva masculina com capuz,0,5,0.0,1.0
-2025-02-18,capacete infantil menina,0,1,0.0,1.0
-2025-02-18,casa almeida,0,1,0.0,2.0
-2025-02-18,casa bauducco,0,3,0.0,37.0
-2025-02-18,casa bauduco,0,1,0.0,43.0
-2025-02-18,casa de cambio balneario shopping,0,1,0.0,12.0
-2025-02-18,casa riachielo,0,3,0.0,4.666666666666666
-2025-02-18,casa riachuel,0,1,0.0,4.0
-2025-02-18,casa riachuello,0,2,0.0,4.5
-2025-02-18,casa riachuelo,0,230,0.0,5.165217391304348
-2025-02-18,casa riachuelo lojas,0,14,0.0,4.214285714285714
-2025-02-18,casa riachuelo rio de janeiro,0,2,0.0,4.5
-2025-02-18,casa riachulo,0,1,0.0,4.0
-2025-02-18,casa richuelo,0,1,0.0,5.0
-2025-02-18,casas bahia estudante,0,1,0.0,2.0
-2025-02-18,casas riachuelo,0,4,0.0,4.75
-2025-02-18,centauro foto,0,1,0.0,1.0
-2025-02-18,centauro loja,0,38,0.0,7.447368421052632
-2025-02-18,centauro loja centauro,0,1,0.0,7.0
-2025-02-18,centauro loja fisica,0,2,0.0,9.0
-2025-02-18,centauro nacoes shopping,0,1,0.0,12.0
-2025-02-18,centauro shopping,0,2,0.0,8.5
-2025-02-18,centauro shopping continental,0,2,0.0,7.0
-2025-02-18,centauro shopping continente,0,1,0.0,17.0
-2025-02-18,centauros lojas,0,1,0.0,5.0
-2025-02-18,centro de balneário camboriú,0,2,0.0,70.5
-2025-02-18,centro médico norte shopping,0,1,0.0,1.0
-2025-02-18,cep almeida junior,0,1,0.0,7.0
-2025-02-18,cep balneario shopping,0,7,0.0,9.714285714285714
-2025-02-18,cep do shopping balneário camboriú,0,3,0.0,10.666666666666666
-2025-02-18,cep shopping balneario camboriu,0,3,0.0,10.333333333333334
-2025-02-18,cervejaria stannis,0,1,0.0,7.0
-2025-02-18,chocolates brasil cacau franquia,0,1,0.0,36.0
-2025-02-18,cinema balneario camboriu,0,1,0.0,35.0
-2025-02-18,cinema balneario shopping,0,3,0.0,12.333333333333334
-2025-02-18,cinema balneário camboriú,0,3,0.0,12.666666666666666
-2025-02-18,cinema balneário shopping,0,2,0.0,11.0
-2025-02-18,cinema balneário shopping valor do ingresso,0,2,0.0,11.5
-2025-02-18,cinema gnc balneário camboriú,0,2,0.0,37.0
-2025-02-18,cinema shopping balneario santos,0,1,0.0,14.0
-2025-02-18,claro shopping balneario camboriu,0,1,0.0,1.0
-2025-02-18,cobasi blumenau,0,3,0.0,28.333333333333332
-2025-02-18,cobasi neumarkt,0,7,0.0,9.714285714285714
-2025-02-18,cobasi norte shopping,0,2,0.0,29.0
-2025-02-18,cobasi shopping neumarkt,0,4,0.0,8.25
-2025-02-18,colcci blumenau,0,1,0.0,12.0
-2025-02-18,colcci significado,0,1,0.0,29.0
-2025-02-18,como comprar notebook com desconto de estudante,0,1,0.0,2.0
-2025-02-18,como conseguir desconto na samsung sendo estudante,0,1,0.0,3.0
-2025-02-18,como divulgar uma franquia,0,1,0.0,82.0
-2025-02-18,comprar tablet com desconto de estudante,0,1,0.0,2.0
-2025-02-18,compras em balneário camboriú,0,1,0.0,19.0
-2025-02-18,compras em camboriú,0,1,0.0,23.0
-2025-02-18,continental shopping,0,1,0.0,30.0
-2025-02-18,continente boulevard,0,1,0.0,4.0
-2025-02-18,continente park shopping,0,1,0.0,85.0
-2025-02-18,continente shoping,0,1,0.0,7.0
-2025-02-18,continente shopping,0,125,0.0,9.92
-2025-02-18,continente shopping florianopolis,0,5,0.0,10.2
-2025-02-18,continente shopping florianópolis,0,9,0.0,9.88888888888889
-2025-02-18,continente shopping lojas,0,6,0.0,9.333333333333334
-2025-02-18,continente shopping marcas,0,3,0.0,11.0
-2025-02-18,continente shopping sc,0,2,0.0,8.0
-2025-02-18,continete shopping,0,2,0.0,7.0
-2025-02-18,costureira balneario shopping,0,2,0.0,12.5
-2025-02-18,criamigos balneário camboriú,0,1,0.0,10.0
-2025-02-18,criciuma shopping center,0,1,0.0,26.0
-2025-02-18,crocs balneario shopping,0,1,0.0,15.0
-2025-02-18,crocs franquia valor,0,1,0.0,9.0
-2025-02-18,crocs norte shopping,0,2,0.0,9.0
-2025-02-18,cual es el mejor shopping de camboriú,0,3,0.0,5.333333333333333
-2025-02-18,cual es el shopping más grande de camboriú,0,7,0.0,13.142857142857142
-2025-02-18,cupom de desconto grandvision,0,1,0.0,67.0
-2025-02-18,cuál es el shopping más grande de camboriú,0,4,0.0,12.0
-2025-02-18,decathlon barra shopping sul,0,1,0.0,47.0
-2025-02-18,dengo franquias,0,1,0.0,5.0
-2025-02-18,desconto de estudante tablet,0,1,0.0,2.0
-2025-02-18,desconto estudante apple,0,1,0.0,2.0
-2025-02-18,desconto na samsung,0,1,0.0,2.0
-2025-02-18,desconto na samsung para estudantes,0,1,0.0,2.0
-2025-02-18,desconto para educacao apple,0,1,0.0,2.0
-2025-02-18,desconto para estudantes samsung,0,1,0.0,2.0
-2025-02-18,desconto universitario apple,0,1,0.0,3.0
-2025-02-18,dirección de shopping,0,1,0.0,12.0
-2025-02-18,directorio de balneario shopping,0,2,0.0,11.0
-2025-02-18,diretório de balneário shopping,0,1,0.0,8.0
-2025-02-18,diretório de nações shopping,0,3,0.0,4.666666666666666
-2025-02-18,diretório de norte shopping blumenau,0,1,0.0,8.0
-2025-02-18,dress to shop,0,1,0.0,36.0
-2025-02-18,dudalina trabalhe conosco,0,1,0.0,40.0
-2025-02-18,eiachuelo casa,0,2,0.0,7.0
-2025-02-18,"email ""expedicaoaventura.com""",0,1,0.0,10.0
-2025-02-18,empresa almeida junior,0,1,0.0,1.0
-2025-02-18,empresas com boa reputação (cases),0,1,0.0,88.0
-2025-02-18,empresas que usam omnichannel,0,1,0.0,1.0
-2025-02-18,estacionamento balneario shopping,0,2,0.0,15.5
-2025-02-18,estacionamento shopping balneario camboriu,0,1,0.0,14.0
-2025-02-18,estacionamento shopping balneário,0,1,0.0,15.0
-2025-02-18,fans app,0,1,0.0,10.0
-2025-02-18,farm garten shopping,0,1,0.0,7.0
-2025-02-18,filmes cinema balneário camboriú,0,1,0.0,31.0
-2025-02-18,forum continente,0,1,0.0,7.0
-2025-02-18,fotos de balneario shopping,0,24,0.0,5.166666666666667
-2025-02-18,fotos de continente shopping,0,38,0.0,4.315789473684211
-2025-02-18,fotos de unidade de polícia de imigração - pep garten shopping bom retiro,0,1,0.0,6.0
-2025-02-18,franqueadora otica center,0,1,0.0,78.0
-2025-02-18,franquia bacio di latte,0,2,0.0,11.5
-2025-02-18,franquia biscoite,0,1,0.0,18.0
-2025-02-18,franquia bob's,0,1,0.0,48.0
-2025-02-18,franquia brasil cacau,0,1,0.0,34.0
-2025-02-18,franquia calvin klein,0,2,0.0,8.0
-2025-02-18,franquia constance,0,1,0.0,28.0
-2025-02-18,franquia crocs,0,7,0.0,6.428571428571429
-2025-02-18,franquia crocs brasil,0,2,0.0,5.5
-2025-02-18,franquia crocs valor,0,4,0.0,4.25
-2025-02-18,franquia da bauducco,0,1,0.0,34.0
-2025-02-18,franquia da crocs,0,1,0.0,5.0
-2025-02-18,franquia da crocs valor,0,1,0.0,5.0
-2025-02-18,franquia dengo,0,3,0.0,10.666666666666666
-2025-02-18,franquia do bacio di latte,0,1,0.0,11.0
-2025-02-18,franquia do spoleto,0,1,0.0,27.0
-2025-02-18,franquia dress to,0,1,0.0,7.0
-2025-02-18,franquia hope,0,1,0.0,37.0
-2025-02-18,franquia imaginarium,0,2,0.0,32.0
-2025-02-18,franquia lança perfume valor,0,2,0.0,5.5
-2025-02-18,franquia luiza barcelos,0,1,0.0,11.0
-2025-02-18,franquia milon,0,1,0.0,28.0
-2025-02-18,franquia montana grill,0,1,0.0,30.0
-2025-02-18,franquia petite jolie,0,1,0.0,5.0
-2025-02-18,franquia quem disse berenice,0,1,0.0,21.0
-2025-02-18,franquia spoleto,0,1,0.0,35.0
-2025-02-18,franquia tip top,0,1,0.0,27.0
-2025-02-18,franquia uza,0,5,0.0,9.4
-2025-02-18,franquia uza shoes,0,2,0.0,7.0
-2025-02-18,franquia vans,0,1,0.0,5.0
-2025-02-18,franquias em shoppings,0,2,0.0,46.5
-2025-02-18,franquias giraffas,0,1,0.0,34.0
-2025-02-18,franquias havanna,0,2,0.0,19.5
-2025-02-18,franquias milon,0,1,0.0,22.0
-2025-02-18,franquias yoga,0,1,0.0,34.0
-2025-02-18,fundo de shopping,0,1,0.0,52.0
-2025-02-18,gartem,0,1,0.0,8.0
-2025-02-18,garten,0,8,0.0,9.125
-2025-02-18,garten center,0,1,0.0,9.0
-2025-02-18,garten grill,0,1,0.0,52.0
-2025-02-18,garten shoping,0,2,0.0,9.0
-2025-02-18,garten shopping,0,166,0.0,8.397590361445783
-2025-02-18,garten shopping joinville,0,16,0.0,8.3125
-2025-02-18,garten shopping joinville lojas,0,1,0.0,9.0
-2025-02-18,geofusion onmaps,0,2,0.0,29.5
-2025-02-18,giraffas blumenau,0,2,0.0,5.0
-2025-02-18,giraffas garten shopping,0,1,0.0,2.0
-2025-02-18,giraffas joinville,0,5,0.0,9.2
-2025-02-18,giraffas shopping continente,0,1,0.0,18.0
-2025-02-18,gnc balneário camboriú,0,1,0.0,30.0
-2025-02-18,grand cru norte shopping,0,3,0.0,12.666666666666666
-2025-02-18,grupo almeida,0,2,0.0,9.5
-2025-02-18,grupo shopping,0,1,0.0,16.0
-2025-02-18,havan florianopolis horario de funcionamento,0,1,0.0,55.0
-2025-02-18,historia osklen,0,2,0.0,50.0
-2025-02-18,hope resort,0,1,0.0,81.0
-2025-02-18,horario shopping balneario camboriu,0,1,0.0,9.0
-2025-02-18,horário do balneário,0,1,0.0,65.0
-2025-02-18,horário do shopping hoje,0,1,0.0,11.0
-2025-02-18,hugo boss catarina,0,2,0.0,13.0
-2025-02-18,imagens de academia proquality premium continente shopping,0,3,0.0,9.0
-2025-02-18,imagens de balneário shopping,0,11,0.0,7.818181818181818
-2025-02-18,imagens de cobasi neumarkt,0,3,0.0,4.0
-2025-02-18,imagens de paris 6 balneário camboriú,0,2,0.0,9.0
-2025-02-18,imagens de proquality niterói,0,1,0.0,4.0
-2025-02-18,imagens de shopping garten,0,9,0.0,4.888888888888889
-2025-02-18,imagens de unidade de polícia de imigração - pep garten shopping bom retiro,0,14,0.0,6.428571428571429
-2025-02-18,imaginarium franquia,0,2,0.0,31.0
-2025-02-18,iphone estudante,0,1,0.0,3.0
-2025-02-18,iplace desconto estudante,0,1,0.0,2.0
-2025-02-18,jaj brasil investimentos e participacoes ltda,0,4,0.0,9.0
-2025-02-18,joalheria a novidade,0,1,0.0,7.0
-2025-02-18,joge,0,76,0.0,6.657894736842105
-2025-02-18,jogê,0,6,0.0,4.333333333333334
-2025-02-18,joinville garten shopping,0,4,0.0,8.25
-2025-02-18,jornal de balneário camboriú,0,1,0.0,55.0
-2025-02-18,jr almeida,0,1,0.0,7.0
-2025-02-18,jr shopping,0,1,0.0,6.0
-2025-02-18,jr shopping center,0,1,0.0,4.0
-2025-02-18,jun feet,0,1,0.0,6.0
-2025-02-18,junior eventos,0,2,0.0,8.5
-2025-02-18,jurássico,0,1,0.0,14.0
-2025-02-18,kabum balneario camboriu,0,1,0.0,11.0
-2025-02-18,kfc em balneário camboriú,0,1,0.0,11.0
-2025-02-18,kfc em santa catarina,0,1,0.0,5.0
-2025-02-18,kfc norte shopping,0,1,0.0,51.0
-2025-02-18,kfc santa catarina,0,1,0.0,5.0
-2025-02-18,kfc sc,0,1,0.0,4.0
-2025-02-18,lacoste balneario shopping,0,1,0.0,12.0
-2025-02-18,lavanderia no shopping,0,1,0.0,3.0
-2025-02-18,lavanderia omo,0,4,0.0,43.25
-2025-02-18,le briju lojas,0,1,0.0,6.0
-2025-02-18,lenovo desconto para estudante,0,1,0.0,2.0
-2025-02-18,levis,0,1,0.0,11.0
-2025-02-18,lez a lez balneario,0,1,0.0,8.0
-2025-02-18,lez a lez significado,0,1,0.0,7.0
-2025-02-18,lindt balneário camboriú,0,2,0.0,8.0
-2025-02-18,lindt catarina,0,1,0.0,1.0
-2025-02-18,livraria catarinense balneário shopping,0,1,0.0,13.0
-2025-02-18,loja artefacto,0,2,0.0,18.5
-2025-02-18,loja balneario camboriu,0,1,0.0,10.0
-2025-02-18,loja biscoite,0,2,0.0,52.0
-2025-02-18,loja boss,0,1,0.0,13.0
-2025-02-18,loja casa riachuelo,0,2,0.0,17.0
-2025-02-18,loja centaro,0,1,0.0,7.0
-2025-02-18,loja centauro,0,262,0.0,5.561068702290076
-2025-02-18,loja constance norte shopping,0,1,0.0,8.0
-2025-02-18,loja crocs barra shopping,0,1,0.0,7.0
-2025-02-18,loja da centauro,0,26,0.0,5.8076923076923075
-2025-02-18,loja da taco,0,2,0.0,6.0
-2025-02-18,loja de bebê continente shopping - são josé,0,1,0.0,42.0
-2025-02-18,loja g5,0,1,0.0,8.0
-2025-02-18,loja grand cru,0,1,0.0,43.0
-2025-02-18,loja melissa joinville,0,2,0.0,10.0
-2025-02-18,loja oceane,0,2,0.0,52.0
-2025-02-18,loja petite jolie,0,1,0.0,6.0
-2025-02-18,loja riachuelo casa,0,5,0.0,5.8
-2025-02-18,loja richards,0,1,0.0,35.0
-2025-02-18,loja richards outlet,0,1,0.0,12.0
-2025-02-18,loja santa lolla mais próxima,0,1,0.0,16.0
-2025-02-18,loja sentauro,0,1,0.0,3.0
-2025-02-18,loja shopping,0,1,0.0,6.0
-2025-02-18,loja shopping balneario camboriu,0,1,0.0,5.0
-2025-02-18,loja shopping neumarkt,0,1,0.0,7.0
-2025-02-18,loja taco norte shopping,0,1,0.0,14.0
-2025-02-18,loja taco shopping,0,3,0.0,14.666666666666666
-2025-02-18,lojas americanas em balneário camboriú,0,1,0.0,38.0
-2025-02-18,lojas balneario shopping,0,2,0.0,6.5
-2025-02-18,lojas balneário camboriú,0,5,0.0,10.6
-2025-02-18,lojas centauro,0,212,0.0,8.04245283018868
-2025-02-18,lojas centauros,0,6,0.0,4.0
-2025-02-18,lojas continente shopping,0,11,0.0,16.090909090909093
-2025-02-18,lojas de marcas,0,1,0.0,61.0
-2025-02-18,lojas do balneário shopping,0,1,0.0,7.0
-2025-02-18,lojas do norte shopping blumenau,0,2,0.0,12.5
-2025-02-18,lojas do shopping balneário camboriú,0,1,0.0,13.0
-2025-02-18,lojas do shopping continente,0,1,0.0,7.0
-2025-02-18,lojas do shopping garten joinville,0,8,0.0,10.375
-2025-02-18,lojas do shopping neumarkt,0,1,0.0,7.0
-2025-02-18,lojas lilica e tigor,0,1,0.0,43.0
-2025-02-18,lojas naçoes shopping,0,2,0.0,7.0
-2025-02-18,lojas neumarkt,0,2,0.0,10.5
-2025-02-18,lojas no continente shopping,0,1,0.0,11.0
-2025-02-18,lojas norte shopping blumenau,0,1,0.0,12.0
-2025-02-18,lojas riachuelo casa,0,2,0.0,6.5
-2025-02-18,lojas shopping balneario,0,1,0.0,7.0
-2025-02-18,lojas shopping balneário camboriú,0,1,0.0,4.0
-2025-02-18,lojas shopping continente,0,3,0.0,13.0
-2025-02-18,lojas shopping garten joinville,0,1,0.0,10.0
-2025-02-18,lojas shopping neumarkt,0,2,0.0,7.0
-2025-02-18,lojas shopping norte,0,1,0.0,5.0
-2025-02-18,lojas shopping norte blumenau,0,1,0.0,14.0
-2025-02-18,loungerie,0,2,0.0,6.0
-2025-02-18,loungerie norte shopping,0,1,0.0,12.0
-2025-02-18,loungerie trabalhe conosco,0,1,0.0,36.0
-2025-02-18,luz da lua franquia valor,0,2,0.0,5.0
-2025-02-18,magazine luiza balneário camboriú - sc,0,1,0.0,75.0
-2025-02-18,magazine luiza balneário shopping,0,3,0.0,14.666666666666666
-2025-02-18,magazine luiza shopping balneario,0,3,0.0,12.0
-2025-02-18,maior empresa de shopping,0,1,0.0,28.0
-2025-02-18,maior shopping balneário camboriú,0,2,0.0,16.0
-2025-02-18,maior shopping blumenau,0,1,0.0,15.0
-2025-02-18,maior shopping de balneario,0,1,0.0,11.0
-2025-02-18,maior shopping de balneário camboriú,0,9,0.0,14.777777777777779
-2025-02-18,maior shopping de blumenau,0,1,0.0,13.0
-2025-02-18,maior shopping de joinville,0,1,0.0,16.0
-2025-02-18,maior shopping de santa catarina,0,3,0.0,10.666666666666666
-2025-02-18,mall camboriu,0,12,0.0,10.166666666666666
-2025-02-18,mall en camboriu,0,3,0.0,10.666666666666666
-2025-02-18,mapa balneario shopping,0,1,0.0,5.0
-2025-02-18,mapa shopping balneario,0,2,0.0,8.0
-2025-02-18,mapa shopping balneario camboriu,0,2,0.0,8.5
-2025-02-18,marca santa lolla é boa,0,1,0.0,10.0
-2025-02-18,maria filo higienopolis,0,1,0.0,13.0
-2025-02-18,mejor shopping de camboriu,0,1,0.0,1.0
-2025-02-18,melhor shopping balneário camboriú,0,1,0.0,17.0
-2025-02-18,melhor shopping de blumenau,0,1,0.0,1.0
-2025-02-18,melissa clube,0,1,0.0,21.0
-2025-02-18,melissa garten,0,2,0.0,2.0
-2025-02-18,melissa joinville,0,2,0.0,8.5
-2025-02-18,mercado 24 horas balneário camboriú,0,1,0.0,74.0
-2025-02-18,mercados em balneário camboriú,0,1,0.0,78.0
-2025-02-18,midia shopping,0,1,0.0,39.0
-2025-02-18,milon outlet,0,1,0.0,56.0
-2025-02-18,montana grill,0,4,0.0,48.75
-2025-02-18,motorola desconto estudante,0,2,0.0,2.0
-2025-02-18,mundo jurássico,0,1,0.0,75.0
-2025-02-18,museu da ilusão,0,1,0.0,68.0
-2025-02-18,nacoes shoping,0,1,0.0,9.0
-2025-02-18,nacoes shopping,0,24,0.0,7.375
-2025-02-18,nacoes shopping criciuma,0,2,0.0,4.5
-2025-02-18,naçoes shopping,0,2,0.0,5.0
-2025-02-18,nações shopping,0,154,0.0,9.279220779220779
-2025-02-18,nações shopping criciuma,0,6,0.0,10.5
-2025-02-18,nações shopping criciúma,0,2,0.0,4.5
-2025-02-18,nações shopping lojas,0,1,0.0,7.0
-2025-02-18,nba store florianopolis,0,1,0.0,16.0
-2025-02-18,neumarket,0,3,0.0,7.666666666666667
-2025-02-18,neumarkt,0,29,0.0,8.068965517241379
-2025-02-18,neumarkt blumenau,0,4,0.0,9.0
-2025-02-18,neumarkt shopping blumenau,0,4,0.0,7.25
-2025-02-18,neumarkt shopping blumenau - sc,0,1,0.0,5.0
-2025-02-18,norte dhopping,0,1,0.0,8.0
-2025-02-18,norte shooping,0,1,0.0,9.0
-2025-02-18,norte shoping,0,2,0.0,10.0
-2025-02-18,norte shopping,0,33,0.0,6.909090909090909
-2025-02-18,norte shopping blumenau,0,137,0.0,8.226277372262775
-2025-02-18,norte shopping blumenau lojas,0,2,0.0,12.0
-2025-02-18,norte shopping em blumenau,0,1,0.0,4.0
-2025-02-18,norte shopping lojas,0,3,0.0,6.666666666666667
-2025-02-18,norteshopping,0,1,0.0,10.0
-2025-02-18,notebook desconto estudante,0,1,0.0,3.0
-2025-02-18,notebook para estudantes samsung,0,1,0.0,3.0
-2025-02-18,noticias balneario camboriu,0,2,0.0,86.5
-2025-02-18,noticias de balneario camboriu,0,1,0.0,94.0
-2025-02-18,noticias de camboriu agora,0,1,0.0,77.0
-2025-02-18,notícias balneário camboriú,0,2,0.0,91.0
-2025-02-18,notícias balneário camboriú hoje,0,1,0.0,81.0
-2025-02-18,notícias de balneário camboriú,0,1,0.0,59.0
-2025-02-18,notícias de camboriú,0,2,0.0,65.5
-2025-02-18,notícias de camboriú hoje,0,1,0.0,80.0
-2025-02-18,o que fazer em balneário camboriú hoje,0,3,0.0,41.333333333333336
-2025-02-18,oaklen,0,4,0.0,8.5
-2025-02-18,oceane franquia,0,2,0.0,1.0
-2025-02-18,oceane loja,0,1,0.0,78.0
-2025-02-18,oceane lojas,0,2,0.0,60.0
-2025-02-18,onde tirar o passaporte em joinville,0,1,0.0,5.0
-2025-02-18,online shopping marketplace,0,1,0.0,90.0
-2025-02-18,opiniones de balneario shopping,0,16,0.0,6.875
-2025-02-18,optica diniz,0,2,0.0,4.0
-2025-02-18,orica diniz,0,1,0.0,5.0
-2025-02-18,osklen balneario camboriu,0,2,0.0,11.0
-2025-02-18,otica center franqueadora,0,2,0.0,76.5
-2025-02-18,otica diniz,0,56,0.0,8.071428571428571
-2025-02-18,otica diniz norte shopping,0,1,0.0,17.0
-2025-02-18,oticadiniz,0,1,0.0,4.0
-2025-02-18,oticas diniz,0,28,0.0,12.142857142857142
-2025-02-18,outback neumarkt,0,1,0.0,13.0
-2025-02-18,pampili franquia,0,1,0.0,22.0
-2025-02-18,pao de lo balneario,0,1,0.0,10.0
-2025-02-18,passaporte em joinville,0,2,0.0,8.0
-2025-02-18,passaporte joinville garten,0,2,0.0,7.0
-2025-02-18,passaporte nacoes shopping,0,1,0.0,12.0
-2025-02-18,pep garten shopping,0,2,0.0,7.5
-2025-02-18,pep nacoes shopping criciuma,0,1,0.0,11.0
-2025-02-18,petite jolie franquia,0,1,0.0,6.0
-2025-02-18,petite jolie shopping,0,6,0.0,5.166666666666667
-2025-02-18,pizza de bis,0,1,0.0,19.0
-2025-02-18,pizza hut joinville,0,2,0.0,12.5
-2025-02-18,poke pipoca de camarão,0,1,0.0,48.0
-2025-02-18,policia federal garten,0,3,0.0,6.0
-2025-02-18,policia federal joinville,0,5,0.0,15.0
-2025-02-18,policia federal joinville garten,0,2,0.0,4.5
-2025-02-18,policia federal joinville passaporte,0,2,0.0,7.0
-2025-02-18,policia federal nacoes shopping,0,12,0.0,8.25
-2025-02-18,policia federal nações shopping,0,3,0.0,11.666666666666666
-2025-02-18,policia federal shopping garten,0,6,0.0,5.0
-2025-02-18,polícia federal garten shopping,0,6,0.0,4.833333333333334
-2025-02-18,polícia federal joinville,0,5,0.0,12.2
-2025-02-18,polícia federal joinville agendamento,0,1,0.0,11.0
-2025-02-18,polícia federal joinville passaporte,0,2,0.0,7.0
-2025-02-18,polícia federal joinville passaporte horário de atendimento,0,2,0.0,3.5
-2025-02-18,polícia federal passaporte criciúma nações shopping,0,2,0.0,10.0
-2025-02-18,portal almeida,0,4,0.0,9.5
-2025-02-18,portalalmeida,0,5,0.0,2.0
-2025-02-18,praça almeida júnior,0,1,0.0,81.0
-2025-02-18,preço estacionamento balneario shopping,0,2,0.0,11.5
-2025-02-18,primeira compra,0,1,0.0,1.0
-2025-02-18,principais marcas,0,1,0.0,59.0
-2025-02-18,pro quality,0,6,0.0,10.333333333333334
-2025-02-18,projeto top mkt,0,1,0.0,49.0
-2025-02-18,promoção natal imagens,0,2,0.0,69.0
-2025-02-18,promoção shopping balneario camboriu,0,1,0.0,3.0
-2025-02-18,proquality,0,3,0.0,7.0
-2025-02-18,proquality continente,0,1,0.0,15.0
-2025-02-18,puket,0,1,0.0,1.0
-2025-02-18,puket significado,0,3,0.0,7.0
-2025-02-18,quais lojas tem no norte shopping,0,1,0.0,10.0
-2025-02-18,qual maior shopping de balneário camboriú,0,3,0.0,15.333333333333334
-2025-02-18,qual maior shopping de joinville,0,1,0.0,16.0
-2025-02-18,qual o maior shopping de joinville,0,1,0.0,11.0
-2025-02-18,qual o melhor shopping de balneário camboriú,0,3,0.0,11.0
-2025-02-18,qual shopping tem a loja riachuelo,0,2,0.0,2.0
-2025-02-18,qual é o maior shopping de santa catarina,0,1,0.0,11.0
-2025-02-18,quantos shopping tem em blumenau,0,1,0.0,11.0
-2025-02-18,quantos shopping tem em joinville,0,1,0.0,11.0
-2025-02-18,quantos shoppings tem em blumenau,0,1,0.0,10.0
-2025-02-18,quantos shoppings tem em joinville,0,1,0.0,8.0
-2025-02-18,quantos shoppings tem em santa catarina,0,1,0.0,1.0
-2025-02-18,que horas abre o shopping de balneário camboriú,0,2,0.0,10.0
-2025-02-18,que horas fecha as lojas do shopping,0,1,0.0,12.0
-2025-02-18,que horas fecha o shopping de balneário camboriú,0,2,0.0,9.5
-2025-02-18,que horas são em balneário camboriú,0,1,0.0,99.0
-2025-02-18,quero ver tênis,0,2,0.0,1.0
-2025-02-18,quiosque para alugar em balneário camboriú,0,1,0.0,7.0
-2025-02-18,rede de shopping,0,2,0.0,8.0
-2025-02-18,restaurante norte shopping,0,1,0.0,11.0
-2025-02-18,restaurantes norte shopping blumenau,0,1,0.0,11.0
-2025-02-18,riachelo casa,0,3,0.0,6.0
-2025-02-18,riachuello casa,0,1,0.0,6.0
-2025-02-18,riachuello home,0,3,0.0,4.0
-2025-02-18,riachuelo casa,0,233,0.0,7.742489270386266
-2025-02-18,riachuelo casa lojas,0,5,0.0,4.0
-2025-02-18,riachuelo home,0,69,0.0,4.405797101449275
-2025-02-18,riachuelocasa,0,5,0.0,6.6
-2025-02-18,riachulo casa,0,2,0.0,6.5
-2025-02-18,riacuelo casa,0,2,0.0,32.0
-2025-02-18,ricahuelo casa,0,1,0.0,6.0
-2025-02-18,richard loja,0,3,0.0,7.0
-2025-02-18,richards loja,0,4,0.0,5.5
-2025-02-18,richards lojas,0,1,0.0,9.0
-2025-02-18,richards shopping recife,0,1,0.0,11.0
-2025-02-18,riqchuelo casa,0,1,0.0,6.0
-2025-02-18,rischuelo casa,0,2,0.0,5.5
-2025-02-18,roachuelo casa,0,1,0.0,6.0
-2025-02-18,robo que faz sorvete,0,3,0.0,3.0
-2025-02-18,s24 estudante,0,1,0.0,3.0
-2025-02-18,salao balneario shopping,0,1,0.0,11.0
-2025-02-18,salao shopping neumarkt,0,1,0.0,13.0
-2025-02-18,salinas shopping,0,1,0.0,28.0
-2025-02-18,samsonite norte shopping,0,1,0.0,12.0
-2025-02-18,samsung desconto de estudante,0,1,0.0,3.0
-2025-02-18,samsung para estudante,0,1,0.0,4.0
-2025-02-18,samsung para estudantes,0,1,0.0,4.0
-2025-02-18,samsung para estudantes vale a pena,0,1,0.0,3.0
-2025-02-18,santa lolla balneario,0,1,0.0,8.0
-2025-02-18,santa lolla balneario shopping,0,1,0.0,11.0
-2025-02-18,santa lolla balneário camboriú,0,1,0.0,7.0
-2025-02-18,santa lolla franquia,0,4,0.0,5.5
-2025-02-18,santa lolla shopping della,0,1,0.0,10.0
-2025-02-18,santa ursula ribeirao preto,0,5,0.0,21.4
-2025-02-18,schutz de onde é,0,1,0.0,9.0
-2025-02-18,schutz franquia,0,1,0.0,11.0
-2025-02-18,schutz marca origem,0,1,0.0,5.0
-2025-02-18,schutz norte shopping,0,2,0.0,12.0
-2025-02-18,schutz é uma marca brasileira,0,1,0.0,7.0
-2025-02-18,shooping balneario,0,1,0.0,6.0
-2025-02-18,shooping bc,0,1,0.0,10.0
-2025-02-18,shooping camboriu,0,2,0.0,7.0
-2025-02-18,shoping balneario,0,5,0.0,6.0
-2025-02-18,shoping balneario camboriu,0,6,0.0,8.666666666666668
-2025-02-18,shoping balneario camburiu,0,1,0.0,9.0
-2025-02-18,shoping bc,0,2,0.0,8.0
-2025-02-18,shoping c,0,1,0.0,11.0
-2025-02-18,shoping camboriu,0,30,0.0,8.433333333333334
-2025-02-18,shoping camboriú,0,1,0.0,5.0
-2025-02-18,shoping de camboriu,0,3,0.0,12.333333333333334
-2025-02-18,shoping em balneario,0,1,0.0,11.0
-2025-02-18,shoping en camboriu,0,6,0.0,11.833333333333334
-2025-02-18,shoping garten,0,1,0.0,14.0
-2025-02-18,shoping norte,0,1,0.0,10.0
-2025-02-18,shopping,0,6,0.0,6.5
-2025-02-18,shopping abiertos hoy,0,1,0.0,7.0
-2025-02-18,shopping almeida,0,3,0.0,1.6666666666666665
-2025-02-18,shopping almeida junior balneario camboriu,0,1,0.0,5.0
-2025-02-18,shopping aqui perto,0,1,0.0,7.0
-2025-02-18,shopping balneario,0,105,0.0,6.2
-2025-02-18,shopping balneario camboriu,0,320,0.0,8.8625
-2025-02-18,shopping balneario camboriu centro,0,1,0.0,10.0
-2025-02-18,shopping balneario camboriu estacionamento,0,1,0.0,15.0
-2025-02-18,shopping balneario camboriú,0,12,0.0,5.833333333333333
-2025-02-18,shopping balneario camburiu,0,1,0.0,7.0
-2025-02-18,shopping balneario lojas,0,1,0.0,13.0
-2025-02-18,shopping balneario.,0,1,0.0,6.0
-2025-02-18,shopping balneário,0,10,0.0,7.6
-2025-02-18,shopping balneário camboriu,0,1,0.0,6.0
-2025-02-18,shopping balneário camboriú,0,432,0.0,6.527777777777778
-2025-02-18,shopping balneário camboriú endereço,0,1,0.0,11.0
-2025-02-18,shopping balneário camboriú horario,0,1,0.0,8.0
-2025-02-18,shopping balneário camboriú lojas,0,2,0.0,12.0
-2025-02-18,shopping balneário camboriú sc,0,17,0.0,7.235294117647059
-2025-02-18,shopping balneário de camboriú,0,1,0.0,8.0
-2025-02-18,shopping balneário lojas,0,1,0.0,11.0
-2025-02-18,shopping bc,0,17,0.0,9.117647058823529
-2025-02-18,shopping beira mar balneario camboriu,0,2,0.0,11.0
-2025-02-18,shopping blumenau,0,4,0.0,3.75
-2025-02-18,shopping blumenau br 470,0,1,0.0,12.0
-2025-02-18,shopping blumenau neumarkt,0,3,0.0,8.0
-2025-02-18,shopping blumenau norte,0,2,0.0,7.0
-2025-02-18,shopping blumenau sc,0,1,0.0,24.0
-2025-02-18,shopping brasil camboriu,0,2,0.0,8.0
-2025-02-18,shopping cambiriu,0,1,0.0,7.0
-2025-02-18,shopping camboriu balneario,0,11,0.0,13.090909090909092
-2025-02-18,shopping camboriu brasil,0,19,0.0,12.105263157894736
-2025-02-18,shopping camboriu lojas,0,1,0.0,10.0
-2025-02-18,shopping camboriu mas grande,0,9,0.0,11.777777777777779
-2025-02-18,shopping camboriú,0,28,0.0,7.5
-2025-02-18,shopping camboriú brasil,0,1,0.0,12.0
-2025-02-18,shopping camboriú sc,0,3,0.0,11.333333333333334
-2025-02-18,shopping camboriú zara,0,1,0.0,12.0
-2025-02-18,shopping camburiu,0,3,0.0,5.0
-2025-02-18,shopping center,0,12,0.0,40.333333333333336
-2025-02-18,shopping center balneário camboriú,0,2,0.0,9.0
-2025-02-18,shopping centers,0,2,0.0,22.5
-2025-02-18,shopping centwr,0,1,0.0,6.0
-2025-02-18,shopping continental florianópolis,0,3,0.0,9.333333333333334
-2025-02-18,shopping continente,0,41,0.0,9.317073170731707
-2025-02-18,shopping continente florianópolis,0,5,0.0,10.2
-2025-02-18,shopping continente lojas,0,4,0.0,11.25
-2025-02-18,shopping continete,0,1,0.0,6.0
-2025-02-18,shopping criciuma nações,0,1,0.0,11.0
-2025-02-18,shopping das nacoes,0,1,0.0,7.0
-2025-02-18,shopping das nações,0,8,0.0,8.375
-2025-02-18,shopping de balneario,0,4,0.0,6.5
-2025-02-18,shopping de balneario camboriu,0,3,0.0,8.0
-2025-02-18,shopping de balneário,0,4,0.0,8.0
-2025-02-18,shopping de balneário camboriú,0,14,0.0,6.5
-2025-02-18,shopping de camboriu,0,19,0.0,11.736842105263158
-2025-02-18,shopping de camboriú,0,1,0.0,13.0
-2025-02-18,shopping de joinville santa catarina,0,1,0.0,12.0
-2025-02-18,shopping em balneario camboriu,0,7,0.0,8.285714285714285
-2025-02-18,shopping em balneario camboriú,0,1,0.0,9.0
-2025-02-18,shopping em balneario camburiu,0,2,0.0,8.0
-2025-02-18,shopping em balneário camboriú,0,83,0.0,6.9397590361445785
-2025-02-18,shopping em balneário camboriú sc,0,1,0.0,10.0
-2025-02-18,shopping em bc,0,10,0.0,10.2
-2025-02-18,shopping em blumenau,0,2,0.0,1.0
-2025-02-18,shopping em blumenau sc,0,1,0.0,1.0
-2025-02-18,shopping em camboriú,0,10,0.0,9.4
-2025-02-18,shopping em camboriú santa catarina,0,1,0.0,1.0
-2025-02-18,shopping em joinville,0,11,0.0,8.0
-2025-02-18,shopping em joinville santa catarina,0,1,0.0,12.0
-2025-02-18,shopping em joinville sc,0,1,0.0,17.0
-2025-02-18,shopping em santa catarina,0,3,0.0,12.0
-2025-02-18,shopping em.balneario camboriu,0,2,0.0,10.0
-2025-02-18,shopping en balneario camboriu,0,1,0.0,10.0
-2025-02-18,shopping en balneario camboriú,0,3,0.0,11.0
-2025-02-18,shopping en camboriu,0,108,0.0,11.444444444444445
-2025-02-18,shopping en camboriu brasil,0,1,0.0,11.0
-2025-02-18,shopping en camboriú,0,17,0.0,11.823529411764707
-2025-02-18,shopping florianopolis,0,1,0.0,5.0
-2025-02-18,shopping florianópolis continente,0,1,0.0,14.0
-2025-02-18,shopping garden,0,1,0.0,15.0
-2025-02-18,shopping garten,0,90,0.0,9.977777777777778
-2025-02-18,shopping garten em joinville,0,1,0.0,9.0
-2025-02-18,shopping garten joinville,0,36,0.0,7.861111111111111
-2025-02-18,shopping garten joinville lojas,0,1,0.0,5.0
-2025-02-18,shopping garten joinville sc,0,1,0.0,8.0
-2025-02-18,shopping ipo,0,1,0.0,4.0
-2025-02-18,shopping itapema,0,1,0.0,4.0
-2025-02-18,shopping joinvile,0,1,0.0,5.0
-2025-02-18,shopping joinville,0,51,0.0,6.019607843137255
-2025-02-18,shopping joinville garten,0,2,0.0,11.0
-2025-02-18,shopping joiville,0,3,0.0,5.333333333333333
-2025-02-18,shopping mais próximo de mim,0,1,0.0,10.0
-2025-02-18,shopping mall balneario camboriu,0,1,0.0,8.0
-2025-02-18,shopping mapa,0,1,0.0,4.0
-2025-02-18,shopping mas grande de florianópolis,0,1,0.0,56.0
-2025-02-18,shopping nacoes,0,12,0.0,6.583333333333333
-2025-02-18,shopping nações,0,34,0.0,8.294117647058822
-2025-02-18,shopping nações criciúma,0,5,0.0,11.0
-2025-02-18,shopping neumarket,0,3,0.0,9.333333333333334
-2025-02-18,shopping neumarkt,0,82,0.0,8.902439024390244
-2025-02-18,shopping neumarkt blumenau,0,17,0.0,7.117647058823529
-2025-02-18,shopping neumarkt blumenau lojas,0,4,0.0,10.75
-2025-02-18,shopping neumarkt lojas,0,3,0.0,6.666666666666667
-2025-02-18,shopping neumart,0,1,0.0,11.0
-2025-02-18,shopping newmarket,0,1,0.0,9.0
-2025-02-18,shopping newmarketing,0,7,0.0,9.0
-2025-02-18,shopping norte,0,1,0.0,8.0
-2025-02-18,shopping norte blumenau,0,51,0.0,7.470588235294118
-2025-02-18,shopping norte shopping blumenau,0,1,0.0,8.0
-2025-02-18,shopping parque balneário,0,1,0.0,30.0
-2025-02-18,shopping perto da rodoviária,0,1,0.0,7.0
-2025-02-18,shopping perto de mim,0,2,0.0,9.0
-2025-02-18,shopping próximo a mim,0,1,0.0,9.0
-2025-02-18,shopping sao jose sc,0,1,0.0,5.0
-2025-02-18,shopping.balneario,0,2,0.0,6.0
-2025-02-18,shoppings,0,8,0.0,12.375
-2025-02-18,shoppings balneario camboriu,0,1,0.0,9.0
-2025-02-18,shoppings balneário camboriú,0,1,0.0,10.0
-2025-02-18,shoppings camboriu,0,1,0.0,4.0
-2025-02-18,shoppings de balneário camboriú,0,1,0.0,12.0
-2025-02-18,shoppings em balneario camboriu,0,3,0.0,4.333333333333334
-2025-02-18,shoppings em balneário camboriú,0,14,0.0,6.928571428571429
-2025-02-18,shoppings em blumenau,0,2,0.0,1.0
-2025-02-18,shoppings em santa catarina,0,1,0.0,6.0
-2025-02-18,simple organic bc,0,2,0.0,16.0
-2025-02-18,simple organic lojas,0,1,0.0,47.0
-2025-02-18,sorteio byd,0,1,0.0,1.0
-2025-02-18,sorteio natal,0,1,0.0,96.0
-2025-02-18,spoleto joinville,0,3,0.0,6.333333333333333
-2025-02-18,spoleto patio brasil,0,1,0.0,18.0
-2025-02-18,spot imobiliaria,0,1,0.0,16.0
-2025-02-18,spot one,0,2,0.0,6.5
-2025-02-18,spot one balneario camboriu,0,2,0.0,5.5
-2025-02-18,spotone,0,1,0.0,3.0
-2025-02-18,sustentabilidade e esg,0,1,0.0,96.0
-2025-02-18,sustentabilidade esg,0,1,0.0,87.0
-2025-02-18,tab s6 lite promoção estudante,0,1,0.0,2.0
-2025-02-18,tabacaria nações shopping,0,1,0.0,12.0
-2025-02-18,tablet samsung para estudantes universitarios,0,1,0.0,2.0
-2025-02-18,tablet samsung s6 desconto estudante,0,2,0.0,2.0
-2025-02-18,taco bell,0,1,0.0,11.0
-2025-02-18,taco trabalhe conosco,0,1,0.0,31.0
-2025-02-18,telefone almeida,0,1,0.0,11.0
-2025-02-18,telefone almeida junior,0,1,0.0,3.0
-2025-02-18,telefone shopping garten joinville,0,1,0.0,11.0
-2025-02-18,tem girafas no norte shopping,0,1,0.0,18.0
-2025-02-18,tem shopping em balneário camboriú,0,1,0.0,11.0
-2025-02-18,tem shopping em joinville,0,1,0.0,6.0
-2025-02-18,the one garten,0,1,0.0,27.0
-2025-02-18,the spot one,0,12,0.0,6.083333333333333
-2025-02-18,the spot one balneário camboriú,0,3,0.0,7.666666666666667
-2025-02-18,the spot one by xtay balneário camboriú,0,2,0.0,10.5
-2025-02-18,unidade de polícia de imigração - pep garten shopping bom retiro,0,6,0.0,8.0
-2025-02-18,unidade de polícia de imigração - pep garten shopping telefone,0,2,0.0,5.5
-2025-02-18,valisere shopping recife,0,1,0.0,5.0
-2025-02-18,valor estacionamento balneário shopping,0,2,0.0,11.0
-2025-02-18,valor estacionamento shopping balneario,0,2,0.0,13.0
-2025-02-18,valor estacionamento shopping balneário camboriú,0,3,0.0,13.666666666666666
-2025-02-18,valor estacionamento shopping neumarkt,0,1,0.0,17.0
-2025-02-18,vans balneario shopping,0,1,0.0,8.0
-2025-02-18,vans camboriu,0,2,0.0,11.5
-2025-02-18,verao 2021,0,1,0.0,13.0
-2025-02-18,verão 2021,0,1,0.0,8.0
-2025-02-18,vivara continente shopping,0,1,0.0,9.0
-2025-02-18,vivo balneario camboriu telefone,0,1,0.0,45.0
-2025-02-18,where was the first kfc restaurant,0,1,0.0,67.0
-2025-02-18,xiaomi desconto para estudantes,0,1,0.0,4.0
-2025-02-18,yogini lojas,0,1,0.0,4.0
-2025-02-18,zapalla lojas,0,1,0.0,5.0
-2025-02-18,zara em blumenau,0,1,0.0,3.0
-2025-02-18,zee dog lojas,0,1,0.0,37.0
-2025-02-18,ótica diniz,0,93,0.0,5.989247311827957
-2025-02-18,ótica higienopolis,0,1,0.0,63.0
-2025-02-18,óticas diniz,0,12,0.0,12.916666666666666
+2026-06-11,aj midia,1,2,0.5,1.0
+2026-06-11,ajfans app,1,4,0.25,2.5
+2026-06-11,almeida júnior,1,33,0.030303030303030304,6.303030303030303
+2026-06-11,almeidajunior,1,1,1.0,4.0
+2026-06-11,apresentação comercial pdf,1,2,0.5,23.0
+2026-06-11,be mall,1,2,0.5,6.0
+2026-06-11,me nota way,1,12,0.08333333333333333,4.833333333333334
+2026-06-11,shopping continente,1,74,0.013513513513513514,7.121621621621622
+2026-06-11,shoppings almeida junior,1,2,0.5,1.0
 2025-02-19,a marca schutz é brasileira,0,1,0.0,8.0
 2025-02-19,a samsung da desconto para estudantes,0,2,0.0,2.5
 2025-02-19,abl shopping,0,4,0.0,36.25
@@ -314089,3 +313291,555 @@
 2026-06-10,ótica dinis,0,1,0.0,8.0
 2026-06-10,ótica diniz,0,4,0.0,9.5
 2026-06-10,óticas diniz,0,17,0.0,9.764705882352942
+2026-06-11,01452-000,0,1,0.0,11.0
+2026-06-11,@susana barbosa,0,3,0.0,8.0
+2026-06-11,@susana_barbosa,0,10,0.0,7.3
+2026-06-11,a marca schutz é brasileira,0,1,0.0,8.0
+2026-06-11,administradora de shopping,0,1,0.0,18.0
+2026-06-11,administradora de shopping centers,0,1,0.0,17.0
+2026-06-11,administradora de shoppings,0,1,0.0,19.0
+2026-06-11,aj app,0,2,0.0,5.0
+2026-06-11,alemida,0,1,0.0,10.0
+2026-06-11,almeid,0,2,0.0,10.0
+2026-06-11,almeida,0,33,0.0,9.121212121212121
+2026-06-11,almeida atacarejo,0,1,0.0,18.0
+2026-06-11,almeida campello weisbach 2004 cash flow sensitivity of cash pdf,0,1,0.0,8.0
+2026-06-11,almeida center,0,6,0.0,24.166666666666668
+2026-06-11,almeida corrigida fiel copyright domínio público,0,1,0.0,9.0
+2026-06-11,almeida investimentos,0,5,0.0,6.8
+2026-06-11,almeida jr shopping,0,1,0.0,1.0
+2026-06-11,almeida junior logo,0,1,0.0,1.0
+2026-06-11,almeida junior trabalhe conosco,0,1,0.0,3.0
+2026-06-11,almeida junior vagas,0,2,0.0,3.0
+2026-06-11,almeida planilhas,0,2,0.0,6.5
+2026-06-11,altenburg balneario,0,2,0.0,8.0
+2026-06-11,aniversário do shopping,0,1,0.0,10.0
+2026-06-11,app ajfans,0,1,0.0,2.0
+2026-06-11,artefatos loja,0,1,0.0,9.0
+2026-06-11,artwalk,0,7,0.0,15.428571428571429
+2026-06-11,aumeida,0,1,0.0,11.0
+2026-06-11,authentic feet,0,1,0.0,79.0
+2026-06-11,authentic feet balneário shopping,0,1,0.0,10.0
+2026-06-11,authentic feet barra shopping,0,8,0.0,9.25
+2026-06-11,authentic feet norte shopping,0,3,0.0,10.666666666666666
+2026-06-11,"av. brigadeiro faria lima, 2277",0,1,0.0,10.0
+2026-06-11,avaliações sobre unidade de polícia de imigração - pep garten shopping bom retiro,0,1,0.0,5.0
+2026-06-11,avatim balneario,0,1,0.0,11.0
+2026-06-11,"avenida brigadeiro faria lima, 2277",0,2,0.0,11.5
+2026-06-11,avenida faria lima 2277,0,3,0.0,10.333333333333334
+2026-06-11,balneario shoping,0,1,0.0,10.0
+2026-06-11,balneario shopping,0,39,0.0,9.384615384615385
+2026-06-11,balneario shopping estacionamento,0,1,0.0,1.0
+2026-06-11,balneario shopping lojas,0,3,0.0,8.0
+2026-06-11,balneario shopping mall,0,2,0.0,8.5
+2026-06-11,balneario shopping mall fotos,0,1,0.0,4.0
+2026-06-11,balneário camboriú shopping,0,1,0.0,20.0
+2026-06-11,balneário shopping,0,26,0.0,9.538461538461538
+2026-06-11,balneário shopping balneário camboriú,0,1,0.0,4.0
+2026-06-11,balneário shopping camboriú,0,2,0.0,8.5
+2026-06-11,balneário shopping fotos,0,10,0.0,6.0
+2026-06-11,bar do alemao,0,1,0.0,3.0
+2026-06-11,bar do norte,0,1,0.0,12.0
+2026-06-11,bauducco casa,0,1,0.0,13.0
+2026-06-11,bb basico lojas,0,8,0.0,11.5
+2026-06-11,bc shopping,0,1,0.0,5.0
+2026-06-11,bemall,0,7,0.0,4.428571428571429
+2026-06-11,bemall login,0,8,0.0,4.125
+2026-06-11,best places to shop,0,2,0.0,1.0
+2026-06-11,bibi franquia,0,2,0.0,6.0
+2026-06-11,bibi shopping recife,0,3,0.0,9.333333333333334
+2026-06-11,biscoiter,0,1,0.0,7.0
+2026-06-11,biscoitw,0,1,0.0,6.0
+2026-06-11,biscoitê,0,41,0.0,8.414634146341463
+2026-06-11,biscoitê a biscoiteria,0,2,0.0,5.0
+2026-06-11,boali,0,21,0.0,7.9523809523809526
+2026-06-11,boali alimentação saudável,0,1,0.0,12.0
+2026-06-11,boali restaurante,0,1,0.0,10.0
+2026-06-11,boali tabela nutricional,0,1,0.0,9.0
+2026-06-11,boss loja,0,1,0.0,13.0
+2026-06-11,botique do pao,0,1,0.0,7.0
+2026-06-11,boutique do pao,0,1,0.0,7.0
+2026-06-11,boutique do pao de lo,0,23,0.0,8.608695652173914
+2026-06-11,boutique do pao de lo balneario,0,4,0.0,10.75
+2026-06-11,boutique do pão de lo,0,2,0.0,8.0
+2026-06-11,boutique do pão de ló,0,1,0.0,8.0
+2026-06-11,boutique pao de lo,0,5,0.0,8.0
+2026-06-11,boutique pão de lo,0,1,0.0,10.0
+2026-06-11,brasil cacau balneario camboriu,0,2,0.0,6.0
+2026-06-11,brasil cacau continente shopping,0,1,0.0,7.0
+2026-06-11,brasil cacau norte shopping,0,1,0.0,13.0
+2026-06-11,brigadeiria,0,3,0.0,8.666666666666668
+2026-06-11,brigadeiria ou brigaderia,0,5,0.0,9.8
+2026-06-11,brigaderia,0,5,0.0,10.0
+2026-06-11,briju,0,1,0.0,11.0
+2026-06-11,bscoitê,0,5,0.0,8.2
+2026-06-11,bshope,0,1,0.0,3.0
+2026-06-11,buddha spa,0,1,0.0,3.0
+2026-06-11,cacau brasil franquia,0,1,0.0,44.0
+2026-06-11,cacau noir,0,38,0.0,7.157894736842105
+2026-06-11,cacau noit,0,2,0.0,7.5
+2026-06-11,calendário junior,0,3,0.0,8.333333333333332
+2026-06-11,carbone continente,0,2,0.0,10.0
+2026-06-11,carbone continente shopping,0,2,0.0,8.5
+2026-06-11,carbone shopping continente,0,3,0.0,8.333333333333332
+2026-06-11,casa bauducco,0,3,0.0,9.333333333333334
+2026-06-11,casa da bauducco,0,1,0.0,13.0
+2026-06-11,casas bauducco,0,4,0.0,8.0
+2026-06-11,cea criciuma,0,1,0.0,7.0
+2026-06-11,cecconello lojas,0,3,0.0,8.666666666666668
+2026-06-11,cecconello lojas fisicas,0,2,0.0,5.5
+2026-06-11,centauro continente shopping,0,6,0.0,8.166666666666668
+2026-06-11,centauro shopping continental,0,2,0.0,10.5
+2026-06-11,centauro shopping continente,0,3,0.0,9.0
+2026-06-11,chilli beans continente shopping,0,1,0.0,8.0
+2026-06-11,chocolates brasil cacau fotos,0,2,0.0,3.0
+2026-06-11,cia loja,0,1,0.0,59.0
+2026-06-11,cia maritima,0,3,0.0,21.0
+2026-06-11,cia maritima bc,0,1,0.0,5.0
+2026-06-11,cia marítima,0,3,0.0,38.666666666666664
+2026-06-11,cia. marítima fotos,0,2,0.0,1.0
+2026-06-11,ciamigos,0,1,0.0,9.0
+2026-06-11,club melissa,0,1,0.0,5.0
+2026-06-11,clube melissa,0,12,0.0,12.0
+2026-06-11,cobasi blumenau,0,24,0.0,9.291666666666666
+2026-06-11,cobasi blumenau norte shopping,0,2,0.0,10.0
+2026-06-11,cobasi neumarkt,0,13,0.0,8.307692307692307
+2026-06-11,cobasi shopping neumarkt,0,1,0.0,9.0
+2026-06-11,cobasi shopping norte,0,1,0.0,9.0
+2026-06-11,companhia maritima,0,1,0.0,41.0
+2026-06-11,comtinente shopping,0,3,0.0,8.0
+2026-06-11,concept loja,0,1,0.0,13.0
+2026-06-11,constance norte shopping,0,2,0.0,12.5
+2026-06-11,continent shopping,0,1,0.0,6.0
+2026-06-11,continente park shopping,0,2,0.0,6.0
+2026-06-11,continente shop,0,2,0.0,5.5
+2026-06-11,continente shopping,0,167,0.0,6.365269461077844
+2026-06-11,continente shopping florianópolis,0,1,0.0,15.0
+2026-06-11,continente shopping fotos,0,1,0.0,2.0
+2026-06-11,continente shopping logo,0,1,0.0,9.0
+2026-06-11,continente shopping residences,0,1,0.0,7.0
+2026-06-11,costureira balneario shopping,0,1,0.0,12.0
+2026-06-11,cri amigos,0,1,0.0,10.0
+2026-06-11,cria amigos,0,11,0.0,11.0
+2026-06-11,criaamigos,0,8,0.0,9.375
+2026-06-11,criamigos,0,62,0.0,9.564516129032258
+2026-06-11,crieamigos,0,2,0.0,10.0
+2026-06-11,crocs franquia,0,1,0.0,11.0
+2026-06-11,crocs garten shopping,0,1,0.0,6.0
+2026-06-11,crocs joinville,0,5,0.0,11.2
+2026-06-11,crocs norte shopping,0,3,0.0,7.0
+2026-06-11,crocs tijuca,0,1,0.0,30.0
+2026-06-11,diniz otica,0,5,0.0,9.6
+2026-06-11,diretório de balneário shopping,0,2,0.0,10.0
+2026-06-11,dono de shopping,0,2,0.0,3.5
+2026-06-11,dono do park shopping,0,2,0.0,12.5
+2026-06-11,dress to brasil,0,3,0.0,47.333333333333336
+2026-06-11,edificio trade center,0,1,0.0,7.0
+2026-06-11,estacionamento balneario shopping,0,1,0.0,7.0
+2026-06-11,estacionamento continente shopping gratuito,0,2,0.0,10.0
+2026-06-11,estacionamento garten shopping,0,2,0.0,7.0
+2026-06-11,estacionamento garten shopping joinville,0,1,0.0,1.0
+2026-06-11,estacionamento shopping continente,0,1,0.0,3.0
+2026-06-11,fala ju login,0,1,0.0,5.0
+2026-06-11,faria lima 2277,0,1,0.0,12.0
+2026-06-11,farm balneário camboriú,0,2,0.0,9.0
+2026-06-11,favia alessandra,0,1,0.0,1.0
+2026-06-11,filé mignon continente,0,1,0.0,9.0
+2026-06-11,financeira almeida,0,5,0.0,12.0
+2026-06-11,flavia alessandra,0,1,0.0,14.0
+2026-06-11,flavia alessandta,0,1,0.0,1.0
+2026-06-11,franquia biscoitê,0,1,0.0,7.0
+2026-06-11,franquia colcci,0,3,0.0,11.666666666666666
+2026-06-11,franquia da puket,0,1,0.0,7.0
+2026-06-11,franquia giraffas,0,2,0.0,30.0
+2026-06-11,franquia hermanito,0,1,0.0,12.0
+2026-06-11,franquia levis,0,3,0.0,6.0
+2026-06-11,franquia luiza barcelos,0,2,0.0,12.0
+2026-06-11,franquia petite jolie,0,1,0.0,6.0
+2026-06-11,franquia puket,0,1,0.0,5.0
+2026-06-11,franquia quem disse berenice,0,2,0.0,15.5
+2026-06-11,franquia santa lola,0,2,0.0,7.0
+2026-06-11,franquia santa lolla,0,3,0.0,7.0
+2026-06-11,franquia schutz valor,0,1,0.0,11.0
+2026-06-11,franquias milon,0,2,0.0,18.0
+2026-06-11,garten shopping,0,18,0.0,9.722222222222221
+2026-06-11,giraffas joinville,0,3,0.0,7.666666666666667
+2026-06-11,giraffas loja,0,1,0.0,11.0
+2026-06-11,giraffas vacaria,0,1,0.0,21.0
+2026-06-11,grand cru joinville,0,3,0.0,8.333333333333332
+2026-06-11,grupo almeida,0,7,0.0,6.714285714285714
+2026-06-11,grupo almeida junior shopping centers,0,1,0.0,1.0
+2026-06-11,grupo msj,0,1,0.0,11.0
+2026-06-11,grupo shopping,0,2,0.0,7.0
+2026-06-11,guga junior shop,0,1,0.0,5.0
+2026-06-11,havanna é de onde,0,2,0.0,12.0
+2026-06-11,hope resort lojas,0,1,0.0,9.0
+2026-06-11,hugo boss balneario camboriu,0,2,0.0,7.0
+2026-06-11,ibscoitê,0,11,0.0,8.363636363636363
+2026-06-11,imagens de balneário shopping,0,2,0.0,6.5
+2026-06-11,imagens de continente shopping,0,1,0.0,2.0
+2026-06-11,imagens de nações shopping,0,3,0.0,13.0
+2026-06-11,imaginarium brasília,0,4,0.0,9.0
+2026-06-11,imaginarium joinville,0,2,0.0,8.5
+2026-06-11,imaginarium norte shopping,0,1,0.0,4.0
+2026-06-11,imaginarium tatuape,0,2,0.0,11.5
+2026-06-11,inauguração norte shopping,0,1,0.0,6.0
+2026-06-11,jafans,0,1,0.0,4.0
+2026-06-11,jaimes almeida junior,0,5,0.0,1.2
+2026-06-11,jaimes bento de almeida junior,0,1,0.0,2.0
+2026-06-11,jaj brasil investimentos e participacoes ltda,0,1,0.0,2.0
+2026-06-11,joge,0,16,0.0,13.0
+2026-06-11,joinville garten shopping,0,1,0.0,13.0
+2026-06-11,junior ida,0,1,0.0,11.0
+2026-06-11,junior ri,0,1,0.0,8.0
+2026-06-11,kfc americana,0,1,0.0,10.0
+2026-06-11,kfc balneario shopping,0,1,0.0,8.0
+2026-06-11,kfc em santa catarina,0,1,0.0,12.0
+2026-06-11,kit de maquiagemlifestyle,0,1,0.0,26.0
+2026-06-11,kopenhagen joinville,0,2,0.0,10.0
+2026-06-11,levi's norte shopping fotos,0,1,0.0,12.0
+2026-06-11,lez a lez joinville,0,6,0.0,8.833333333333332
+2026-06-11,lez a lez significado,0,5,0.0,6.4
+2026-06-11,lilica,0,1,0.0,1.0
+2026-06-11,lilica & tigor,0,1,0.0,9.0
+2026-06-11,lilica e tigor,0,3,0.0,27.333333333333332
+2026-06-11,lilica e tigor site,0,1,0.0,9.0
+2026-06-11,lilica ripilica e tigor,0,8,0.0,5.625
+2026-06-11,lilica ripilica loja fisica,0,2,0.0,6.0
+2026-06-11,lilica ripilica shopping,0,2,0.0,5.0
+2026-06-11,lilica tigor,0,2,0.0,7.5
+2026-06-11,lindt,0,1,0.0,6.0
+2026-06-11,loja altenburg balneário camboriú,0,1,0.0,8.0
+2026-06-11,loja crocs joinville,0,1,0.0,10.0
+2026-06-11,loja da lilica ripilica,0,1,0.0,5.0
+2026-06-11,loja da new balance,0,1,0.0,7.0
+2026-06-11,loja fisica oceane,0,1,0.0,13.0
+2026-06-11,loja fórum,0,1,0.0,8.0
+2026-06-11,loja hope resort,0,4,0.0,5.5
+2026-06-11,loja imaginarium shopping,0,1,0.0,10.0
+2026-06-11,loja lanca perfume,0,1,0.0,19.0
+2026-06-11,loja lança perfume perto de mim,0,1,0.0,9.0
+2026-06-11,loja lilica ripilica,0,1,0.0,21.0
+2026-06-11,loja maria filo,0,1,0.0,6.0
+2026-06-11,loja maritima,0,1,0.0,12.0
+2026-06-11,loja melissa joinville,0,1,0.0,10.0
+2026-06-11,loja natura shopping da ilha,0,1,0.0,11.0
+2026-06-11,loja new balance,0,4,0.0,15.25
+2026-06-11,loja new balance shopping,0,1,0.0,12.0
+2026-06-11,loja oceane,0,80,0.0,9.2875
+2026-06-11,loja paris balneario shopping,0,1,0.0,8.0
+2026-06-11,loja petite jolie,0,1,0.0,13.0
+2026-06-11,loja santa lola,0,1,0.0,8.0
+2026-06-11,loja santa lolla,0,1,0.0,7.0
+2026-06-11,loja santa lolla shopping,0,1,0.0,4.0
+2026-06-11,loja taco,0,4,0.0,9.5
+2026-06-11,loja taco shopping,0,1,0.0,4.0
+2026-06-11,loja tigor,0,1,0.0,11.0
+2026-06-11,loja tigor e lilica,0,1,0.0,90.0
+2026-06-11,loja tip top,0,1,0.0,13.0
+2026-06-11,loja uza shoes,0,2,0.0,13.0
+2026-06-11,loja valisere shopping,0,1,0.0,5.0
+2026-06-11,loja vams,0,1,0.0,10.0
+2026-06-11,loja vans,0,92,0.0,8.467391304347826
+2026-06-11,loja vans balneario camboriu,0,4,0.0,8.0
+2026-06-11,loja vans perto de mim,0,1,0.0,13.0
+2026-06-11,lojas balneario shopping,0,10,0.0,8.0
+2026-06-11,lojas bc shopping,0,1,0.0,6.0
+2026-06-11,lojas cacau brasil,0,1,0.0,4.0
+2026-06-11,lojas canal concept,0,1,0.0,9.0
+2026-06-11,lojas centauro em santa catarina,0,2,0.0,10.0
+2026-06-11,lojas do balneário shopping,0,7,0.0,6.428571428571429
+2026-06-11,lojas do norte shopping blumenau,0,1,0.0,11.0
+2026-06-11,lojas do shopping balneário camboriú,0,1,0.0,12.0
+2026-06-11,lojas do shopping norte,0,1,0.0,7.0
+2026-06-11,lojas naçoes shopping,0,6,0.0,9.166666666666666
+2026-06-11,lojas nações shopping criciuma,0,2,0.0,7.0
+2026-06-11,lojas neumarkt,0,1,0.0,7.0
+2026-06-11,lojas no norte shopping,0,1,0.0,9.0
+2026-06-11,lojas norte shopping blumenau,0,2,0.0,11.0
+2026-06-11,lojas oceane,0,6,0.0,12.5
+2026-06-11,lojas riachuelo shopping,0,1,0.0,1.0
+2026-06-11,lojas richard,0,1,0.0,11.0
+2026-06-11,lojas roupas caras balneario camboriu,0,2,0.0,7.0
+2026-06-11,lojas shopping balneario,0,2,0.0,8.5
+2026-06-11,lojas shopping balneario camboriu,0,1,0.0,9.0
+2026-06-11,lojas shopping balneário camboriú,0,2,0.0,7.0
+2026-06-11,lojas shopping neumarkt,0,1,0.0,10.0
+2026-06-11,lojas valisere,0,1,0.0,10.0
+2026-06-11,lojas vans,0,10,0.0,9.5
+2026-06-11,lojas vans shopping,0,1,0.0,5.0
+2026-06-11,loungerie joinville,0,2,0.0,7.0
+2026-06-11,maior empresa de shopping,0,1,0.0,17.0
+2026-06-11,maior shopping de blumenau,0,1,0.0,7.0
+2026-06-11,maior shopping de florianópolis,0,1,0.0,11.0
+2026-06-11,maior shopping de santa catarina,0,5,0.0,7.6
+2026-06-11,maiores shoppings de santa catarina,0,1,0.0,1.0
+2026-06-11,malls,0,1,0.0,9.0
+2026-06-11,marca degalls,0,1,0.0,8.0
+2026-06-11,marca petite jolie,0,2,0.0,11.0
+2026-06-11,marca santa lola,0,2,0.0,7.0
+2026-06-11,marca santa lolla,0,7,0.0,5.857142857142857
+2026-06-11,marca zapalla,0,1,0.0,1.0
+2026-06-11,marcas brasileiras de calçados,0,1,0.0,3.0
+2026-06-11,marcas de shopping,0,1,0.0,1.0
+2026-06-11,melissa clube,0,1,0.0,4.0
+2026-06-11,melissa continente shopping,0,1,0.0,12.0
+2026-06-11,melissa joinville,0,1,0.0,7.0
+2026-06-11,midia de elevador,0,1,0.0,9.0
+2026-06-11,midia elevadores,0,2,0.0,7.5
+2026-06-11,midia em elevadores,0,2,0.0,9.0
+2026-06-11,montana grill,0,25,0.0,5.52
+2026-06-11,montanha grill,0,1,0.0,7.0
+2026-06-11,nacoe,0,1,0.0,7.0
+2026-06-11,nacoes,0,15,0.0,7.333333333333333
+2026-06-11,nacoes criciuma,0,1,0.0,5.0
+2026-06-11,nacoes shopping,0,12,0.0,7.583333333333333
+2026-06-11,nacoes shopping criciuma,0,1,0.0,6.0
+2026-06-11,natura shopping balneario camboriu,0,4,0.0,12.25
+2026-06-11,natura shopping da ilha,0,1,0.0,11.0
+2026-06-11,naçoes shopping,0,3,0.0,7.0
+2026-06-11,nações shopping,0,72,0.0,8.75
+2026-06-11,nações shopping criciuma,0,10,0.0,5.3
+2026-06-11,nações shopping fotos,0,6,0.0,7.166666666666667
+2026-06-11,nações shopping trabalhe conosco,0,1,0.0,11.0
+2026-06-11,neumarket,0,2,0.0,7.5
+2026-06-11,neumarkt,0,12,0.0,6.666666666666667
+2026-06-11,neumarkt blumenau,0,1,0.0,11.0
+2026-06-11,neumarkt shopping,0,4,0.0,5.25
+2026-06-11,neumarkt shopping blumenau,0,2,0.0,6.5
+2026-06-11,new balance loja,0,5,0.0,10.4
+2026-06-11,newmarket,0,1,0.0,21.0
+2026-06-11,newmarket shopping,0,1,0.0,5.0
+2026-06-11,norte shopping,0,11,0.0,6.545454545454546
+2026-06-11,norte shopping blumenau,0,86,0.0,6.313953488372093
+2026-06-11,norte shopping blumenau lojas,0,2,0.0,11.5
+2026-06-11,norte shopping lojas,0,1,0.0,10.0
+2026-06-11,north shopping blumenau,0,2,0.0,4.0
+2026-06-11,o que fazer em balneário camboriú com crianças,0,1,0.0,15.0
+2026-06-11,o que significa lez a lez,0,1,0.0,9.0
+2026-06-11,o que é santa lolla,0,1,0.0,11.0
+2026-06-11,oaklen,0,1,0.0,22.0
+2026-06-11,oceane loja,0,38,0.0,8.868421052631579
+2026-06-11,oceane loja fisica,0,1,0.0,13.0
+2026-06-11,onde fazer passaporte em joinville,0,1,0.0,14.0
+2026-06-11,onde tem loja petite jolie,0,1,0.0,14.0
+2026-06-11,otica diniz,0,11,0.0,9.181818181818182
+2026-06-11,otica diniz norte shopping,0,1,0.0,4.0
+2026-06-11,otica diniz parnamirim,0,1,0.0,11.0
+2026-06-11,oticas diniz,0,20,0.0,10.0
+2026-06-11,oticasdiniz,0,2,0.0,10.0
+2026-06-11,outlet tip top,0,2,0.0,52.5
+2026-06-11,pao de lo boutique,0,1,0.0,10.0
+2026-06-11,paris 6,0,8,0.0,9.375
+2026-06-11,paris 6 balneario,0,6,0.0,9.166666666666666
+2026-06-11,paris 6 balneario camboriu,0,2,0.0,11.0
+2026-06-11,paris 6 balneário camboriú,0,17,0.0,8.764705882352942
+2026-06-11,paris 6 bistro balneario camboriu comentários,0,2,0.0,10.5
+2026-06-11,paris 6 bistro balneario camboriu fotos,0,1,0.0,10.0
+2026-06-11,paris balneario shopping,0,2,0.0,9.0
+2026-06-11,paris restaurante,0,1,0.0,11.0
+2026-06-11,parmegiana em blumenau,0,1,0.0,7.0
+2026-06-11,passaporte em joinville,0,2,0.0,13.0
+2026-06-11,passaporte garten,0,2,0.0,4.0
+2026-06-11,passaporte garten shopping,0,1,0.0,6.0
+2026-06-11,passaporte joinville,0,1,0.0,15.0
+2026-06-11,petit jolie,0,3,0.0,7.0
+2026-06-11,pizzaria hut,0,1,0.0,7.0
+2026-06-11,policia federal garten shopping,0,1,0.0,6.0
+2026-06-11,policia federal joinville garten,0,5,0.0,5.6
+2026-06-11,policia federal nacoes shopping,0,1,0.0,3.0
+2026-06-11,policia federal passaporte joinville,0,3,0.0,6.333333333333333
+2026-06-11,polícia federal garten shopping,0,2,0.0,8.0
+2026-06-11,polícia federal horario de funcionamento,0,1,0.0,11.0
+2026-06-11,polícia federal joinville agendamento,0,1,0.0,1.0
+2026-06-11,polícia federal joinville garten shopping telefone,0,1,0.0,6.0
+2026-06-11,polícia federal joinville passaporte horário de atendimento,0,1,0.0,1.0
+2026-06-11,polícia federal passaporte joinville,0,1,0.0,12.0
+2026-06-11,popayes,0,1,0.0,11.0
+2026-06-11,popeyes,0,2,0.0,10.0
+2026-06-11,popeyes joinville,0,3,0.0,3.0
+2026-06-11,praça almeida junior,0,1,0.0,14.0
+2026-06-11,praça de alimentação continente shopping,0,3,0.0,8.666666666666668
+2026-06-11,praça de alimentação shopping continental,0,1,0.0,11.0
+2026-06-11,premiações,0,1,0.0,10.0
+2026-06-11,primeiro shopping do rio de janeiro,0,1,0.0,45.0
+2026-06-11,promoção balneário camboriú shopping,0,1,0.0,7.0
+2026-06-11,promoção garten shopping joinville,0,2,0.0,6.0
+2026-06-11,promoção shopping balneario camboriu,0,4,0.0,6.5
+2026-06-11,promoção shopping continente,0,1,0.0,9.0
+2026-06-11,promoção shopping garten joinville,0,4,0.0,3.25
+2026-06-11,promoções balneario shopping,0,7,0.0,6.142857142857143
+2026-06-11,proquality,0,3,0.0,9.333333333333334
+2026-06-11,proquality premium,0,1,0.0,8.0
+2026-06-11,puket franquia,0,2,0.0,3.5
+2026-06-11,quais lojas tem no norte shopping,0,1,0.0,5.0
+2026-06-11,quais os premios?,0,1,0.0,4.0
+2026-06-11,qual maior shopping de santa catarina,0,2,0.0,5.0
+2026-06-11,qual o maior shopping de blumenau,0,3,0.0,12.333333333333334
+2026-06-11,quando sai o sorteio,0,1,0.0,1.0
+2026-06-11,quantas lojas tem ?,0,1,0.0,2.0
+2026-06-11,quantos shopping tem em balneário camboriú,0,3,0.0,10.0
+2026-06-11,quantos shopping tem em blumenau,0,4,0.0,12.75
+2026-06-11,quantos shopping tem em joinville,0,2,0.0,11.0
+2026-06-11,quantos shoppings tem em balneário camboriú,0,2,0.0,8.5
+2026-06-11,quem é almeida junior,0,1,0.0,1.0
+2026-06-11,quem é dono do shopping,0,1,0.0,1.0
+2026-06-11,rede de shopping,0,1,0.0,5.0
+2026-06-11,renovação de passaporte,0,1,0.0,3.0
+2026-06-11,restaurante boali,0,2,0.0,5.0
+2026-06-11,restaurante continente,0,1,0.0,10.0
+2026-06-11,restaurante paris 6 balneário camboriú,0,1,0.0,8.0
+2026-06-11,restaurante shopping continente,0,2,0.0,12.0
+2026-06-11,restaurantes continente shopping,0,2,0.0,11.0
+2026-06-11,restaurantes no shopping continente,0,2,0.0,11.0
+2026-06-11,richards,0,5,0.0,15.8
+2026-06-11,richards shopping morumbi,0,1,0.0,8.0
+2026-06-11,richars,0,1,0.0,8.0
+2026-06-11,rochards,0,1,0.0,4.0
+2026-06-11,santa lolla,0,1,0.0,21.0
+2026-06-11,santa lolla balneario,0,3,0.0,7.333333333333333
+2026-06-11,santa lolla balneário camboriú,0,3,0.0,5.333333333333333
+2026-06-11,santa lolla bc,0,2,0.0,8.5
+2026-06-11,santa lolla fotos,0,7,0.0,2.857142857142857
+2026-06-11,santa lolla lojas,0,2,0.0,14.0
+2026-06-11,santa lolla marca,0,1,0.0,7.0
+2026-06-11,santa lolla shopping,0,3,0.0,6.0
+2026-06-11,santa lollla,0,1,0.0,21.0
+2026-06-11,santa ursula ribeirão preto,0,1,0.0,9.0
+2026-06-11,santalolla,0,8,0.0,19.375
+2026-06-11,schtuz,0,1,0.0,3.0
+2026-06-11,schutz,0,8,0.0,3.875
+2026-06-11,schutz continente shopping,0,1,0.0,4.0
+2026-06-11,schutz joinville,0,1,0.0,4.0
+2026-06-11,schutz.,0,1,0.0,4.0
+2026-06-11,sephora balneario,0,1,0.0,8.0
+2026-06-11,sephora balneario camboriu,0,7,0.0,10.285714285714286
+2026-06-11,sephora balneário camboriú,0,1,0.0,7.0
+2026-06-11,sephora camboriu,0,1,0.0,11.0
+2026-06-11,sephora em balneário camboriú,0,2,0.0,13.0
+2026-06-11,sergio's calçados lojas,0,1,0.0,1.0
+2026-06-11,series inspiradas em livros,0,1,0.0,3.0
+2026-06-11,shoping continente,0,2,0.0,8.0
+2026-06-11,shoping nacoes,0,3,0.0,5.666666666666667
+2026-06-11,shopping alameda,0,1,0.0,11.0
+2026-06-11,shopping almeida junior,0,2,0.0,1.0
+2026-06-11,shopping almeida junior balneario camboriu,0,1,0.0,1.0
+2026-06-11,shopping balneario,0,15,0.0,9.533333333333333
+2026-06-11,shopping balneario camboriu,0,2,0.0,28.0
+2026-06-11,shopping balneario lojas,0,2,0.0,9.0
+2026-06-11,shopping balneário,0,1,0.0,8.0
+2026-06-11,shopping balneário camboriú,0,7,0.0,10.0
+2026-06-11,shopping balneário santos,0,1,0.0,4.0
+2026-06-11,shopping bc lojas,0,1,0.0,9.0
+2026-06-11,shopping blumenau neumarkt,0,3,0.0,7.333333333333333
+2026-06-11,shopping blumenau norte,0,2,0.0,6.0
+2026-06-11,shopping camboriu lojas,0,2,0.0,7.0
+2026-06-11,shopping camboriú,0,1,0.0,11.0
+2026-06-11,shopping center,0,1,0.0,8.0
+2026-06-11,shopping center blumenau,0,1,0.0,11.0
+2026-06-11,shopping centers,0,3,0.0,13.0
+2026-06-11,shopping continental sao jose,0,1,0.0,8.0
+2026-06-11,shopping continente florianópolis,0,1,0.0,7.0
+2026-06-11,shopping continente restaurantes,0,1,0.0,11.0
+2026-06-11,shopping criciuma nações,0,2,0.0,6.5
+2026-06-11,shopping das nacoes,0,2,0.0,5.0
+2026-06-11,shopping das naçoes,0,4,0.0,6.25
+2026-06-11,shopping das nações,0,11,0.0,4.818181818181818
+2026-06-11,shopping das nações criciuma,0,1,0.0,6.0
+2026-06-11,shopping das nações em criciúma,0,1,0.0,6.0
+2026-06-11,shopping de balneario,0,1,0.0,19.0
+2026-06-11,shopping de balneário,0,1,0.0,6.0
+2026-06-11,shopping de balneário camboriú,0,3,0.0,14.0
+2026-06-11,shopping de joinville,0,1,0.0,12.0
+2026-06-11,shopping em balneario camboriu,0,1,0.0,12.0
+2026-06-11,shopping em balneário camboriú,0,5,0.0,11.8
+2026-06-11,shopping em blumenau,0,2,0.0,6.5
+2026-06-11,shopping em blumenau sc,0,1,0.0,10.0
+2026-06-11,shopping em joinville,0,3,0.0,9.666666666666666
+2026-06-11,shopping garden,0,1,0.0,4.0
+2026-06-11,shopping garden joinville,0,1,0.0,9.0
+2026-06-11,shopping garten,0,6,0.0,8.166666666666668
+2026-06-11,shopping garten joinville,0,2,0.0,7.5
+2026-06-11,shopping joinville,0,2,0.0,9.5
+2026-06-11,shopping joinville garten,0,1,0.0,8.0
+2026-06-11,shopping nacoes,0,8,0.0,6.0
+2026-06-11,shopping nacoes criciuma,0,2,0.0,7.0
+2026-06-11,shopping nações,0,24,0.0,7.541666666666667
+2026-06-11,shopping nações criciuma,0,1,0.0,3.0
+2026-06-11,shopping nações criciúma,0,3,0.0,7.333333333333333
+2026-06-11,shopping nações unidas,0,2,0.0,27.0
+2026-06-11,shopping neo marketing blumenau,0,1,0.0,6.0
+2026-06-11,shopping neumarkt,0,13,0.0,8.23076923076923
+2026-06-11,shopping neumarkt blumenau,0,2,0.0,6.0
+2026-06-11,shopping neumarkt blumenau lojas,0,2,0.0,10.5
+2026-06-11,shopping newmarket,0,2,0.0,8.5
+2026-06-11,shopping newmarketing,0,2,0.0,7.0
+2026-06-11,shopping norte blumenau,0,9,0.0,6.333333333333333
+2026-06-11,shopping norte em blumenau,0,1,0.0,8.0
+2026-06-11,shopping norte lojas,0,1,0.0,9.0
+2026-06-11,shopping santa ursula,0,2,0.0,13.5
+2026-06-11,shopping santa úrsula,0,2,0.0,13.0
+2026-06-11,shopping urubici,0,1,0.0,9.0
+2026-06-11,shoppings,0,2,0.0,8.0
+2026-06-11,shoppings balneário camboriú,0,1,0.0,16.0
+2026-06-11,shoppings em balneário camboriú,0,1,0.0,17.0
+2026-06-11,shutz,0,1,0.0,4.0
+2026-06-11,sisana barbosa,0,1,0.0,7.0
+2026-06-11,"site:shoppingvaledoaco.com.br/alimentacao.php ""boali""",0,2,0.0,10.0
+2026-06-11,"site:shoppingvaledoaco.com.br/alimentacao.php ""boali"" ""delivery""",0,1,0.0,10.0
+2026-06-11,sorteio balneario shopping,0,3,0.0,8.666666666666668
+2026-06-11,spoleto blumenau,0,1,0.0,15.0
+2026-06-11,srtwalk,0,1,0.0,11.0
+2026-06-11,suana barbosa,0,1,0.0,4.0
+2026-06-11,summer vibes sephora,0,1,0.0,4.0
+2026-06-11,susaba barbosa,0,1,0.0,5.0
+2026-06-11,susan barbosa,0,1,0.0,10.0
+2026-06-11,susana _barbosa,0,1,0.0,6.0
+2026-06-11,susana barbisa,0,7,0.0,5.571428571428571
+2026-06-11,susana barbos,0,1,0.0,5.0
+2026-06-11,susana barbosa,0,404,0.0,5.405940594059406
+2026-06-11,susana barbosa elle,0,12,0.0,5.75
+2026-06-11,susana barbosa elle brasil,0,3,0.0,7.333333333333333
+2026-06-11,susana batbosa,0,3,0.0,5.333333333333333
+2026-06-11,susana-barbosa,0,2,0.0,5.0
+2026-06-11,susana.barbosa,0,1,0.0,6.0
+2026-06-11,susana_ barbosa,0,1,0.0,6.0
+2026-06-11,susana_barbosa,0,73,0.0,7.3561643835616435
+2026-06-11,susanabarbosa,0,3,0.0,8.0
+2026-06-11,susaza barbosa,0,1,0.0,5.0
+2026-06-11,sussana barbosa,0,6,0.0,5.0
+2026-06-11,suzana barbisa,0,4,0.0,5.5
+2026-06-11,suzana_barbosa,0,6,0.0,5.166666666666667
+2026-06-11,suzanabarbosa,0,1,0.0,7.0
+2026-06-11,taco norte shopping,0,2,0.0,12.0
+2026-06-11,tania bulhoes blumenau,0,1,0.0,3.0
+2026-06-11,telefone da almeida,0,1,0.0,1.0
+2026-06-11,the north face balneario shopping,0,2,0.0,8.0
+2026-06-11,the spot,0,1,0.0,11.0
+2026-06-11,the spot one,0,4,0.0,10.75
+2026-06-11,the spot one balneário camboriú,0,2,0.0,10.5
+2026-06-11,the spot one balneário shopping,0,8,0.0,9.375
+2026-06-11,tigor lilica ripilica,0,1,0.0,4.0
+2026-06-11,trindade shopping,0,1,0.0,50.0
+2026-06-11,unidade de polícia de imigração - pep garten shopping bom retiro,0,4,0.0,7.5
+2026-06-11,unidade de polícia de imigração - pep garten shopping fotos,0,2,0.0,2.0
+2026-06-11,usaflex blumenau,0,1,0.0,7.0
+2026-06-11,usaflex joinville,0,1,0.0,12.0
+2026-06-11,uza shoes lojas,0,12,0.0,11.0
+2026-06-11,vagas almeida junior,0,1,0.0,4.0
+2026-06-11,valisere lojas,0,1,0.0,11.0
+2026-06-11,valisere lojas sp,0,2,0.0,8.0
+2026-06-11,valor estacionamento balneário shopping,0,1,0.0,10.0
+2026-06-11,valor estacionamento shopping garten joinville,0,2,0.0,1.0
+2026-06-11,vans balneario camboriu,0,2,0.0,10.0
+2026-06-11,vans balneario shopping,0,3,0.0,5.666666666666667
+2026-06-11,vans balneário camboriú,0,2,0.0,8.0
+2026-06-11,vans bc,0,2,0.0,8.0
+2026-06-11,vans blumenau,0,1,0.0,7.0
+2026-06-11,vans loja,0,26,0.0,5.346153846153846
+2026-06-11,vans shopping campo grande,0,1,0.0,8.0
+2026-06-11,vans store fotos,0,6,0.0,6.833333333333333
+2026-06-11,varejo tech day,0,11,0.0,9.636363636363637
+2026-06-11,zapalla loja,0,1,0.0,13.0
+2026-06-11,ótica diniz,0,10,0.0,7.5
+2026-06-11,óticas diniz,0,23,0.0,9.434782608695652
