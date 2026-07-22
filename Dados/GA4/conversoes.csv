@@ -14,7 +14,6 @@
 20250901,session_start,google,cpc,1486.0,0.0,1447.0
 20250825,page_view,google,cpc,1478.0,0.0,1128.0
 20250726,session_start,google,cpc,1469.0,0.0,1402.0
-20250721,page_view,google,cpc,1466.0,0.0,1192.0
 20250725,page_view,google,cpc,1463.0,0.0,1179.0
 20250826,page_view,google,cpc,1448.0,0.0,1105.0
 20250722,session_start,google,cpc,1441.0,0.0,1363.0
@@ -33,7 +32,6 @@
 20250823,session_start,google,cpc,1282.0,0.0,1236.0
 20250727,first_visit,google,cpc,1278.0,0.0,1278.0
 20250901,first_visit,google,cpc,1269.0,0.0,1269.0
-20250721,session_start,google,cpc,1259.0,0.0,1194.0
 20250729,session_start,google,cpc,1258.0,0.0,1200.0
 20250722,first_visit,google,cpc,1257.0,0.0,1257.0
 20250725,session_start,google,cpc,1249.0,0.0,1186.0
@@ -60,7 +58,6 @@
 20250830,first_visit,google,cpc,1099.0,0.0,1099.0
 20250831,session_start,google,cpc,1099.0,0.0,1060.0
 20250818,first_visit,google,cpc,1096.0,0.0,1096.0
-20250721,first_visit,google,cpc,1091.0,0.0,1091.0
 20250829,page_view,google,cpc,1085.0,0.0,971.0
 20250724,first_visit,google,cpc,1084.0,0.0,1084.0
 20250819,session_start,google,cpc,1080.0,0.0,1036.0
@@ -208,7 +205,6 @@
 20251019,page_view,ig,paid,567.0,0.0,445.0
 20260604,page_view,(direct),(none),566.0,0.0,395.0
 20250814,first_visit,google,cpc,565.0,0.0,564.0
-20250721,user_engagement,google,cpc,562.0,0.0,516.0
 20251016,first_visit,ig,paid,562.0,0.0,562.0
 20251025,first_visit,google,cpc,562.0,0.0,562.0
 20251013,scroll,google,cpc,560.0,0.0,211.0
@@ -333,6 +329,7 @@
 20260430,user_engagement,(not set),(not set),385.0,0.0,298.0
 20251126,scroll,(direct),(none),384.0,0.0,76.0
 20260607,session_start,(direct),(none),382.0,0.0,371.0
+20260721,page_view,(direct),(none),382.0,0.0,289.0
 20251022,session_start,google,cpc,381.0,0.0,368.0
 20251023,first_visit,google,cpc,381.0,0.0,380.0
 20250810,user_engagement,google,cpc,378.0,0.0,350.0
@@ -488,6 +485,7 @@
 20260712,scroll,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,300.0,0.0,114.0
 20251027,scroll,google,cpc,299.0,0.0,110.0
 20251108,page_view,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,299.0,0.0,295.0
+20260721,scroll,(direct),(none),299.0,0.0,147.0
 20250922,scroll,google,organic,298.0,0.0,62.0
 20251102,scroll,google,cpc,298.0,0.0,101.0
 20251108,session_start,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,298.0,0.0,295.0
@@ -504,6 +502,7 @@
 20260421,session_start,ig,paid,296.0,0.0,292.0
 20260508,scroll,google,organic,296.0,0.0,87.0
 20260516,session_start,fb,paid,296.0,0.0,290.0
+20260721,session_start,(direct),(none),296.0,0.0,289.0
 20251102,user_engagement,google,cpc,295.0,0.0,221.0
 20260411,session_start,ig,paid,295.0,0.0,294.0
 20260617,page_view,google,organic,295.0,0.0,148.0
@@ -599,6 +598,7 @@
 20260404,session_start,ig,paid,274.0,0.0,274.0
 20260424,scroll,google,organic,274.0,0.0,69.0
 20260504,scroll,google,organic,274.0,0.0,79.0
+20260721,first_visit,(direct),(none),274.0,0.0,273.0
 20250903,session_start,(direct),(none),273.0,0.0,259.0
 20251130,page_view,(direct),(none),273.0,0.0,174.0
 20260203,scroll,google,organic,273.0,0.0,74.0
@@ -629,7 +629,6 @@
 20251118,scroll,google,organic,267.0,0.0,62.0
 20260402,first_visit,ig,paid,267.0,0.0,266.0
 20260627,page_view,(direct),(none),267.0,0.0,203.0
-20250721,scroll,google,organic,266.0,0.0,66.0
 20250809,page_view,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,266.0,0.0,261.0
 20250912,page_view,(direct),(none),266.0,0.0,179.0
 20251023,user_engagement,google,cpc,266.0,0.0,218.0
@@ -734,7 +733,6 @@
 20260421,scroll,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,247.0,0.0,91.0
 20260524,session_start,fb,paid,247.0,0.0,240.0
 20260713,scroll,google,organic,247.0,0.0,52.0
-20250721,scroll,google,cpc,246.0,0.0,101.0
 20250831,first_visit,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,246.0,0.0,246.0
 20251128,page_view,(direct),(none),246.0,0.0,158.0
 20260212,scroll,google,organic,246.0,0.0,57.0
@@ -748,6 +746,7 @@
 20260421,page_view,(direct),(none),245.0,0.0,184.0
 20260526,page_view,ig,paid,245.0,0.0,209.0
 20260711,scroll,(direct),(none),245.0,0.0,134.0
+20260721,scroll,google,organic,245.0,0.0,61.0
 20250727,RD Popup e WhatsApp,google,cpc,244.0,0.0,171.0
 20250910,scroll,google,organic,244.0,0.0,61.0
 20251007,first_visit,google,cpc,244.0,0.0,244.0
@@ -1149,6 +1148,7 @@
 20260621,scroll,(direct),(none),200.0,0.0,106.0
 20260627,first_visit,(direct),(none),200.0,0.0,198.0
 20260712,first_visit,(direct),(none),200.0,0.0,199.0
+20260721,user_engagement,(direct),(none),200.0,0.0,163.0
 20250725,page_view,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,199.0,0.0,187.0
 20250816,scroll,google,cpc,199.0,0.0,82.0
 20250817,first_visit,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,199.0,0.0,198.0
@@ -1696,7 +1696,6 @@
 20260403,session_start,fb,paid,160.0,0.0,159.0
 20260513,page_view,(direct),(none),160.0,0.0,122.0
 20260627,first_visit,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,160.0,0.0,160.0
-20250721,page_view,google,organic,159.0,0.0,85.0
 20250725,page_view,(direct),(none),159.0,0.0,99.0
 20250807,scroll,google,cpc,159.0,0.0,53.0
 20250819,scroll,google,cpc,159.0,0.0,66.0
@@ -1940,7 +1939,6 @@
 20260608,page_view,google,organic,148.0,0.0,87.0
 20260610,user_engagement,(direct),(none),148.0,0.0,120.0
 20260620,scroll,google,organic,148.0,0.0,50.0
-20250721,RD Popup e WhatsApp,google,cpc,147.0,0.0,100.0
 20250801,page_view,hs-wif-3l1-02f-46g.wifeed.com.br,referral,147.0,0.0,128.0
 20250802,scroll,google,cpc,147.0,0.0,56.0
 20250803,RD Popup e WhatsApp,google,cpc,147.0,0.0,96.0
@@ -2007,7 +2005,6 @@
 20260627,scroll,(direct),(none),145.0,0.0,70.0
 20260701,page_view,(direct),(none),145.0,0.0,119.0
 20260719,scroll,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,145.0,0.0,54.0
-20250721,page_view,(direct),(none),144.0,0.0,110.0
 20250726,page_view,hs-wif-3l1-02f-46g.wifeed.com.br,referral,144.0,0.0,113.0
 20250727,page_view,(direct),(none),144.0,0.0,114.0
 20250730,page_view,google,organic,144.0,0.0,92.0
@@ -2397,6 +2394,7 @@
 20260707,session_start,(direct),(none),128.0,0.0,123.0
 20260711,page_view,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,128.0,0.0,122.0
 20260715,scroll,(direct),(none),128.0,0.0,65.0
+20260721,page_view,google,organic,128.0,0.0,79.0
 20250731,page_view,hs-wif-uan-8f1-aa8.wifeed.com.br,referral,127.0,0.0,111.0
 20250806,session_start,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,127.0,0.0,114.0
 20250822,page_view,google,organic,127.0,0.0,80.0
@@ -2687,7 +2685,6 @@
 20260713,session_start,(direct),(none),120.0,0.0,116.0
 20260716,page_view,google,organic,120.0,0.0,69.0
 20260716,session_start,(direct),(none),120.0,0.0,112.0
-20250721,session_start,(direct),(none),119.0,0.0,111.0
 20250723,first_visit,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,119.0,0.0,119.0
 20250727,scroll,(direct),(none),119.0,0.0,53.0
 20250731,RD Popup e WhatsApp,google,cpc,119.0,0.0,91.0
@@ -2753,7 +2750,6 @@
 20260626,page_view,google,organic,118.0,0.0,75.0
 20260706,scroll,(direct),(none),118.0,0.0,49.0
 20260712,user_engagement,(direct),(none),118.0,0.0,100.0
-20250721,page_view,(data not available),(data not available),117.0,0.0,77.0
 20250723,first_visit,(direct),(none),117.0,0.0,117.0
 20250725,page_view,hs-wif-3l1-02f-46g.wifeed.com.br,referral,117.0,0.0,103.0
 20250727,session_start,(direct),(none),117.0,0.0,115.0
@@ -2931,8 +2927,6 @@
 20260525,user_engagement,google,organic,113.0,0.0,70.0
 20260627,scroll,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,113.0,0.0,44.0
 20260630,scroll,(direct),(none),113.0,0.0,51.0
-20250721,page_view,(not set),(not set),112.0,0.0,81.0
-20250721,scroll,(direct),(none),112.0,0.0,46.0
 20250722,RD Popup e WhatsApp,google,cpc,112.0,0.0,85.0
 20250722,session_start,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,112.0,0.0,95.0
 20250726,session_start,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,112.0,0.0,102.0
@@ -3170,6 +3164,7 @@
 20260608,scroll,balneariocamboriushopping.com.br,referral,107.0,0.0,20.0
 20260706,scroll,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,107.0,0.0,42.0
 20260718,scroll,google,organic,107.0,0.0,35.0
+20260721,scroll,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,107.0,0.0,40.0
 20250722,user_engagement,google,organic,106.0,0.0,74.0
 20250723,user_engagement,(direct),(none),106.0,0.0,73.0
 20250725,session_start,(direct),(none),106.0,0.0,101.0
@@ -3307,7 +3302,6 @@
 20260715,user_engagement,google,organic,104.0,0.0,42.0
 20260719,page_view,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,104.0,0.0,102.0
 20260719,session_start,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,104.0,0.0,102.0
-20250721,first_visit,(direct),(none),103.0,0.0,103.0
 20250728,first_visit,(direct),(none),103.0,0.0,103.0
 20250729,page_view,hs-wif-uan-8f1-aa8.wifeed.com.br,referral,103.0,0.0,91.0
 20250801,RD Popup e WhatsApp,google,cpc,103.0,0.0,79.0
@@ -3518,7 +3512,6 @@
 20260616,first_visit,(direct),(none),100.0,0.0,100.0
 20260617,scroll,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,100.0,0.0,32.0
 20260717,page_view,google,organic,100.0,0.0,62.0
-20250721,session_start,google,organic,99.0,0.0,88.0
 20250725,session_start,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,99.0,0.0,88.0
 20250727,session_start,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,99.0,0.0,98.0
 20250728,first_visit,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,99.0,0.0,99.0
@@ -3708,7 +3701,6 @@
 20260703,session_start,ndmais.com.br,referral,97.0,0.0,90.0
 20260711,scroll,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,97.0,0.0,38.0
 20260717,user_engagement,(direct),(none),97.0,0.0,77.0
-20250721,user_engagement,google,organic,96.0,0.0,66.0
 20250803,page_view,hs-wif-3l1-02f-46g.wifeed.com.br,referral,96.0,0.0,80.0
 20250805,page_view,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,96.0,0.0,88.0
 20250809,first_visit,(direct),(none),96.0,0.0,96.0
@@ -3895,6 +3887,7 @@
 20260705,scroll,l.instagram.com,referral,94.0,0.0,27.0
 20260711,first_visit,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,94.0,0.0,94.0
 20260720,session_start,google,organic,94.0,0.0,87.0
+20260721,session_start,google,organic,94.0,0.0,81.0
 20250722,page_view,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,93.0,0.0,75.0
 20250725,first_visit,hs-wif-3l1-02f-46g.wifeed.com.br,referral,93.0,0.0,92.0
 20250725,page_view,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,93.0,0.0,88.0
@@ -4225,6 +4218,8 @@
 20260717,page_view,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,89.0,0.0,86.0
 20260717,session_start,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,89.0,0.0,86.0
 20260718,user_engagement,(direct),(none),89.0,0.0,71.0
+20260721,page_view,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,89.0,0.0,87.0
+20260721,session_start,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,89.0,0.0,87.0
 20250726,user_engagement,(direct),(none),88.0,0.0,73.0
 20250804,page_view,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,88.0,0.0,86.0
 20250804,session_start,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,88.0,0.0,86.0
@@ -4374,7 +4369,6 @@
 20260708,page_view,google,organic,87.0,0.0,57.0
 20260715,page_view,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,87.0,0.0,86.0
 20260716,scroll,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,87.0,0.0,33.0
-20250721,session_start,(not set),(not set),86.0,0.0,78.0
 20250728,page_view,hs-wif-uan-8f1-aa8.wifeed.com.br,referral,86.0,0.0,75.0
 20250805,user_engagement,google,organic,86.0,0.0,70.0
 20250806,page_view,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,86.0,0.0,77.0
@@ -4588,6 +4582,7 @@
 20260709,page_view,google,organic,84.0,0.0,52.0
 20260715,first_visit,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,84.0,0.0,84.0
 20260717,first_visit,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,84.0,0.0,84.0
+20260721,first_visit,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,84.0,0.0,84.0
 20250727,page_view,hs-wif-3l1-02f-46g.wifeed.com.br,referral,83.0,0.0,73.0
 20250728,session_start,hs-wif-uan-8f1-aa8.wifeed.com.br,referral,83.0,0.0,75.0
 20250729,first_visit,hs-wif-uan-8f1-aa8.wifeed.com.br,referral,83.0,0.0,83.0
@@ -4757,7 +4752,6 @@
 20260623,user_engagement,(direct),(none),82.0,0.0,63.0
 20260713,scroll,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,82.0,0.0,31.0
 20260713,user_engagement,(direct),(none),82.0,0.0,62.0
-20250721,user_engagement,(direct),(none),81.0,0.0,67.0
 20250723,first_visit,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,81.0,0.0,81.0
 20250724,scroll,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,81.0,0.0,37.0
 20250726,first_visit,(data not available),(data not available),81.0,0.0,81.0
@@ -5030,7 +5024,6 @@
 20260704,scroll,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,78.0,0.0,29.0
 20260714,user_engagement,(direct),(none),78.0,0.0,61.0
 20260720,user_engagement,google,organic,78.0,0.0,49.0
-20250721,session_start,(data not available),(data not available),77.0,0.0,77.0
 20250725,first_visit,(data not available),(data not available),77.0,0.0,77.0
 20250725,session_start,(data not available),(data not available),77.0,0.0,77.0
 20250731,user_engagement,google,organic,77.0,0.0,52.0
@@ -5105,7 +5098,6 @@
 20260713,page_view,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,77.0,0.0,72.0
 20260713,scroll,hs-wif-3l1-02f-46g.wifeed.com.br,referral,77.0,0.0,30.0
 20260716,user_engagement,(direct),(none),77.0,0.0,61.0
-20250721,first_visit,(data not available),(data not available),76.0,0.0,76.0
 20250725,session_start,google,organic,76.0,0.0,63.0
 20250728,first_visit,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,76.0,0.0,76.0
 20250730,first_visit,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,76.0,0.0,76.0
@@ -5181,6 +5173,7 @@
 20260709,session_start,(direct),(none),76.0,0.0,74.0
 20260713,session_start,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,76.0,0.0,71.0
 20260714,user_engagement,google,organic,76.0,0.0,55.0
+20260721,session_start,hs-wif-3l1-02f-46g.wifeed.com.br,referral,76.0,0.0,71.0
 20250723,first_visit,(data not available),(data not available),75.0,0.0,75.0
 20250723,session_start,(data not available),(data not available),75.0,0.0,75.0
 20250726,page_view,google,organic,75.0,0.0,54.0
@@ -5270,6 +5263,8 @@
 20260713,page_view,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,75.0,0.0,70.0
 20260717,page_view,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,75.0,0.0,71.0
 20260717,session_start,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,75.0,0.0,71.0
+20260721,page_view,hs-wif-3l1-02f-46g.wifeed.com.br,referral,75.0,0.0,71.0
+20260721,user_engagement,google,organic,75.0,0.0,50.0
 20250815,first_visit,hs-wif-uan-8f1-aa8.wifeed.com.br,referral,74.0,0.0,74.0
 20250816,RD Popup e WhatsApp,(not set),(not set),74.0,0.0,53.0
 20250823,first_visit,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,74.0,0.0,74.0
@@ -5356,7 +5351,6 @@
 20260705,scroll,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,74.0,0.0,26.0
 20260705,session_start,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,74.0,0.0,74.0
 20260710,session_start,google,organic,74.0,0.0,65.0
-20250721,first_visit,google,organic,73.0,0.0,72.0
 20250728,first_visit,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,73.0,0.0,73.0
 20250731,first_visit,google,organic,73.0,0.0,73.0
 20250802,session_start,google,organic,73.0,0.0,66.0
@@ -5607,6 +5601,7 @@
 20260626,user_engagement,google,organic,71.0,0.0,46.0
 20260629,session_start,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,71.0,0.0,68.0
 20260708,session_start,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,71.0,0.0,71.0
+20260721,scroll,bing,organic,71.0,0.0,4.0
 20250729,first_visit,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,70.0,0.0,70.0
 20250803,scroll,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,70.0,0.0,34.0
 20250804,first_visit,ig,paid,70.0,0.0,70.0
@@ -5694,6 +5689,7 @@
 20260707,session_start,google,organic,70.0,0.0,60.0
 20260707,user_engagement,(direct),(none),70.0,0.0,58.0
 20260709,first_visit,(direct),(none),70.0,0.0,70.0
+20260721,scroll,hs-wif-3l1-02f-46g.wifeed.com.br,referral,70.0,0.0,28.0
 20250811,page_view,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,69.0,0.0,56.0
 20250813,session_start,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,69.0,0.0,63.0
 20250828,session_start,hs-wif-uan-8f1-aa8.wifeed.com.br,referral,69.0,0.0,56.0
@@ -5769,7 +5765,7 @@
 20260710,user_engagement,google,organic,69.0,0.0,47.0
 20260716,page_view,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,69.0,0.0,66.0
 20260720,session_start,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,69.0,0.0,63.0
-20250721,first_visit,(not set),(not set),68.0,0.0,68.0
+20260721,first_visit,hs-wif-3l1-02f-46g.wifeed.com.br,referral,69.0,0.0,69.0
 20250722,first_visit,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,68.0,0.0,68.0
 20250724,page_view,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,68.0,0.0,59.0
 20250724,session_start,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,68.0,0.0,59.0
@@ -5886,7 +5882,6 @@
 20260717,first_visit,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,68.0,0.0,68.0
 20260717,session_start,google,organic,68.0,0.0,62.0
 20260717,user_engagement,google,organic,68.0,0.0,46.0
-20250721,page_view,hs-wif-3l1-02f-46g.wifeed.com.br,referral,67.0,0.0,57.0
 20250724,first_visit,(data not available),(data not available),67.0,0.0,67.0
 20250726,user_engagement,(data not available),(data not available),67.0,0.0,58.0
 20250727,first_visit,hs-wif-3l1-02f-46g.wifeed.com.br,referral,67.0,0.0,67.0
@@ -5994,9 +5989,6 @@
 20260715,scroll,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,67.0,0.0,25.0
 20260716,session_start,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,67.0,0.0,66.0
 20260720,page_view,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,67.0,0.0,61.0
-20250721,page_view,hs-wif-uan-8f1-aa8.wifeed.com.br,referral,66.0,0.0,46.0
-20250721,session_start,hs-wif-3l1-02f-46g.wifeed.com.br,referral,66.0,0.0,57.0
-20250721,user_engagement,(data not available),(data not available),66.0,0.0,49.0
 20250727,first_visit,(data not available),(data not available),66.0,0.0,66.0
 20250728,first_visit,hs-wif-uan-8f1-aa8.wifeed.com.br,referral,66.0,0.0,66.0
 20250729,page_view,(data not available),(data not available),66.0,0.0,50.0
@@ -6098,10 +6090,7 @@
 20260624,user_engagement,google,organic,66.0,0.0,45.0
 20260706,user_engagement,google,organic,66.0,0.0,44.0
 20260717,scroll,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,66.0,0.0,28.0
-20250721,page_view,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,65.0,0.0,58.0
-20250721,page_view,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,65.0,0.0,63.0
-20250721,session_start,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,65.0,0.0,58.0
-20250721,session_start,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,65.0,0.0,63.0
+20260721,first_visit,google,organic,66.0,0.0,66.0
 20250722,first_visit,hs-wif-3l1-02f-46g.wifeed.com.br,referral,65.0,0.0,65.0
 20250803,first_visit,(direct),(none),65.0,0.0,65.0
 20250806,session_start,(direct),(none),65.0,0.0,60.0
@@ -6304,7 +6293,6 @@
 20260708,session_start,google,organic,64.0,0.0,57.0
 20260714,first_visit,google,organic,64.0,0.0,64.0
 20260714,first_visit,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,64.0,0.0,64.0
-20250721,session_start,hs-wif-uan-8f1-aa8.wifeed.com.br,referral,63.0,0.0,46.0
 20250726,scroll,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,63.0,0.0,28.0
 20250730,first_visit,hs-wif-uan-8f1-aa8.wifeed.com.br,referral,63.0,0.0,63.0
 20250801,first_visit,google,organic,63.0,0.0,63.0
@@ -6521,7 +6509,6 @@
 20260711,page_view,google,organic,62.0,0.0,48.0
 20260711,scroll,hs-wif-3l1-02f-46g.wifeed.com.br,referral,62.0,0.0,25.0
 20260713,session_start,hs-wif-3l1-02f-46g.wifeed.com.br,referral,62.0,0.0,58.0
-20250721,first_visit,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,61.0,0.0,61.0
 20250724,user_engagement,google,organic,61.0,0.0,50.0
 20250729,scroll,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,61.0,0.0,30.0
 20250809,page_view,ig,paid,61.0,0.0,58.0
@@ -7145,6 +7132,7 @@
 20260710,session_start,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,56.0,0.0,53.0
 20260712,generate_lead,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,56.0,0.0,51.0
 20260720,first_visit,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,56.0,0.0,56.0
+20260721,page_view,bing,organic,56.0,0.0,5.0
 20250725,scroll,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,55.0,0.0,25.0
 20250728,session_start,(data not available),(data not available),55.0,0.0,55.0
 20250807,first_visit,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,55.0,0.0,55.0
@@ -7347,8 +7335,6 @@
 20260709,user_engagement,google,organic,54.0,0.0,36.0
 20260713,first_visit,hs-wif-3l1-02f-46g.wifeed.com.br,referral,54.0,0.0,54.0
 20260718,scroll,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,54.0,0.0,21.0
-20250721,first_visit,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,53.0,0.0,53.0
-20250721,session_start,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,53.0,0.0,40.0
 20250724,first_visit,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,53.0,0.0,53.0
 20250729,page_view,continenteshopping.com.br,referral,53.0,0.0,25.0
 20250804,user_engagement,(direct),(none),53.0,0.0,40.0
@@ -7470,7 +7456,6 @@
 20260716,scroll,balneariocamboriushopping.com.br,referral,53.0,0.0,13.0
 20260717,first_visit,hs-wif-3l1-02f-46g.wifeed.com.br,referral,53.0,0.0,53.0
 20260718,scroll,hs-wif-3l1-02f-46g.wifeed.com.br,referral,53.0,0.0,21.0
-20250721,page_view,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,52.0,0.0,40.0
 20250807,page_view,continenteshopping.com.br,referral,52.0,0.0,23.0
 20250822,first_visit,(data not available),(data not available),52.0,0.0,52.0
 20250822,session_start,(data not available),(data not available),52.0,0.0,52.0
@@ -7689,7 +7674,6 @@
 20260715,scroll,hs-wif-3l1-02f-46g.wifeed.com.br,referral,51.0,0.0,22.0
 20260719,session_start,google,organic,51.0,0.0,51.0
 20260720,session_start,hs-wif-3l1-02f-46g.wifeed.com.br,referral,51.0,0.0,47.0
-20250721,first_visit,hs-wif-3l1-02f-46g.wifeed.com.br,referral,50.0,0.0,50.0
 20250726,scroll,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,50.0,0.0,25.0
 20250729,first_visit,(data not available),(data not available),50.0,0.0,50.0
 20250729,session_start,(data not available),(data not available),50.0,0.0,50.0
@@ -8028,7 +8012,6 @@
 20260706,session_start,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,48.0,0.0,47.0
 20260716,session_start,hs-wif-3l1-02f-46g.wifeed.com.br,referral,48.0,0.0,42.0
 20260719,first_visit,google,organic,48.0,0.0,48.0
-20250721,page_view,ig,paid,47.0,0.0,45.0
 20250725,first_visit,google,organic,47.0,0.0,47.0
 20250725,scroll,hs-wif-3l1-02f-46g.wifeed.com.br,referral,47.0,0.0,22.0
 20250726,first_visit,google,organic,47.0,0.0,47.0
@@ -8148,7 +8131,6 @@
 20260710,first_visit,hs-wif-3l1-02f-46g.wifeed.com.br,referral,47.0,0.0,47.0
 20260711,first_visit,google,organic,47.0,0.0,47.0
 20260718,session_start,google,organic,47.0,0.0,45.0
-20250721,session_start,ig,paid,46.0,0.0,45.0
 20250722,user_engagement,(data not available),(data not available),46.0,0.0,43.0
 20250723,page_view,balneariocamboriushopping.com.br,referral,46.0,0.0,15.0
 20250727,user_engagement,continenteshopping.com.br,referral,46.0,0.0,12.0
@@ -8404,8 +8386,6 @@
 20260714,session_start,hs-wif-3l1-02f-46g.wifeed.com.br,referral,45.0,0.0,42.0
 20260718,session_start,hs-wif-3l1-02f-46g.wifeed.com.br,referral,45.0,0.0,40.0
 20260718,session_start,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,45.0,0.0,42.0
-20250721,first_visit,ig,paid,44.0,0.0,44.0
-20250721,page_view,balneariocamboriushopping.com.br,referral,44.0,0.0,18.0
 20250725,scroll,l.instagram.com,referral,44.0,0.0,17.0
 20250728,user_engagement,(data not available),(data not available),44.0,0.0,38.0
 20250730,first_visit,ig,paid,44.0,0.0,44.0
@@ -8541,7 +8521,6 @@
 20260718,page_view,hs-wif-3l1-02f-46g.wifeed.com.br,referral,44.0,0.0,40.0
 20260719,page_view,hs-wif-3l1-02f-46g.wifeed.com.br,referral,44.0,0.0,43.0
 20260719,session_start,hs-wif-3l1-02f-46g.wifeed.com.br,referral,44.0,0.0,43.0
-20250721,user_engagement,(not set),(not set),43.0,0.0,33.0
 20250729,page_view,balneariocamboriushopping.com.br,referral,43.0,0.0,16.0
 20250802,user_engagement,(direct),(none),43.0,0.0,38.0
 20250804,page_view,continenteshopping.com.br,referral,43.0,0.0,21.0
@@ -8682,7 +8661,7 @@
 20260716,session_start,balneariocamboriushopping.com.br,referral,43.0,0.0,42.0
 20260720,page_view,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,43.0,0.0,40.0
 20260720,session_start,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,43.0,0.0,40.0
-20250721,page_view,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,42.0,0.0,30.0
+20260721,page_view,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,43.0,0.0,38.0
 20250722,page_view,l.instagram.com,referral,42.0,0.0,30.0
 20250726,page_view,blumenaunorteshopping.com.br,referral,42.0,0.0,26.0
 20250810,scroll,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,42.0,0.0,16.0
@@ -8832,6 +8811,7 @@
 20260707,first_visit,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,42.0,0.0,42.0
 20260713,session_start,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,42.0,0.0,36.0
 20260719,user_engagement,google,organic,42.0,0.0,26.0
+20260721,session_start,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,42.0,0.0,38.0
 20250731,scroll,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,41.0,0.0,18.0
 20250806,session_start,ig,paid,41.0,0.0,41.0
 20250807,scroll,continenteshopping.com.br,referral,41.0,0.0,11.0
@@ -9107,8 +9087,6 @@
 20260713,page_view,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,40.0,0.0,35.0
 20260714,first_visit,hs-wif-3l1-02f-46g.wifeed.com.br,referral,40.0,0.0,40.0
 20260719,generate_lead,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,40.0,0.0,36.0
-20250721,scroll,(not set),(not set),39.0,0.0,12.0
-20250721,session_start,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,39.0,0.0,30.0
 20250722,scroll,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,39.0,0.0,12.0
 20250728,scroll,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,39.0,0.0,18.0
 20250730,scroll,hs-wif-uan-8f1-aa8.wifeed.com.br,referral,39.0,0.0,15.0
@@ -9250,7 +9228,6 @@
 20260717,page_view,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,39.0,0.0,37.0
 20260717,session_start,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,39.0,0.0,37.0
 20260718,first_visit,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,39.0,0.0,39.0
-20250721,first_visit,hs-wif-uan-8f1-aa8.wifeed.com.br,referral,38.0,0.0,38.0
 20250723,scroll,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,38.0,0.0,20.0
 20250724,scroll,hs-wif-3l1-02f-46g.wifeed.com.br,referral,38.0,0.0,16.0
 20250725,scroll,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,38.0,0.0,16.0
@@ -9398,6 +9375,7 @@
 20260711,generate_lead,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,38.0,0.0,34.0
 20260715,session_start,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,38.0,0.0,34.0
 20260718,first_visit,google,organic,38.0,0.0,38.0
+20260721,scroll,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,38.0,0.0,17.0
 20250722,scroll,gartenshopping.com.br,referral,37.0,0.0,9.0
 20250724,scroll,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,37.0,0.0,14.0
 20250804,page_view,nacoesshopping.com.br,referral,37.0,0.0,15.0
@@ -9543,7 +9521,6 @@
 20260712,session_start,hs-wif-3l1-02f-46g.wifeed.com.br,referral,37.0,0.0,34.0
 20260715,page_view,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,37.0,0.0,34.0
 20260720,first_visit,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,37.0,0.0,37.0
-20250721,page_view,continenteshopping.com.br,referral,36.0,0.0,19.0
 20250724,page_view,balneariocamboriushopping.com.br,referral,36.0,0.0,13.0
 20250727,page_view,ig,paid,36.0,0.0,34.0
 20250731,page_view,continenteshopping.com.br,referral,36.0,0.0,19.0
@@ -9843,8 +9820,7 @@
 20260718,first_visit,hs-wif-3l1-02f-46g.wifeed.com.br,referral,35.0,0.0,35.0
 20260718,first_visit,l.instagram.com,referral,35.0,0.0,34.0
 20260720,scroll,sfmc,email,35.0,0.0,17.0
-20250721,first_visit,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,34.0,0.0,34.0
-20250721,scroll,balneariocamboriushopping.com.br,referral,34.0,0.0,6.0
+20260721,scroll,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,35.0,0.0,12.0
 20250722,page_view,ig,paid,34.0,0.0,33.0
 20250723,scroll,hs-wif-3l1-02f-46g.wifeed.com.br,referral,34.0,0.0,18.0
 20250727,scroll,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,34.0,0.0,16.0
@@ -10202,6 +10178,7 @@
 20260713,first_visit,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,33.0,0.0,33.0
 20260715,page_view,balneariocamboriushopping.com.br,referral,33.0,0.0,22.0
 20260718,generate_lead,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,33.0,0.0,28.0
+20260721,first_visit,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,33.0,0.0,33.0
 20250722,page_view,balneariocamboriushopping.com.br,referral,32.0,0.0,15.0
 20250724,scroll,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,32.0,0.0,18.0
 20250725,page_view,continenteshopping.com.br,referral,32.0,0.0,16.0
@@ -10383,6 +10360,8 @@
 20260715,scroll,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,32.0,0.0,12.0
 20260717,first_visit,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,32.0,0.0,32.0
 20260719,scroll,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,32.0,0.0,13.0
+20260721,page_view,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,32.0,0.0,27.0
+20260721,session_start,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,32.0,0.0,27.0
 20250729,scroll,l.instagram.com,referral,31.0,0.0,12.0
 20250731,scroll,l.instagram.com,referral,31.0,0.0,12.0
 20250801,page_view,nacoesshopping.com.br,referral,31.0,0.0,16.0
@@ -10611,7 +10590,6 @@
 20260711,user_engagement,google,organic,31.0,0.0,21.0
 20260712,user_engagement,google,organic,31.0,0.0,24.0
 20260713,session_start,balneariocamboriushopping.com.br,referral,31.0,0.0,29.0
-20250721,scroll,hs-wif-uan-8f1-aa8.wifeed.com.br,referral,30.0,0.0,9.0
 20250722,session_start,l.instagram.com,referral,30.0,0.0,30.0
 20250723,scroll,l.instagram.com,referral,30.0,0.0,13.0
 20250724,page_view,continenteshopping.com.br,referral,30.0,0.0,13.0
@@ -11337,6 +11315,7 @@
 20260716,page_view,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,28.0,0.0,27.0
 20260716,session_start,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,28.0,0.0,27.0
 20260718,user_engagement,google,organic,28.0,0.0,22.0
+20260721,scroll,sfmc,email,28.0,0.0,14.0
 20250723,scroll,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,27.0,0.0,16.0
 20250725,user_engagement,balneariocamboriushopping.com.br,referral,27.0,0.0,14.0
 20250726,page_view,l.instagram.com,referral,27.0,0.0,23.0
@@ -11599,8 +11578,6 @@
 20260712,first_visit,balneariocamboriushopping.com.br,referral,27.0,0.0,27.0
 20260716,session_start,sfmc,email,27.0,0.0,27.0
 20260717,page_view,continenteshopping.com.br,referral,27.0,0.0,23.0
-20250721,first_visit,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,26.0,0.0,26.0
-20250721,page_view,nacoesshopping.com.br,referral,26.0,0.0,14.0
 20250722,first_visit,l.instagram.com,referral,26.0,0.0,26.0
 20250722,session_start,continenteshopping.com.br,referral,26.0,0.0,25.0
 20250723,page_view,ig,paid,26.0,0.0,25.0
@@ -11903,6 +11880,8 @@
 20260719,session_start,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,26.0,0.0,26.0
 20260720,generate_lead,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,26.0,0.0,16.0
 20260720,session_start,sfmc,email,26.0,0.0,22.0
+20260721,generate_lead,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,26.0,0.0,23.0
+20260721,page_view,balneariocamboriushopping.com.br,referral,26.0,0.0,22.0
 20250722,first_visit,continenteshopping.com.br,referral,25.0,0.0,25.0
 20250723,first_visit,ig,paid,25.0,0.0,25.0
 20250723,form_franquia,google,cpc,25.0,0.0,21.0
@@ -12166,7 +12145,7 @@
 20260718,page_view,balneariocamboriushopping.com.br,referral,25.0,0.0,16.0
 20260719,first_visit,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,25.0,0.0,25.0
 20260720,generate_lead,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,25.0,0.0,22.0
-20250721,page_view,gartenshopping.com.br,referral,24.0,0.0,13.0
+20260721,first_visit,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,25.0,0.0,24.0
 20250722,click,google,organic,24.0,0.0,20.0
 20250722,scroll,hs-wif-3l1-02f-46g.wifeed.com.br,referral,24.0,0.0,11.0
 20250722,user_engagement,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,24.0,0.0,14.0
@@ -12476,6 +12455,7 @@
 20260719,session_start,continenteshopping.com.br,referral,24.0,0.0,24.0
 20260720,page_view,continenteshopping.com.br,referral,24.0,0.0,17.0
 20260720,scroll,bing,organic,24.0,0.0,4.0
+20260721,user_engagement,bing,organic,24.0,0.0,3.0
 20250723,page_view,blumenaunorteshopping.com.br,referral,23.0,0.0,13.0
 20250723,scroll,neumarktshopping.com.br,referral,23.0,0.0,3.0
 20250723,user_engagement,continenteshopping.com.br,referral,23.0,0.0,17.0
@@ -12794,7 +12774,8 @@
 20260716,first_visit,sfmc,email,23.0,0.0,23.0
 20260720,scroll,balneariocamboriushopping.com.br,referral,23.0,0.0,8.0
 20260720,session_start,balneariocamboriushopping.com.br,referral,23.0,0.0,21.0
-20250721,scroll,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,22.0,0.0,7.0
+20260721,click,(direct),(none),23.0,0.0,15.0
+20260721,session_start,balneariocamboriushopping.com.br,referral,23.0,0.0,22.0
 20250722,form_franquia,google,cpc,22.0,0.0,21.0
 20250722,scroll,balneariocamboriushopping.com.br,referral,22.0,0.0,6.0
 20250723,first_visit,continenteshopping.com.br,referral,22.0,0.0,22.0
@@ -13146,9 +13127,7 @@
 20260718,user_engagement,l.instagram.com,referral,22.0,0.0,14.0
 20260719,scroll,balneariocamboriushopping.com.br,referral,22.0,0.0,5.0
 20260720,page_view,nacoesshopping.com.br,referral,22.0,0.0,19.0
-20250721,page_view,neumarktshopping.com.br,referral,21.0,0.0,12.0
-20250721,scroll,bing,organic,21.0,0.0,2.0
-20250721,session_start,continenteshopping.com.br,referral,21.0,0.0,19.0
+20260721,first_visit,balneariocamboriushopping.com.br,referral,22.0,0.0,22.0
 20250722,RD Popup e WhatsApp,continenteshopping.com.br,referral,21.0,0.0,18.0
 20250722,page_view,nacoesshopping.com.br,referral,21.0,0.0,12.0
 20250722,scroll,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,21.0,0.0,13.0
@@ -13554,6 +13533,7 @@
 20260718,page_view,sfmc,email,21.0,0.0,20.0
 20260718,session_start,continenteshopping.com.br,referral,21.0,0.0,18.0
 20260720,first_visit,sfmc,email,21.0,0.0,20.0
+20260721,click,google,organic,21.0,0.0,13.0
 20250722,RD Popup e WhatsApp,google,organic,20.0,0.0,12.0
 20250722,first_visit,blumenaunorteshopping.com.br,referral,20.0,0.0,20.0
 20250722,page_view,gartenshopping.com.br,referral,20.0,0.0,12.0
@@ -13975,7 +13955,7 @@
 20260719,page_view,balneariocamboriushopping.com.br,referral,20.0,0.0,17.0
 20260720,scroll,blumenaunorteshopping.com.br,referral,20.0,0.0,5.0
 20260720,session_start,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,20.0,0.0,14.0
-20250721,session_start,balneariocamboriushopping.com.br,referral,19.0,0.0,18.0
+20260721,session_start,sfmc,email,20.0,0.0,17.0
 20250722,user_engagement,blumenaunorteshopping.com.br,referral,19.0,0.0,17.0
 20250723,user_engagement,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,19.0,0.0,11.0
 20250725,first_visit,ig,paid,19.0,0.0,19.0
@@ -14373,8 +14353,8 @@
 20260720,first_visit,balneariocamboriushopping.com.br,referral,19.0,0.0,19.0
 20260720,page_view,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,19.0,0.0,14.0
 20260720,session_start,nacoesshopping.com.br,referral,19.0,0.0,19.0
-20250721,first_visit,balneariocamboriushopping.com.br,referral,18.0,0.0,18.0
-20250721,scroll,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,18.0,0.0,11.0
+20260721,page_view,sfmc,email,19.0,0.0,17.0
+20260721,scroll,balneariocamboriushopping.com.br,referral,19.0,0.0,5.0
 20250724,scroll,gartenshopping.com.br,referral,18.0,0.0,3.0
 20250726,session_start,continenteshopping.com.br,referral,18.0,0.0,18.0
 20250728,RD Popup e WhatsApp,google,organic,18.0,0.0,11.0
@@ -14833,10 +14813,6 @@
 20260716,page_view,continenteshopping.com.br,referral,18.0,0.0,14.0
 20260719,session_start,balneariocamboriushopping.com.br,referral,18.0,0.0,17.0
 20260720,first_visit,nacoesshopping.com.br,referral,18.0,0.0,18.0
-20250721,first_visit,continenteshopping.com.br,referral,17.0,0.0,17.0
-20250721,page_view,blumenaunorteshopping.com.br,referral,17.0,0.0,8.0
-20250721,scroll,(data not available),(data not available),17.0,0.0,5.0
-20250721,user_engagement,balneariocamboriushopping.com.br,referral,17.0,0.0,8.0
 20250722,user_engagement,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,17.0,0.0,13.0
 20250723,session_start,balneariocamboriushopping.com.br,referral,17.0,0.0,15.0
 20250724,user_engagement,hs-wif-3l1-02f-46g.wifeed.com.br,referral,17.0,0.0,13.0
@@ -15332,10 +15308,8 @@
 20260720,scroll,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,17.0,0.0,7.0
 20260720,session_start,continenteshopping.com.br,referral,17.0,0.0,17.0
 20260720,user_engagement,balneariocamboriushopping.com.br,referral,17.0,0.0,13.0
-20250721,click,google,organic,16.0,0.0,12.0
-20250721,form_franquia,google,cpc,16.0,0.0,14.0
-20250721,scroll,blumenaunorteshopping.com.br,referral,16.0,0.0,5.0
-20250721,user_engagement,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,16.0,0.0,9.0
+20260721,page_view,continenteshopping.com.br,referral,17.0,0.0,16.0
+20260721,session_start,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,17.0,0.0,14.0
 20250722,scroll,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,16.0,0.0,11.0
 20250722,user_engagement,(not set),(not set),16.0,0.0,10.0
 20250723,session_start,nacoesshopping.com.br,referral,16.0,0.0,15.0
@@ -15842,8 +15816,11 @@
 20260720,click,google,organic,16.0,0.0,14.0
 20260720,first_visit,continenteshopping.com.br,referral,16.0,0.0,16.0
 20260720,user_engagement,continenteshopping.com.br,referral,16.0,0.0,12.0
-20250721,scroll,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,15.0,0.0,7.0
-20250721,scroll,ig,paid,15.0,0.0,5.0
+20260721,first_visit,continenteshopping.com.br,referral,16.0,0.0,16.0
+20260721,page_view,nacoesshopping.com.br,referral,16.0,0.0,15.0
+20260721,page_view,neumarktshopping.com.br,referral,16.0,0.0,11.0
+20260721,session_start,continenteshopping.com.br,referral,16.0,0.0,16.0
+20260721,session_start,nacoesshopping.com.br,referral,16.0,0.0,15.0
 20250722,first_visit,balneariocamboriushopping.com.br,referral,15.0,0.0,15.0
 20250722,scroll,blumenaunorteshopping.com.br,referral,15.0,0.0,6.0
 20250722,session_start,balneariocamboriushopping.com.br,referral,15.0,0.0,15.0
@@ -16474,14 +16451,10 @@
 20260718,user_engagement,balneariocamboriushopping.com.br,referral,15.0,0.0,12.0
 20260720,page_view,blumenaunorteshopping.com.br,referral,15.0,0.0,11.0
 20260720,scroll,continenteshopping.com.br,referral,15.0,0.0,5.0
-20250721,RD Popup e WhatsApp,google,organic,14.0,0.0,10.0
-20250721,first_visit,facebook.com,referral,14.0,0.0,14.0
-20250721,first_visit,nacoesshopping.com.br,referral,14.0,0.0,14.0
-20250721,page_view,facebook.com,referral,14.0,0.0,14.0
-20250721,scroll,continenteshopping.com.br,referral,14.0,0.0,4.0
-20250721,session_start,facebook.com,referral,14.0,0.0,14.0
-20250721,session_start,gartenshopping.com.br,referral,14.0,0.0,14.0
-20250721,session_start,nacoesshopping.com.br,referral,14.0,0.0,14.0
+20260721,first_visit,nacoesshopping.com.br,referral,15.0,0.0,14.0
+20260721,first_visit,sfmc,email,15.0,0.0,15.0
+20260721,generate_lead,hs-wif-3l1-02f-46g.wifeed.com.br,referral,15.0,0.0,14.0
+20260721,page_view,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,15.0,0.0,14.0
 20250722,page_view,neumarktshopping.com.br,referral,14.0,0.0,9.0
 20250722,scroll,(data not available),(data not available),14.0,0.0,8.0
 20250723,first_visit,tiktok,paid,14.0,0.0,14.0
@@ -17152,8 +17125,7 @@
 20260718,page_view,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,14.0,0.0,10.0
 20260719,click,google,organic,14.0,0.0,12.0
 20260719,user_engagement,continenteshopping.com.br,referral,14.0,0.0,10.0
-20250721,scroll,gartenshopping.com.br,referral,13.0,0.0,4.0
-20250721,scroll,l.instagram.com,referral,13.0,0.0,5.0
+20260721,scroll,br.search.yahoo.com,referral,14.0,0.0,1.0
 20250722,session_start,gartenshopping.com.br,referral,13.0,0.0,12.0
 20250722,user_engagement,balneariocamboriushopping.com.br,referral,13.0,0.0,8.0
 20250722,user_engagement,continenteshopping.com.br,referral,13.0,0.0,11.0
@@ -17918,10 +17890,6 @@
 20260720,click,(direct),(none),13.0,0.0,11.0
 20260720,generate_lead,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,13.0,0.0,8.0
 20260720,user_engagement,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,13.0,0.0,9.0
-20250721,first_visit,gartenshopping.com.br,referral,12.0,0.0,12.0
-20250721,session_start,neumarktshopping.com.br,referral,12.0,0.0,12.0
-20250721,user_engagement,continenteshopping.com.br,referral,12.0,0.0,9.0
-20250721,user_engagement,hs-wif-uan-8f1-aa8.wifeed.com.br,referral,12.0,0.0,5.0
 20250722,RD Popup e WhatsApp,balneariocamboriushopping.com.br,referral,12.0,0.0,9.0
 20250722,click,(direct),(none),12.0,0.0,12.0
 20250722,first_visit,nacoesshopping.com.br,referral,12.0,0.0,12.0
@@ -18764,7 +18732,10 @@
 20260719,session_start,sfmc,email,12.0,0.0,9.0
 20260720,page_view,bing,organic,12.0,0.0,4.0
 20260720,user_engagement,bing,organic,12.0,0.0,4.0
-20250721,user_engagement,nacoesshopping.com.br,referral,11.0,0.0,8.0
+20260721,scroll,blumenaunorteshopping.com.br,referral,12.0,0.0,4.0
+20260721,scroll,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,12.0,0.0,5.0
+20260721,session_start,neumarktshopping.com.br,referral,12.0,0.0,11.0
+20260721,user_engagement,balneariocamboriushopping.com.br,referral,12.0,0.0,9.0
 20250723,first_visit,neumarktshopping.com.br,referral,11.0,0.0,11.0
 20250723,session_start,gartenshopping.com.br,referral,11.0,0.0,11.0
 20250723,session_start,neumarktshopping.com.br,referral,11.0,0.0,11.0
@@ -19695,11 +19666,10 @@
 20260719,scroll,continenteshopping.com.br,referral,11.0,0.0,5.0
 20260720,first_visit,blumenaunorteshopping.com.br,referral,11.0,0.0,11.0
 20260720,session_start,blumenaunorteshopping.com.br,referral,11.0,0.0,11.0
-20250721,page_view,Google,cpc,10.0,0.0,5.0
-20250721,page_view,bing,organic,10.0,0.0,2.0
-20250721,page_view,l.instagram.com,referral,10.0,0.0,8.0
-20250721,scroll,sfmc,email,10.0,0.0,3.0
-20250721,user_engagement,gartenshopping.com.br,referral,10.0,0.0,8.0
+20260721,first_visit,gartenshopping.com.br,referral,11.0,0.0,11.0
+20260721,first_visit,neumarktshopping.com.br,referral,11.0,0.0,11.0
+20260721,page_view,gartenshopping.com.br,referral,11.0,0.0,11.0
+20260721,session_start,gartenshopping.com.br,referral,11.0,0.0,11.0
 20250722,user_engagement,hs-wif-3l1-02f-46g.wifeed.com.br,referral,10.0,0.0,4.0
 20250723,click,(direct),(none),10.0,0.0,5.0
 20250723,scroll,instagram.com,referral,10.0,0.0,4.0
@@ -20804,12 +20774,8 @@
 20260720,first_visit,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,10.0,0.0,10.0
 20260720,page_view,gartenshopping.com.br,referral,10.0,0.0,8.0
 20260720,user_engagement,nacoesshopping.com.br,referral,10.0,0.0,9.0
-20250721,RD Popup e WhatsApp,(not set),(not set),9.0,0.0,6.0
-20250721,RD Popup e WhatsApp,balneariocamboriushopping.com.br,referral,9.0,0.0,7.0
-20250721,RD Popup e WhatsApp,continenteshopping.com.br,referral,9.0,0.0,8.0
-20250721,first_visit,neumarktshopping.com.br,referral,9.0,0.0,9.0
-20250721,page_view,sfmc,email,9.0,0.0,8.0
-20250721,session_start,sfmc,email,9.0,0.0,8.0
+20260721,page_view,blumenaunorteshopping.com.br,referral,10.0,0.0,5.0
+20260721,user_engagement,continenteshopping.com.br,referral,10.0,0.0,8.0
 20250722,click,google,cpc,9.0,0.0,5.0
 20250722,first_visit,neumarktshopping.com.br,referral,9.0,0.0,9.0
 20250722,page_view,bing,organic,9.0,0.0,4.0
@@ -21929,14 +21895,8 @@
 20260719,session_start,nacoesshopping.com.br,referral,9.0,0.0,8.0
 20260720,page_view,neumarktshopping.com.br,referral,9.0,0.0,6.0
 20260720,scroll,neumarktshopping.com.br,referral,9.0,0.0,4.0
-20250721,RD Popup e WhatsApp,nacoesshopping.com.br,referral,8.0,0.0,7.0
-20250721,scroll,hs-wif-3l1-02f-46g.wifeed.com.br,referral,8.0,0.0,4.0
-20250721,session_start,blumenaunorteshopping.com.br,referral,8.0,0.0,8.0
-20250721,session_start,l.instagram.com,referral,8.0,0.0,8.0
-20250721,user_engagement,bing,organic,8.0,0.0,2.0
-20250721,user_engagement,blumenaunorteshopping.com.br,referral,8.0,0.0,6.0
-20250721,user_engagement,hs-wif-3l1-02f-46g.wifeed.com.br,referral,8.0,0.0,4.0
-20250721,user_engagement,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,8.0,0.0,6.0
+20260721,first_visit,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,9.0,0.0,9.0
+20260721,user_engagement,nacoesshopping.com.br,referral,9.0,0.0,9.0
 20250722,first_visit,tiktok,paid,8.0,0.0,8.0
 20250722,page_view,(not set),(not set),8.0,0.0,7.0
 20250722,page_view,Google,cpc,8.0,0.0,4.0
@@ -23289,11 +23249,10 @@
 20260720,session_start,gartenshopping.com.br,referral,8.0,0.0,8.0
 20260720,user_engagement,blumenaunorteshopping.com.br,referral,8.0,0.0,5.0
 20260720,user_engagement,sfmc,email,8.0,0.0,7.0
-20250721,click,(direct),(none),7.0,0.0,7.0
-20250721,first_visit,l.instagram.com,referral,7.0,0.0,7.0
-20250721,scroll,nacoesshopping.com.br,referral,7.0,0.0,4.0
-20250721,user_engagement,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,7.0,0.0,5.0
-20250721,user_engagement,neumarktshopping.com.br,referral,7.0,0.0,7.0
+20260721,generate_lead,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,8.0,0.0,7.0
+20260721,page_view,br.search.yahoo.com,referral,8.0,0.0,1.0
+20260721,user_engagement,br.search.yahoo.com,referral,8.0,0.0,1.0
+20260721,user_engagement,gartenshopping.com.br,referral,8.0,0.0,8.0
 20250722,RD Popup e WhatsApp,nacoesshopping.com.br,referral,7.0,0.0,7.0
 20250722,first_visit,gartenshopping.com.br,referral,7.0,0.0,7.0
 20250722,generate_lead,hs-wif-uan-8f1-aa8.wifeed.com.br,referral,7.0,0.0,5.0
@@ -24725,11 +24684,8 @@
 20260720,session_start,neumarktshopping.com.br,referral,7.0,0.0,6.0
 20260720,user_engagement,gartenshopping.com.br,referral,7.0,0.0,6.0
 20260720,user_engagement,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,7.0,0.0,4.0
-20250721,RD Popup e WhatsApp,gartenshopping.com.br,referral,6.0,0.0,4.0
-20250721,RD Popup e WhatsApp,neumarktshopping.com.br,referral,6.0,0.0,6.0
-20250721,first_visit,blumenaunorteshopping.com.br,referral,6.0,0.0,6.0
-20250721,first_visit,sfmc,email,6.0,0.0,6.0
-20250721,scroll,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,6.0,0.0,3.0
+20260721,session_start,blumenaunorteshopping.com.br,referral,7.0,0.0,5.0
+20260721,user_engagement,sfmc,email,7.0,0.0,7.0
 20250722,RD Popup e WhatsApp,blumenaunorteshopping.com.br,referral,6.0,0.0,5.0
 20250722,RD Popup e WhatsApp,neumarktshopping.com.br,referral,6.0,0.0,4.0
 20250722,scroll,nacoesshopping.com.br,referral,6.0,0.0,2.0
@@ -26412,10 +26368,11 @@
 20260720,session_start,bing,organic,6.0,0.0,4.0
 20260720,user_engagement,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,6.0,0.0,4.0
 20260720,user_engagement,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,6.0,0.0,3.0
-20250721,first_visit,Google,cpc,5.0,0.0,5.0
-20250721,scroll,neumarktshopping.com.br,referral,5.0,0.0,1.0
-20250721,session_start,Google,cpc,5.0,0.0,5.0
-20250721,user_engagement,l.instagram.com,referral,5.0,0.0,4.0
+20260721,generate_lead,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,6.0,0.0,6.0
+20260721,scroll,gartenshopping.com.br,referral,6.0,0.0,3.0
+20260721,scroll,neumarktshopping.com.br,referral,6.0,0.0,2.0
+20260721,session_start,bing,organic,6.0,0.0,5.0
+20260721,user_engagement,blumenaunorteshopping.com.br,referral,6.0,0.0,5.0
 20250722,click,l.instagram.com,referral,5.0,0.0,3.0
 20250722,first_visit,facebook.com,referral,5.0,0.0,5.0
 20250722,page_view,facebook.com,referral,5.0,0.0,5.0
@@ -28202,9 +28159,11 @@
 20260719,session_start,neumarktshopping.com.br,referral,5.0,0.0,5.0
 20260719,user_engagement,nacoesshopping.com.br,referral,5.0,0.0,4.0
 20260720,user_engagement,hs-wif-3l1-02f-46g.wifeed.com.br,referral,5.0,0.0,4.0
-20250721,click,google,cpc,4.0,0.0,4.0
-20250721,click,l.instagram.com,referral,4.0,0.0,3.0
-20250721,session_start,bing,organic,4.0,0.0,2.0
+20260721,first_visit,blumenaunorteshopping.com.br,referral,5.0,0.0,5.0
+20260721,user_engagement,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,5.0,0.0,4.0
+20260721,user_engagement,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,5.0,0.0,5.0
+20260721,user_engagement,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,5.0,0.0,3.0
+20260721,user_engagement,neumarktshopping.com.br,referral,5.0,0.0,4.0
 20250722,RD Popup e WhatsApp,(direct),(none),4.0,0.0,3.0
 20250722,first_visit,Google,cpc,4.0,0.0,4.0
 20250722,page_view,linktr.ee,referral,4.0,0.0,2.0
@@ -30418,17 +30377,10 @@
 20260720,scroll,(not set),(not set),4.0,0.0,1.0
 20260720,scroll,br.search.yahoo.com,referral,4.0,0.0,1.0
 20260720,scroll,l.wl.co,referral,4.0,0.0,1.0
-20250721,RD Popup e WhatsApp,blumenaunorteshopping.com.br,referral,3.0,0.0,2.0
-20250721,first_visit,Meta,cpc,3.0,0.0,3.0
-20250721,first_visit,tiktok,paid,3.0,0.0,3.0
-20250721,page_view,Meta,cpc,3.0,0.0,3.0
-20250721,page_view,tiktok,paid,3.0,0.0,3.0
-20250721,scroll,br.search.yahoo.com,referral,3.0,0.0,1.0
-20250721,session_start,Meta,cpc,3.0,0.0,3.0
-20250721,session_start,tiktok,paid,3.0,0.0,3.0
-20250721,user_engagement,facebook.com,referral,3.0,0.0,3.0
-20250721,user_engagement,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,3.0,0.0,2.0
-20250721,user_engagement,sfmc,email,3.0,0.0,3.0
+20260721,click,bing,organic,4.0,0.0,2.0
+20260721,scroll,nacoesshopping.com.br,referral,4.0,0.0,2.0
+20260721,scroll,orulo.com.br,referral,4.0,0.0,1.0
+20260721,user_engagement,hs-wif-3l1-02f-46g.wifeed.com.br,referral,4.0,0.0,4.0
 20250722,RD Popup e WhatsApp,Google,cpc,3.0,0.0,3.0
 20250722,RD Popup e WhatsApp,gartenshopping.com.br,referral,3.0,0.0,3.0
 20250722,click,gartenshopping.com.br,referral,3.0,0.0,2.0
@@ -32926,17 +32878,9 @@
 20260720,scroll,linktr.ee,referral,3.0,0.0,1.0
 20260720,scroll,nacoesshopping.com.br,referral,3.0,0.0,1.0
 20260720,user_engagement,neumarktshopping.com.br,referral,3.0,0.0,2.0
-20250721,RD Popup e WhatsApp,Google,cpc,2.0,0.0,2.0
-20250721,click,balneariocamboriushopping.com.br,referral,2.0,0.0,1.0
-20250721,click,bing,organic,2.0,0.0,2.0
-20250721,click,gartenshopping.com.br,referral,2.0,0.0,1.0
-20250721,click,hs-wif-3l1-02f-46g.wifeed.com.br,referral,2.0,0.0,1.0
-20250721,form_franquia,(not set),(not set),2.0,0.0,1.0
-20250721,generate_lead,hs-wif-5bc-87h-xnx.wifeed.com.br,referral,2.0,0.0,2.0
-20250721,generate_lead,hs-wif-uan-8f1-aa8.wifeed.com.br,referral,2.0,0.0,1.0
-20250721,page_view,br.search.yahoo.com,referral,2.0,0.0,1.0
-20250721,scroll,facebook.com,referral,2.0,0.0,1.0
-20250721,user_engagement,ig,paid,2.0,0.0,2.0
+20260721,click,hs-wif-cw7-9ma-gdd.wifeed.com.br,referral,3.0,0.0,2.0
+20260721,scroll,linktr.ee,referral,3.0,0.0,1.0
+20260721,user_engagement,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,3.0,0.0,3.0
 20250722,generate_lead,google,organic,2.0,0.0,2.0
 20250722,generate_lead,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,2.0,0.0,2.0
 20250722,page_view,tecnospeed.lightning.force.com,referral,2.0,0.0,1.0
@@ -36697,35 +36641,20 @@
 20260720,session_start,br.search.yahoo.com,referral,2.0,0.0,1.0
 20260720,session_start,facebook.com,referral,2.0,0.0,2.0
 20260720,session_start,linkedin.com,referral,2.0,0.0,2.0
-20250721,RD Popup e WhatsApp,bing,organic,1.0,0.0,1.0
-20250721,click,(data not available),(data not available),1.0,0.0,1.0
-20250721,click,continenteshopping.com.br,referral,1.0,0.0,1.0
-20250721,click,neumarktshopping.com.br,referral,1.0,0.0,1.0
-20250721,click_whats,google,cpc,1.0,0.0,1.0
-20250721,download_intention,l.instagram.com,referral,1.0,0.0,1.0
-20250721,file_download,continenteshopping.com.br,referral,1.0,0.0,1.0
-20250721,file_download,google,cpc,1.0,0.0,1.0
-20250721,file_download,google,organic,1.0,0.0,1.0
-20250721,first_visit,bing,organic,1.0,0.0,1.0
-20250721,first_visit,br.search.yahoo.com,referral,1.0,0.0,1.0
-20250721,first_visit,fb,paid,1.0,0.0,1.0
-20250721,first_visit,linktr.ee,referral,1.0,0.0,1.0
-20250721,first_visit,m.facebook.com,referral,1.0,0.0,1.0
-20250721,form_franquia,blumenaunorteshopping.com.br,referral,1.0,0.0,1.0
-20250721,form_franquia,continenteshopping.com.br,referral,1.0,0.0,1.0
-20250721,generate_lead,hs-wif-89t-nyk-kwg.wifeed.com.br,referral,1.0,0.0,1.0
-20250721,page_view,fb,paid,1.0,0.0,1.0
-20250721,page_view,linktr.ee,referral,1.0,0.0,1.0
-20250721,page_view,m.facebook.com,referral,1.0,0.0,1.0
-20250721,scroll,tiktok,paid,1.0,0.0,1.0
-20250721,select_content,continenteshopping.com.br,referral,1.0,0.0,1.0
-20250721,select_content,google,cpc,1.0,0.0,1.0
-20250721,select_content,google,organic,1.0,0.0,1.0
-20250721,session_start,br.search.yahoo.com,referral,1.0,0.0,1.0
-20250721,session_start,fb,paid,1.0,0.0,1.0
-20250721,session_start,linktr.ee,referral,1.0,0.0,1.0
-20250721,session_start,m.facebook.com,referral,1.0,0.0,1.0
-20250721,user_engagement,br.search.yahoo.com,referral,1.0,0.0,1.0
+20260721,click,blumenaunorteshopping.com.br,referral,2.0,0.0,2.0
+20260721,click,br.search.yahoo.com,referral,2.0,0.0,1.0
+20260721,first_visit,ig,social,2.0,0.0,2.0
+20260721,generate_lead,(direct),(none),2.0,0.0,1.0
+20260721,generate_lead,balneariocamboriushopping.com.br,referral,2.0,0.0,1.0
+20260721,generate_lead,hs-wif-ztr-yrw-7sl.wifeed.com.br,referral,2.0,0.0,2.0
+20260721,page_view,ig,social,2.0,0.0,2.0
+20260721,page_view,linktr.ee,referral,2.0,0.0,1.0
+20260721,page_view,orulo.com.br,referral,2.0,0.0,1.0
+20260721,scroll,(not set),(not set),2.0,0.0,1.0
+20260721,scroll,l.wl.co,referral,2.0,0.0,1.0
+20260721,session_start,ig,social,2.0,0.0,2.0
+20260721,user_engagement,linktr.ee,referral,2.0,0.0,1.0
+20260721,user_engagement,orulo.com.br,referral,2.0,0.0,1.0
 20250722,RD Popup e WhatsApp,(not set),(not set),1.0,0.0,1.0
 20250722,click,balneariocamboriushopping.com.br,referral,1.0,0.0,1.0
 20250722,click,blumenaunorteshopping.com.br,referral,1.0,0.0,1.0
@@ -44826,3 +44755,14 @@
 20260720,user_engagement,l.wl.co,referral,1.0,0.0,1.0
 20260720,user_engagement,linktr.ee,referral,1.0,0.0,1.0
 20260720,user_engagement,onelink.to,referral,1.0,0.0,1.0
+20260721,click,linktr.ee,referral,1.0,0.0,1.0
+20260721,file_download,balneariocamboriushopping.com.br,referral,1.0,0.0,1.0
+20260721,first_visit,bing,organic,1.0,0.0,1.0
+20260721,first_visit,linktr.ee,referral,1.0,0.0,1.0
+20260721,page_view,l.wl.co,referral,1.0,0.0,1.0
+20260721,select_content,balneariocamboriushopping.com.br,referral,1.0,0.0,1.0
+20260721,session_start,br.search.yahoo.com,referral,1.0,0.0,1.0
+20260721,session_start,l.wl.co,referral,1.0,0.0,1.0
+20260721,session_start,linktr.ee,referral,1.0,0.0,1.0
+20260721,session_start,orulo.com.br,referral,1.0,0.0,1.0
+20260721,user_engagement,ig,social,1.0,0.0,1.0
