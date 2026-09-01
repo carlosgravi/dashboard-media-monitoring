@@ -1,20 +1,17 @@
 ﻿date,city,region,country,sessions,totalUsers,bounceRate,averageSessionDuration,conversions,totalRevenue
 20251018,Blumenau,State of Santa Catarina,Brazil,581.0,546.0,0.5869191049913941,70.71558715834767,9.0,0.0
 20251016,Blumenau,State of Santa Catarina,Brazil,563.0,546.0,0.5204262877442274,78.01533722024867,15.0,0.0
-20250831,Blumenau,State of Santa Catarina,Brazil,547.0,497.0,0.773308957952468,56.135211,12.0,0.0
 20250901,Blumenau,State of Santa Catarina,Brazil,525.0,487.0,0.7561904761904762,52.26970776952381,11.0,0.0
 20250902,Blumenau,State of Santa Catarina,Brazil,483.0,439.0,0.7660455486542443,46.998950832298135,28.0,0.0
 20251020,Blumenau,State of Santa Catarina,Brazil,468.0,444.0,0.6282051282051282,61.15607899358974,16.0,0.0
 20251019,Blumenau,State of Santa Catarina,Brazil,464.0,442.0,0.6336206896551724,58.50432633836208,9.0,0.0
 20260825,Blumenau,State of Santa Catarina,Brazil,442.0,427.0,0.5610859728506787,139.8673074004525,134.0,0.0
-20250831,Sao Jose,State of Santa Catarina,Brazil,398.0,389.0,0.8894472361809045,12.120445007537688,4.0,0.0
 20250906,Blumenau,State of Santa Catarina,Brazil,388.0,355.0,0.8634020618556701,10.438355329896908,13.0,0.0
 20250904,Blumenau,State of Santa Catarina,Brazil,387.0,358.0,0.7286821705426356,71.19527698966408,10.0,0.0
 20250905,Blumenau,State of Santa Catarina,Brazil,368.0,338.0,0.8070652173913043,31.935069399456523,34.0,0.0
 20251004,Blumenau,State of Santa Catarina,Brazil,367.0,339.0,0.8228882833787466,23.533903855585834,40.0,0.0
 20250907,Blumenau,State of Santa Catarina,Brazil,356.0,327.0,0.8174157303370787,26.587459165730333,12.0,0.0
 20250927,Blumenau,State of Santa Catarina,Brazil,354.0,323.0,0.7909604519774012,26.20948220903955,38.0,0.0
-20250831,Criciuma,State of Santa Catarina,Brazil,346.0,330.0,0.8179190751445087,31.719528141618497,3.0,0.0
 20250903,Blumenau,State of Santa Catarina,Brazil,338.0,314.0,0.8047337278106509,54.048495384615386,6.0,0.0
 20250906,Sao Jose,State of Santa Catarina,Brazil,335.0,331.0,0.8865671641791045,14.807139220895522,6.0,0.0
 20251108,Sao Jose,State of Santa Catarina,Brazil,333.0,324.0,0.7987987987987988,23.227108975975977,49.0,0.0
@@ -26,7 +23,6 @@
 20250928,Blumenau,State of Santa Catarina,Brazil,306.0,288.0,0.8333333333333334,32.21728582352941,18.0,0.0
 20251108,Itajai,State of Santa Catarina,Brazil,304.0,302.0,0.8881578947368421,7.194249078947368,25.0,0.0
 20250913,Blumenau,State of Santa Catarina,Brazil,301.0,280.0,0.8338870431893688,41.139903976744186,16.0,0.0
-20250831,Balneario Camboriu,State of Santa Catarina,Brazil,293.0,290.0,0.8907849829351536,11.143419119453924,6.0,0.0
 20251013,Blumenau,State of Santa Catarina,Brazil,287.0,243.0,0.7526132404181185,58.65398024041812,3.0,0.0
 20250925,Blumenau,State of Santa Catarina,Brazil,285.0,247.0,0.7228070175438597,46.29580394736842,28.0,0.0
 20250907,Criciuma,State of Santa Catarina,Brazil,278.0,264.0,0.8525179856115108,6.908780352517986,5.0,0.0
@@ -58,7 +54,7 @@
 20250927,Sao Jose,State of Santa Catarina,Brazil,242.0,226.0,0.7603305785123967,34.36741111570248,24.0,0.0
 20260825,Florianopolis,State of Santa Catarina,Brazil,242.0,235.0,0.5165289256198347,120.61828882231406,84.0,0.0
 20250909,Blumenau,State of Santa Catarina,Brazil,241.0,221.0,0.8008298755186722,32.93826063900415,20.0,0.0
-20250927,Itapema,State of Santa Catarina,Brazil,241.0,240.0,0.8962655601659751,9.716358489626556,13.0,0.0
+20250927,Itapema,State of Santa Catarina,Brazil,241.0,240.0,0.8962655601659751,9.716358489626558,13.0,0.0
 20250927,Joinville,State of Santa Catarina,Brazil,241.0,226.0,0.7136929460580913,65.00578812448133,12.0,0.0
 20250917,Blumenau,State of Santa Catarina,Brazil,238.0,201.0,0.7647058823529411,39.66688031512605,21.0,0.0
 20250910,Blumenau,State of Santa Catarina,Brazil,237.0,208.0,0.8396624472573839,29.18825069198312,12.0,0.0
@@ -75,14 +71,13 @@
 20250921,Sao Jose,State of Santa Catarina,Brazil,227.0,221.0,0.7973568281938326,6.068863629955947,30.0,0.0
 20251002,Blumenau,State of Santa Catarina,Brazil,227.0,208.0,0.7841409691629956,23.59939815418502,18.0,0.0
 20251012,Sao Jose,State of Santa Catarina,Brazil,226.0,217.0,0.8185840707964602,29.707373986725663,1.0,0.0
-20250831,Joinville,State of Santa Catarina,Brazil,223.0,215.0,0.7533632286995515,26.124342560538118,2.0,0.0
 20250918,Blumenau,State of Santa Catarina,Brazil,223.0,190.0,0.7713004484304933,89.83746154708521,20.0,0.0
 20251013,Joinville,State of Santa Catarina,Brazil,223.0,198.0,0.6322869955156951,85.58868613901345,2.0,0.0
 20251014,Blumenau,State of Santa Catarina,Brazil,222.0,206.0,0.7522522522522522,76.40743348648648,3.0,0.0
 20250921,Itajai,State of Santa Catarina,Brazil,221.0,218.0,0.8552036199095022,5.765355633484163,22.0,0.0
 20251001,Blumenau,State of Santa Catarina,Brazil,220.0,198.0,0.7863636363636364,45.670972472727264,17.0,0.0
 20251004,Porto Belo,State of Santa Catarina,Brazil,217.0,217.0,0.8617511520737328,4.805253631336405,23.0,0.0
-20250923,Joinville,State of Santa Catarina,Brazil,215.0,196.0,0.7627906976744186,69.20755336744186,7.0,0.0
+20250923,Joinville,State of Santa Catarina,Brazil,215.0,196.0,0.7627906976744186,69.20755336744185,7.0,0.0
 20250928,Sao Jose,State of Santa Catarina,Brazil,215.0,210.0,0.813953488372093,11.372590074418605,21.0,0.0
 20251109,Itajai,State of Santa Catarina,Brazil,214.0,210.0,0.883177570093458,21.93519901869159,18.0,0.0
 20250902,Sao Jose,State of Santa Catarina,Brazil,213.0,193.0,0.704225352112676,61.03249652112677,3.0,0.0
@@ -96,7 +91,7 @@
 20250903,Sao Jose,State of Santa Catarina,Brazil,205.0,196.0,0.7463414634146341,49.143348682926835,1.0,0.0
 20250904,Criciuma,State of Santa Catarina,Brazil,205.0,195.0,0.7463414634146341,64.23671532682927,0.0,0.0
 20250911,Blumenau,State of Santa Catarina,Brazil,204.0,179.0,0.7450980392156863,35.14062097058824,20.0,0.0
-20250915,Blumenau,State of Santa Catarina,Brazil,204.0,176.0,0.75,45.14732530392156,13.0,0.0
+20250915,Blumenau,State of Santa Catarina,Brazil,204.0,176.0,0.75,45.14732530392157,13.0,0.0
 20260825,Sao Jose,State of Santa Catarina,Brazil,203.0,190.0,0.5812807881773399,77.68956786699506,57.0,0.0
 20250930,Blumenau,State of Santa Catarina,Brazil,202.0,181.0,0.7821782178217822,42.67305927227722,9.0,0.0
 20250901,Balneario Camboriu,State of Santa Catarina,Brazil,201.0,197.0,0.8756218905472637,19.57999187562189,0.0,0.0
@@ -165,12 +160,11 @@
 20250927,Criciuma,State of Santa Catarina,Brazil,161.0,139.0,0.8074534161490683,32.951430316770185,12.0,0.0
 20251007,Blumenau,State of Santa Catarina,Brazil,160.0,147.0,0.76875,27.41335383125,0.0,0.0
 20251106,Blumenau,State of Santa Catarina,Brazil,160.0,148.0,0.7625,33.18120619374999,19.0,0.0
-20251021,Itajai,State of Santa Catarina,Brazil,158.0,154.0,0.7215189873417721,69.12703006962025,11.0,0.0
+20251021,Itajai,State of Santa Catarina,Brazil,158.0,154.0,0.7215189873417721,69.12703006962026,11.0,0.0
 20251019,Itajai,State of Santa Catarina,Brazil,157.0,153.0,0.7452229299363057,38.58888578980891,5.0,0.0
 20250922,Sao Jose,State of Santa Catarina,Brazil,156.0,113.0,0.6282051282051282,228.58956950641024,10.0,0.0
 20251003,Criciuma,State of Santa Catarina,Brazil,156.0,144.0,0.8333333333333334,38.51056966025641,8.0,0.0
 20251006,Joinville,State of Santa Catarina,Brazil,156.0,142.0,0.6794871794871795,65.45890235256411,4.0,0.0
-20250831,Florianopolis,State of Santa Catarina,Brazil,155.0,150.0,0.7483870967741936,56.68971528387097,0.0,0.0
 20251010,Sao Jose,State of Santa Catarina,Brazil,155.0,131.0,0.7354838709677419,89.14204156129033,0.0,0.0
 20260822,Sao Jose,State of Santa Catarina,Brazil,155.0,153.0,0.6,15.470426974193549,58.0,0.0
 20251008,Blumenau,State of Santa Catarina,Brazil,154.0,134.0,0.8506493506493507,41.565723558441555,2.0,0.0
@@ -275,7 +269,7 @@
 20251014,Sao Jose,State of Santa Catarina,Brazil,123.0,92.0,0.7479674796747967,80.63307763414633,1.0,0.0
 20260310,Joinville,State of Santa Catarina,Brazil,123.0,109.0,0.8292682926829268,37.58294273983739,4.0,0.0
 20250906,Penha,State of Santa Catarina,Brazil,122.0,122.0,0.9262295081967213,28.693739721311477,8.0,0.0
-20250908,Penha,State of Santa Catarina,Brazil,122.0,116.0,0.9098360655737705,3.498442213114754,7.0,0.0
+20250908,Penha,State of Santa Catarina,Brazil,122.0,116.0,0.9098360655737705,3.4984422131147537,7.0,0.0
 20251015,Criciuma,State of Santa Catarina,Brazil,122.0,112.0,0.819672131147541,42.534211270491795,0.0,0.0
 20251101,Joinville,State of Santa Catarina,Brazil,122.0,113.0,0.6475409836065574,95.63792236065574,2.0,0.0
 20260711,Criciuma,State of Santa Catarina,Brazil,122.0,120.0,0.6229508196721312,20.59328606557377,32.0,0.0
@@ -369,7 +363,7 @@
 20260325,Blumenau,State of Santa Catarina,Brazil,107.0,100.0,0.5607476635514018,80.51931531775702,15.0,0.0
 20250915,Itajai,State of Santa Catarina,Brazil,106.0,106.0,0.8773584905660378,5.205492094339623,3.0,0.0
 20250915,Sao Jose,State of Santa Catarina,Brazil,106.0,91.0,0.7264150943396226,67.8649920471698,0.0,0.0
-20250917,Criciuma,State of Santa Catarina,Brazil,106.0,97.0,0.8018867924528302,24.55562914150943,4.0,0.0
+20250917,Criciuma,State of Santa Catarina,Brazil,106.0,97.0,0.8018867924528302,24.555629141509435,4.0,0.0
 20250924,Itapema,State of Santa Catarina,Brazil,106.0,100.0,0.8867924528301887,4.3906970566037735,9.0,0.0
 20250925,Itapema,State of Santa Catarina,Brazil,106.0,106.0,0.9245283018867925,8.424490235849058,2.0,0.0
 20251022,Itajai,State of Santa Catarina,Brazil,106.0,105.0,0.7830188679245284,25.95663640566038,4.0,0.0
@@ -484,7 +478,7 @@
 20260723,Balneario Camboriu,State of Santa Catarina,Brazil,93.0,91.0,0.7419354838709677,23.274646419354838,15.0,0.0
 20260725,Blumenau,State of Santa Catarina,Brazil,93.0,92.0,0.6774193548387096,20.858198333333334,21.0,0.0
 20260827,Blumenau,State of Santa Catarina,Brazil,93.0,91.0,0.5913978494623656,37.90350686021505,30.0,0.0
-20250921,Joinville,State of Santa Catarina,Brazil,92.0,90.0,0.8043478260869565,22.703061521739127,2.0,0.0
+20250921,Joinville,State of Santa Catarina,Brazil,92.0,90.0,0.8043478260869565,22.703061521739134,2.0,0.0
 20251016,Sao Jose,State of Santa Catarina,Brazil,92.0,81.0,0.75,33.60795842391304,1.0,0.0
 20251028,Joinville,State of Santa Catarina,Brazil,92.0,87.0,0.5217391304347826,106.30643670652172,0.0,0.0
 20251110,Criciuma,State of Santa Catarina,Brazil,92.0,89.0,0.9021739130434783,18.81179722826087,3.0,0.0
@@ -567,6 +561,7 @@
 20260318,Joinville,State of Santa Catarina,Brazil,84.0,60.0,0.75,61.57496391666667,4.0,0.0
 20260405,Curitiba,State of Parana,Brazil,84.0,83.0,0.8452380952380952,5.842766238095239,0.0,0.0
 20260622,Blumenau,State of Santa Catarina,Brazil,84.0,83.0,0.6190476190476191,52.27563505952381,11.0,0.0
+20260831,Sao Jose,State of Santa Catarina,Brazil,84.0,68.0,0.6666666666666666,187.86424300000002,18.0,0.0
 20250922,Criciuma,State of Santa Catarina,Brazil,83.0,77.0,0.7228915662650602,24.564934457831324,5.0,0.0
 20251103,Blumenau,State of Santa Catarina,Brazil,83.0,82.0,0.5783132530120482,82.86252162650602,2.0,0.0
 20251104,Joinville,State of Santa Catarina,Brazil,83.0,80.0,0.6265060240963856,88.12444221686748,3.0,0.0
@@ -670,6 +665,7 @@
 20260502,Florianopolis,State of Santa Catarina,Brazil,76.0,73.0,0.618421052631579,26.033283368421053,0.0,0.0
 20260801,Criciuma,State of Santa Catarina,Brazil,76.0,76.0,0.6973684210526315,44.60950260526316,18.0,0.0
 20260815,Criciuma,State of Santa Catarina,Brazil,76.0,76.0,0.6842105263157895,28.881943881578945,11.0,0.0
+20260831,Blumenau,State of Santa Catarina,Brazil,76.0,70.0,0.75,30.372776802631577,11.0,0.0
 20260114,Sao Jose,State of Santa Catarina,Brazil,75.0,57.0,0.4666666666666667,539.8663582400001,5.0,0.0
 20260116,Sao Jose,State of Santa Catarina,Brazil,75.0,69.0,0.6533333333333333,125.64870373333333,2.0,0.0
 20260206,Itajai,State of Santa Catarina,Brazil,75.0,75.0,0.7733333333333333,10.9050502,12.0,0.0
@@ -809,7 +805,6 @@
 20260818,Itajai,State of Santa Catarina,Brazil,67.0,67.0,0.7014925373134329,44.37720002985075,14.0,0.0
 20260820,Sao Jose,State of Santa Catarina,Brazil,67.0,60.0,0.6567164179104478,95.82385599999999,8.0,0.0
 20260828,Blumenau,State of Santa Catarina,Brazil,67.0,64.0,0.7014925373134329,14.09751008955224,16.0,0.0
-20250831,Palhoca,State of Santa Catarina,Brazil,66.0,65.0,0.7424242424242424,38.815464272727276,0.0,0.0
 20250929,Florianopolis,State of Santa Catarina,Brazil,66.0,65.0,0.6363636363636364,57.466894924242425,0.0,0.0
 20251017,Itajai,State of Santa Catarina,Brazil,66.0,66.0,0.7878787878787878,34.78272596969697,0.0,0.0
 20251127,Florianopolis,State of Santa Catarina,Brazil,66.0,57.0,0.2727272727272727,153.21662922727273,0.0,0.0
@@ -1231,7 +1226,7 @@
 20250930,Porto Belo,State of Santa Catarina,Brazil,48.0,48.0,0.875,5.086520854166667,2.0,0.0
 20251002,Florianopolis,State of Santa Catarina,Brazil,48.0,44.0,0.5625,94.84569797916667,0.0,0.0
 20251018,Camboriu,State of Santa Catarina,Brazil,48.0,44.0,0.6041666666666666,67.9511876875,0.0,0.0
-20251023,Sao Paulo,State of Sao Paulo,Brazil,48.0,44.0,0.4375,70.85531654166667,1.0,0.0
+20251023,Sao Paulo,State of Sao Paulo,Brazil,48.0,44.0,0.4375,70.85531654166665,1.0,0.0
 20251029,Sao Jose,State of Santa Catarina,Brazil,48.0,44.0,0.5833333333333334,135.12399872916666,6.0,0.0
 20251103,Itajai,State of Santa Catarina,Brazil,48.0,46.0,0.6458333333333334,49.779492041666664,0.0,0.0
 20251125,Sao Paulo,State of Sao Paulo,Brazil,48.0,45.0,0.3958333333333333,79.586096,0.0,0.0
@@ -1449,7 +1444,6 @@
 20260724,Joinville,State of Santa Catarina,Brazil,43.0,42.0,0.5348837209302325,65.35027441860466,11.0,0.0
 20260728,Sao Paulo,State of Sao Paulo,Brazil,43.0,37.0,0.5116279069767442,75.06083193023255,0.0,0.0
 20260828,Sao Paulo,State of Sao Paulo,Brazil,43.0,38.0,0.37209302325581395,176.1084691627907,0.0,0.0
-20250831,Sao Paulo,State of Sao Paulo,Brazil,42.0,42.0,0.6190476190476191,13.220286357142859,3.0,0.0
 20250904,Palhoca,State of Santa Catarina,Brazil,42.0,40.0,0.6904761904761905,66.04652502380952,0.0,0.0
 20251015,Brusque,State of Santa Catarina,Brazil,42.0,42.0,0.6428571428571429,75.24045495238094,0.0,0.0
 20251016,Indaial,State of Santa Catarina,Brazil,42.0,41.0,0.4523809523809524,39.238664928571424,3.0,0.0
@@ -1538,6 +1532,7 @@
 20260725,Joinville,State of Santa Catarina,Brazil,41.0,40.0,0.43902439024390244,96.8640876097561,1.0,0.0
 20260730,Joinville,State of Santa Catarina,Brazil,41.0,40.0,0.5609756097560976,95.81834570731706,0.0,0.0
 20260827,Sao Paulo,State of Sao Paulo,Brazil,41.0,37.0,0.6585365853658537,58.11137780487805,0.0,0.0
+20260831,Joinville,State of Santa Catarina,Brazil,41.0,31.0,0.5853658536585366,43.78930585365853,0.0,0.0
 20250907,Itajai,State of Santa Catarina,Brazil,40.0,38.0,0.675,121.3930883,1.0,0.0
 20250911,Sao Paulo,State of Sao Paulo,Brazil,40.0,36.0,0.5,147.930933175,0.0,0.0
 20251019,Gaspar,State of Santa Catarina,Brazil,40.0,37.0,0.625,55.438241725,1.0,0.0
@@ -1622,7 +1617,6 @@
 20260814,Criciuma,State of Santa Catarina,Brazil,39.0,39.0,0.717948717948718,40.165680153846154,7.0,0.0
 20260826,Criciuma,State of Santa Catarina,Brazil,39.0,37.0,0.6153846153846154,142.22753264102565,2.0,0.0
 20260828,Joinville,State of Santa Catarina,Brazil,39.0,32.0,0.6410256410256411,67.14482158974359,3.0,0.0
-20250831,Curitiba,State of Parana,Brazil,38.0,37.0,0.5526315789473685,123.00827821052633,0.0,0.0
 20250905,Palhoca,State of Santa Catarina,Brazil,38.0,33.0,0.6578947368421053,86.49934410526316,0.0,0.0
 20250908,Palhoca,State of Santa Catarina,Brazil,38.0,37.0,0.5263157894736842,25.66445839473684,1.0,0.0
 20250908,Sao Paulo,State of Sao Paulo,Brazil,38.0,33.0,0.42105263157894735,96.64965128947368,0.0,0.0
@@ -1679,7 +1673,7 @@
 20260829,Criciuma,State of Santa Catarina,Brazil,38.0,38.0,0.7368421052631579,10.406639184210526,8.0,0.0
 20250907,Sao Paulo,State of Sao Paulo,Brazil,37.0,36.0,0.4864864864864865,54.31563324324324,0.0,0.0
 20250917,Florianopolis,State of Santa Catarina,Brazil,37.0,35.0,0.4864864864864865,119.29246251351351,0.0,0.0
-20250917,Sao Paulo,State of Sao Paulo,Brazil,37.0,32.0,0.4594594594594595,146.21845383783787,0.0,0.0
+20250917,Sao Paulo,State of Sao Paulo,Brazil,37.0,32.0,0.4594594594594595,146.21845383783784,0.0,0.0
 20251011,Brusque,State of Santa Catarina,Brazil,37.0,35.0,0.43243243243243246,149.82732872972971,1.0,0.0
 20251018,Curitiba,State of Parana,Brazil,37.0,36.0,0.5135135135135135,54.3597682972973,0.0,0.0
 20251019,Curitiba,State of Parana,Brazil,37.0,34.0,0.5945945945945946,33.84182927027027,0.0,0.0
@@ -1777,12 +1771,12 @@
 20260821,Joinville,State of Santa Catarina,Brazil,36.0,30.0,0.6666666666666666,62.64494586111112,1.0,0.0
 20260822,Joinville,State of Santa Catarina,Brazil,36.0,32.0,0.5277777777777778,86.20856241666667,2.0,0.0
 20260826,Joinville,State of Santa Catarina,Brazil,36.0,33.0,0.5555555555555556,22.995903333333334,10.0,0.0
-20250831,Biguacu,State of Santa Catarina,Brazil,35.0,34.0,0.7142857142857143,89.8734248,0.0,0.0
+20260831,Criciuma,State of Santa Catarina,Brazil,36.0,34.0,0.75,32.87066783333333,4.0,0.0
 20250901,Gaspar,State of Santa Catarina,Brazil,35.0,32.0,0.6285714285714286,93.32855194285715,1.0,0.0
 20250914,Florianopolis,State of Santa Catarina,Brazil,35.0,34.0,0.42857142857142855,84.2484962,0.0,0.0
 20250919,Sao Paulo,State of Sao Paulo,Brazil,35.0,31.0,0.4,87.38650657142857,1.0,0.0
 20250930,Balneario Camboriu,State of Santa Catarina,Brazil,35.0,35.0,0.5428571428571428,81.12894557142857,0.0,0.0
-20251013,Sao Paulo,State of Sao Paulo,Brazil,35.0,29.0,0.45714285714285713,247.52509777142862,1.0,0.0
+20251013,Sao Paulo,State of Sao Paulo,Brazil,35.0,29.0,0.45714285714285713,247.52509777142856,1.0,0.0
 20251013,Tubarao,State of Santa Catarina,Brazil,35.0,34.0,0.5428571428571428,49.15557248571429,0.0,0.0
 20251029,Brusque,State of Santa Catarina,Brazil,35.0,35.0,0.7428571428571429,37.104628485714294,0.0,0.0
 20251102,Balneario Camboriu,State of Santa Catarina,Brazil,35.0,34.0,0.5714285714285714,101.35428054285715,0.0,0.0
@@ -1902,6 +1896,7 @@
 20260818,Sao Paulo,State of Sao Paulo,Brazil,34.0,31.0,0.38235294117647056,309.1005395294118,0.0,0.0
 20260824,Sao Paulo,State of Sao Paulo,Brazil,34.0,32.0,0.35294117647058826,127.69209794117647,1.0,0.0
 20260825,Curitiba,State of Parana,Brazil,34.0,29.0,0.4411764705882353,83.61117644117647,7.0,0.0
+20260831,Sao Paulo,State of Sao Paulo,Brazil,34.0,30.0,0.47058823529411764,205.90080185294119,0.0,0.0
 20250904,Camboriu,State of Santa Catarina,Brazil,33.0,32.0,0.5454545454545454,105.55120972727272,0.0,0.0
 20250907,Palhoca,State of Santa Catarina,Brazil,33.0,31.0,0.6060606060606061,54.63194203030303,0.0,0.0
 20250923,Jaragua do Sul,State of Santa Catarina,Brazil,33.0,29.0,0.7575757575757576,137.43092642424241,0.0,0.0
@@ -1964,7 +1959,6 @@
 20260726,Joinville,State of Santa Catarina,Brazil,33.0,33.0,0.6060606060606061,60.434051545454544,0.0,0.0
 20260816,Florianopolis,State of Santa Catarina,Brazil,33.0,33.0,0.6060606060606061,85.58292848484848,0.0,0.0
 20260825,Criciuma,State of Santa Catarina,Brazil,33.0,30.0,0.6060606060606061,63.049375,3.0,0.0
-20250831,Gaspar,State of Santa Catarina,Brazil,32.0,31.0,0.625,46.66941946875,0.0,0.0
 20250902,Curitiba,State of Parana,Brazil,32.0,32.0,0.59375,35.217747124999995,0.0,0.0
 20250927,Navegantes,State of Santa Catarina,Brazil,32.0,31.0,0.84375,9.54867715625,0.0,0.0
 20250928,Sao Paulo,State of Sao Paulo,Brazil,32.0,29.0,0.40625,88.24214040625,1.0,0.0
@@ -1976,7 +1970,7 @@
 20251016,Navegantes,State of Santa Catarina,Brazil,32.0,30.0,0.5625,57.9044655,0.0,0.0
 20251019,Indaial,State of Santa Catarina,Brazil,32.0,30.0,0.5,113.82379175,0.0,0.0
 20251026,Palhoca,State of Santa Catarina,Brazil,32.0,32.0,0.4375,20.8106835,1.0,0.0
-20251028,Brusque,State of Santa Catarina,Brazil,32.0,30.0,0.6875,156.00550128125002,1.0,0.0
+20251028,Brusque,State of Santa Catarina,Brazil,32.0,30.0,0.6875,156.00550128125,1.0,0.0
 20251104,Balneario Camboriu,State of Santa Catarina,Brazil,32.0,32.0,0.75,69.89774403125,0.0,0.0
 20251107,Sao Paulo,State of Sao Paulo,Brazil,32.0,29.0,0.5625,69.46552459374999,1.0,0.0
 20251112,Florianopolis,State of Santa Catarina,Brazil,32.0,29.0,0.375,61.119541625,1.0,0.0
@@ -2030,7 +2024,6 @@
 20260811,Criciuma,State of Santa Catarina,Brazil,32.0,29.0,0.625,75.58139665625,1.0,0.0
 20260813,Joinville,State of Santa Catarina,Brazil,32.0,27.0,0.5625,85.08274040625,2.0,0.0
 20260826,Florianopolis,State of Santa Catarina,Brazil,32.0,30.0,0.5,237.78668953125,3.0,0.0
-20250831,Icara,State of Santa Catarina,Brazil,31.0,29.0,0.7419354838709677,56.713678709677424,0.0,0.0
 20250903,Camboriu,State of Santa Catarina,Brazil,31.0,27.0,0.5806451612903226,44.76433277419354,0.0,0.0
 20250903,Curitiba,State of Parana,Brazil,31.0,30.0,0.4838709677419355,99.6250361935484,0.0,0.0
 20251024,Sao Paulo,State of Sao Paulo,Brazil,31.0,31.0,0.3870967741935484,97.81279132258065,1.0,0.0
@@ -2160,7 +2153,6 @@
 20260825,Gaspar,State of Santa Catarina,Brazil,30.0,29.0,0.5666666666666667,18.309098866666666,10.0,0.0
 20260826,Sao Paulo,State of Sao Paulo,Brazil,30.0,26.0,0.5,123.11834879999999,0.0,0.0
 20260827,Criciuma,State of Santa Catarina,Brazil,30.0,26.0,0.6333333333333333,113.24125916666665,1.0,0.0
-20250831,Camboriu,State of Santa Catarina,Brazil,29.0,29.0,0.6551724137931034,37.21149772413793,0.0,0.0
 20250901,Itapema,State of Santa Catarina,Brazil,29.0,28.0,0.6551724137931034,19.517724344827585,0.0,0.0
 20250902,Icara,State of Santa Catarina,Brazil,29.0,29.0,0.4827586206896552,268.3263997586207,2.0,0.0
 20250926,Curitiba,State of Parana,Brazil,29.0,26.0,0.4827586206896552,148.83053786206895,0.0,0.0
@@ -2215,7 +2207,6 @@
 20260804,Florianopolis,State of Santa Catarina,Brazil,29.0,29.0,0.5517241379310345,56.823373137931036,0.0,0.0
 20260804,Joinville,State of Santa Catarina,Brazil,29.0,28.0,0.5172413793103449,127.17008617241379,1.0,0.0
 20260822,Florianopolis,State of Santa Catarina,Brazil,29.0,29.0,0.5862068965517241,120.44833844827586,2.0,0.0
-20250831,Itajai,State of Santa Catarina,Brazil,28.0,28.0,0.6071428571428571,41.561255214285715,1.0,0.0
 20250906,Curitiba,State of Parana,Brazil,28.0,28.0,0.42857142857142855,24.05940675,1.0,0.0
 20250913,Sao Paulo,State of Sao Paulo,Brazil,28.0,26.0,0.39285714285714285,33.95504385714286,0.0,0.0
 20250920,Florianopolis,State of Santa Catarina,Brazil,28.0,28.0,0.4642857142857143,22.661992035714285,0.0,0.0
@@ -2269,6 +2260,7 @@
 20260811,Joinville,State of Santa Catarina,Brazil,28.0,23.0,0.6428571428571429,75.03371349999999,0.0,0.0
 20260829,Joinville,State of Santa Catarina,Brazil,28.0,28.0,0.4642857142857143,109.4127110357143,2.0,0.0
 20260830,Florianopolis,State of Santa Catarina,Brazil,28.0,27.0,0.2857142857142857,212.44058989285713,2.0,0.0
+20260831,Florianopolis,State of Santa Catarina,Brazil,28.0,25.0,0.6071428571428571,20.826411142857143,0.0,0.0
 20250903,Icara,State of Santa Catarina,Brazil,27.0,27.0,0.5925925925925926,78.69696466666666,3.0,0.0
 20250909,Palhoca,State of Santa Catarina,Brazil,27.0,27.0,0.4444444444444444,42.09520418518519,0.0,0.0
 20250922,Florianopolis,State of Santa Catarina,Brazil,27.0,26.0,0.6296296296296297,117.46709522222221,0.0,0.0
@@ -2336,7 +2328,6 @@
 20260821,Sao Paulo,State of Sao Paulo,Brazil,27.0,22.0,0.5185185185185185,139.00201074074073,0.0,0.0
 20260823,Joinville,State of Santa Catarina,Brazil,27.0,25.0,0.6296296296296297,17.122785962962965,1.0,0.0
 20260824,Joinville,State of Santa Catarina,Brazil,27.0,24.0,0.7407407407407407,15.746561222222223,0.0,0.0
-20250831,Indaial,State of Santa Catarina,Brazil,26.0,25.0,0.6538461538461539,75.88738653846154,0.0,0.0
 20250910,Curitiba,State of Parana,Brazil,26.0,24.0,0.34615384615384615,34.02287257692308,3.0,0.0
 20250927,Tijucas,State of Santa Catarina,Brazil,26.0,23.0,0.6538461538461539,201.7560193846154,0.0,0.0
 20250928,Navegantes,State of Santa Catarina,Brazil,26.0,22.0,0.6153846153846154,146.5536608846154,0.0,0.0
@@ -2963,7 +2954,6 @@
 20260811,Florianopolis,State of Santa Catarina,Brazil,19.0,17.0,0.5789473684210527,73.20991742105264,2.0,0.0
 20260818,Florianopolis,State of Santa Catarina,Brazil,19.0,18.0,0.3157894736842105,214.46805194736842,0.0,0.0
 20260821,Florianopolis,State of Santa Catarina,Brazil,19.0,17.0,0.42105263157894735,207.26832536842105,1.0,0.0
-20250831,Brusque,State of Santa Catarina,Brazil,18.0,17.0,0.5,232.8345451666667,0.0,0.0
 20250905,Icara,State of Santa Catarina,Brazil,18.0,18.0,0.5,23.083430611111112,0.0,0.0
 20250907,Balneario Camboriu,State of Santa Catarina,Brazil,18.0,17.0,0.5555555555555556,48.89513266666667,0.0,0.0
 20250911,Balneario Camboriu,State of Santa Catarina,Brazil,18.0,17.0,0.2222222222222222,343.78659766666664,1.0,0.0
@@ -2978,7 +2968,7 @@
 20251011,Curitiba,State of Parana,Brazil,18.0,17.0,0.6111111111111112,62.09865177777778,2.0,0.0
 20251011,Gaspar,State of Santa Catarina,Brazil,18.0,18.0,0.5,18.882417222222223,0.0,0.0
 20251014,Gaspar,State of Santa Catarina,Brazil,18.0,17.0,0.7222222222222222,82.27561527777779,0.0,0.0
-20251014,Indaial,State of Santa Catarina,Brazil,18.0,18.0,0.4444444444444444,193.29407550000002,1.0,0.0
+20251014,Indaial,State of Santa Catarina,Brazil,18.0,18.0,0.4444444444444444,193.2940755,1.0,0.0
 20251016,Biguacu,State of Santa Catarina,Brazil,18.0,16.0,0.5555555555555556,127.20621155555556,0.0,0.0
 20251016,Braco do Norte,State of Santa Catarina,Brazil,18.0,18.0,0.5555555555555556,32.18849694444444,0.0,0.0
 20251021,Camboriu,State of Santa Catarina,Brazil,18.0,18.0,0.6666666666666666,35.52711388888889,2.0,0.0
@@ -3177,7 +3167,6 @@
 20260816,Palhoca,State of Santa Catarina,Brazil,17.0,16.0,0.6470588235294118,12.76337905882353,0.0,0.0
 20260818,Balneario Camboriu,State of Santa Catarina,Brazil,17.0,14.0,0.47058823529411764,100.33043929411764,1.0,0.0
 20260825,Brusque,State of Santa Catarina,Brazil,17.0,17.0,0.6470588235294118,36.50456523529412,5.0,0.0
-20250831,Jaragua do Sul,State of Santa Catarina,Brazil,16.0,15.0,0.5625,25.9509833125,0.0,0.0
 20250901,Jaragua do Sul,State of Santa Catarina,Brazil,16.0,15.0,0.75,7.9577986875,0.0,0.0
 20250902,Brusque,State of Santa Catarina,Brazil,16.0,16.0,0.75,72.96021093750001,0.0,0.0
 20250903,Gaspar,State of Santa Catarina,Brazil,16.0,16.0,0.625,71.7543051875,0.0,0.0
@@ -3525,7 +3514,6 @@
 20260816,Curitiba,State of Parana,Brazil,14.0,13.0,0.5,105.17108585714286,0.0,0.0
 20260824,Balneario Camboriu,State of Santa Catarina,Brazil,14.0,14.0,0.5,81.98032957142857,0.0,0.0
 20260828,Kashgar Prefecture,Xinjiang,China,14.0,14.0,0.7857142857142857,3.0217050714285714,0.0,0.0
-20250831,Ararangua,State of Santa Catarina,Brazil,13.0,12.0,0.38461538461538464,118.04687053846153,0.0,0.0
 20250901,Indaial,State of Santa Catarina,Brazil,13.0,13.0,0.7692307692307693,27.975511615384615,0.0,0.0
 20250904,Ararangua,State of Santa Catarina,Brazil,13.0,13.0,0.7692307692307693,12.544570923076925,0.0,0.0
 20250905,Itapema,State of Santa Catarina,Brazil,13.0,12.0,0.6153846153846154,53.20555007692308,0.0,0.0
@@ -3671,9 +3659,6 @@
 20260813,Balneario Camboriu,State of Santa Catarina,Brazil,13.0,11.0,0.38461538461538464,209.32094192307693,0.0,0.0
 20260814,Itajai,State of Santa Catarina,Brazil,13.0,12.0,0.46153846153846156,152.32226153846153,0.0,0.0
 20260830,Kashgar Prefecture,Xinjiang,China,13.0,13.0,0.9230769230769231,2.173615769230769,0.0,0.0
-20250831,Imbituba,State of Santa Catarina,Brazil,12.0,12.0,0.75,13.810157000000002,0.0,0.0
-20250831,Porto Alegre,State of Rio Grande do Sul,Brazil,12.0,12.0,0.75,10.272840166666667,0.0,0.0
-20250831,Tubarao,State of Santa Catarina,Brazil,12.0,12.0,0.9166666666666666,2.2320349166666666,0.0,0.0
 20250903,Brusque,State of Santa Catarina,Brazil,12.0,12.0,0.5,69.94916658333334,0.0,0.0
 20250903,Jaragua do Sul,State of Santa Catarina,Brazil,12.0,11.0,0.3333333333333333,240.90431225,0.0,0.0
 20250903,Tubarao,State of Santa Catarina,Brazil,12.0,10.0,0.75,27.528659333333334,0.0,0.0
@@ -3852,7 +3837,7 @@
 20260824,Rio de Janeiro,State of Rio de Janeiro,Brazil,12.0,9.0,0.25,250.19177125,0.0,0.0
 20260825,Balneario Camboriu,State of Santa Catarina,Brazil,12.0,12.0,0.75,172.51919866666665,6.0,0.0
 20260825,Pomerode,State of Santa Catarina,Brazil,12.0,12.0,0.75,4.588743666666667,2.0,0.0
-20250831,(not set),State of Santa Catarina,Brazil,11.0,11.0,0.9090909090909091,8.783385090909091,0.0,0.0
+20260831,Itajai,State of Santa Catarina,Brazil,12.0,11.0,0.25,120.23457058333332,0.0,0.0
 20250901,Pomerode,State of Santa Catarina,Brazil,11.0,11.0,0.7272727272727273,105.60440745454547,0.0,0.0
 20250901,Tubarao,State of Santa Catarina,Brazil,11.0,11.0,0.5454545454545454,13.698408636363636,0.0,0.0
 20250902,Porto Alegre,State of Rio Grande do Sul,Brazil,11.0,10.0,0.8181818181818182,101.06689627272726,0.0,0.0
@@ -4079,8 +4064,6 @@
 20260820,Balneario Camboriu,State of Santa Catarina,Brazil,11.0,10.0,0.8181818181818182,7.79141090909091,0.0,0.0
 20260825,Belo Horizonte,State of Minas Gerais,Brazil,11.0,10.0,0.5454545454545454,22.03100709090909,0.0,0.0
 20260828,Flint Hill,Virginia,United States,11.0,11.0,0.8181818181818182,1.6734245454545453,0.0,0.0
-20250831,Belo Horizonte,State of Minas Gerais,Brazil,10.0,10.0,0.7,4.9056154,0.0,0.0
-20250831,Navegantes,State of Santa Catarina,Brazil,10.0,10.0,0.7,18.4785256,1.0,0.0
 20250903,Porto Alegre,State of Rio Grande do Sul,Brazil,10.0,10.0,0.7,101.5714049,0.0,0.0
 20250904,Porto Alegre,State of Rio Grande do Sul,Brazil,10.0,10.0,0.3,78.926969,0.0,0.0
 20250904,Rio de Janeiro,State of Rio de Janeiro,Brazil,10.0,10.0,0.5,34.7610542,0.0,0.0
@@ -4334,9 +4317,6 @@
 20260825,Porto Alegre,State of Rio Grande do Sul,Brazil,10.0,10.0,0.5,31.7270532,2.0,0.0
 20260826,Palhoca,State of Santa Catarina,Brazil,10.0,10.0,0.2,123.49245629999999,1.0,0.0
 20260828,Rio de Janeiro,State of Rio de Janeiro,Brazil,10.0,9.0,0.7,125.6646863,0.0,0.0
-20250831,Fortaleza,Ceara,Brazil,9.0,9.0,0.5555555555555556,4.243416,0.0,0.0
-20250831,Itapema,State of Santa Catarina,Brazil,9.0,9.0,0.7777777777777778,14.211882999999998,0.0,0.0
-20250831,Rio do Sul,State of Santa Catarina,Brazil,9.0,9.0,0.7777777777777778,140.8839871111111,0.0,0.0
 20250901,Braco do Norte,State of Santa Catarina,Brazil,9.0,9.0,0.5555555555555556,13.587833444444446,0.0,0.0
 20250901,Navegantes,State of Santa Catarina,Brazil,9.0,9.0,0.4444444444444444,99.49048477777778,0.0,0.0
 20250902,Navegantes,State of Santa Catarina,Brazil,9.0,9.0,0.6666666666666666,73.35442722222223,0.0,0.0
@@ -4639,7 +4619,6 @@
 20260828,Belo Horizonte,State of Minas Gerais,Brazil,9.0,9.0,0.5555555555555556,296.04510244444447,0.0,0.0
 20260829,Itajai,State of Santa Catarina,Brazil,9.0,9.0,0.5555555555555556,29.908283,0.0,0.0
 20260830,Itajai,State of Santa Catarina,Brazil,9.0,9.0,0.5555555555555556,219.50791122222222,1.0,0.0
-20250831,Braco do Norte,State of Santa Catarina,Brazil,8.0,8.0,0.75,20.78128175,0.0,0.0
 20250901,Belo Horizonte,State of Minas Gerais,Brazil,8.0,7.0,0.75,4.32631075,0.0,0.0
 20250901,Maringa,State of Parana,Brazil,8.0,5.0,0.25,170.699178375,0.0,0.0
 20250902,Rio de Janeiro,State of Rio de Janeiro,Brazil,8.0,8.0,0.5,46.0881995,0.0,0.0
@@ -5019,6 +4998,7 @@
 20260828,Curitiba,State of Parana,Brazil,8.0,8.0,0.375,151.209558625,0.0,0.0
 20260828,Itajai,State of Santa Catarina,Brazil,8.0,8.0,0.25,303.2052335,0.0,0.0
 20260830,Balneario Camboriu,State of Santa Catarina,Brazil,8.0,8.0,0.625,25.786464749999997,0.0,0.0
+20260831,Kashgar Prefecture,Xinjiang,China,8.0,8.0,0.875,1.261188125,0.0,0.0
 20250901,(not set),California,United States,7.0,7.0,0.0,8.591257142857144,0.0,0.0
 20250902,Belo Horizonte,State of Minas Gerais,Brazil,7.0,7.0,0.42857142857142855,83.31111242857143,0.0,0.0
 20250902,Imbituba,State of Santa Catarina,Brazil,7.0,7.0,0.5714285714285714,128.69410485714286,0.0,0.0
@@ -5518,7 +5498,6 @@
 20260827,Rio de Janeiro,State of Rio de Janeiro,Brazil,7.0,6.0,0.42857142857142855,50.22329071428572,0.0,0.0
 20260828,Palhoca,State of Santa Catarina,Brazil,7.0,7.0,0.42857142857142855,125.25517771428572,1.0,0.0
 20260829,Balneario Camboriu,State of Santa Catarina,Brazil,7.0,7.0,0.7142857142857143,4.817995714285715,0.0,0.0
-20250831,Rolandia,State of Parana,Brazil,6.0,6.0,0.8333333333333334,3.6987303333333337,0.0,0.0
 20250901,(not set),(not set),India,6.0,6.0,0.0,9.632094166666667,0.0,0.0
 20250901,Tijucas,State of Santa Catarina,Brazil,6.0,6.0,0.5,14.487862833333333,0.0,0.0
 20250902,(not set),State of Santa Catarina,Brazil,6.0,6.0,0.8333333333333334,18.3748285,0.0,0.0
@@ -6184,9 +6163,8 @@
 20260829,Kashgar Prefecture,Xinjiang,China,6.0,6.0,1.0,1.6451481666666667,0.0,0.0
 20260830,Palhoca,State of Santa Catarina,Brazil,6.0,6.0,0.8333333333333334,6.291072666666667,0.0,0.0
 20260830,Sao Paulo,State of Sao Paulo,Brazil,6.0,6.0,0.3333333333333333,47.107685333333336,0.0,0.0
-20250831,Apucarana,State of Parana,Brazil,5.0,5.0,0.8,0.39485939999999997,0.0,0.0
-20250831,Franca,State of Sao Paulo,Brazil,5.0,5.0,0.6,3.2187484,0.0,0.0
-20250831,Palmas,State of Tocantins,Brazil,5.0,5.0,0.4,328.611291,0.0,0.0
+20260831,Curitiba,State of Parana,Brazil,6.0,6.0,0.3333333333333333,90.88904866666667,0.0,0.0
+20260831,Porto Alegre,State of Rio Grande do Sul,Brazil,6.0,6.0,0.6666666666666666,12.351411,1.0,0.0
 20250901,Anapolis,State of Goias,Brazil,5.0,5.0,0.8,45.3261038,0.0,0.0
 20250901,Chapeco,State of Santa Catarina,Brazil,5.0,5.0,0.8,16.632589,0.0,0.0
 20250901,Guarulhos,State of Sao Paulo,Brazil,5.0,4.0,0.2,52.8657732,0.0,0.0
@@ -7188,14 +7166,8 @@
 20260828,Icara,State of Santa Catarina,Brazil,5.0,5.0,0.4,210.9025846,0.0,0.0
 20260828,Navegantes,State of Santa Catarina,Brazil,5.0,3.0,0.2,34.2434058,0.0,0.0
 20260829,Curitiba,State of Parana,Brazil,5.0,5.0,0.2,13.296723199999999,0.0,0.0
-20250831,Caxias do Sul,State of Rio Grande do Sul,Brazil,4.0,4.0,0.75,13.01481375,0.0,0.0
-20250831,Morro da Fumaca,State of Santa Catarina,Brazil,4.0,4.0,1.0,1.3022405,0.0,0.0
-20250831,Santo Amaro da Imperatriz,State of Santa Catarina,Brazil,4.0,4.0,1.0,0.0,0.0,0.0
-20250831,Sao Bento do Sul,State of Santa Catarina,Brazil,4.0,4.0,0.75,3.35374575,0.0,0.0
-20250831,Sete Lagoas,State of Minas Gerais,Brazil,4.0,4.0,0.25,16.99818325,0.0,0.0
-20250831,Tijucas,State of Santa Catarina,Brazil,4.0,4.0,1.0,0.59085175,0.0,0.0
-20250831,Timbo,State of Santa Catarina,Brazil,4.0,4.0,0.5,3.9833305,0.0,0.0
-20250831,Vitoria,State of Espirito Santo,Brazil,4.0,4.0,0.25,25.728512000000002,1.0,0.0
+20260831,Palhoca,State of Santa Catarina,Brazil,5.0,3.0,0.6,6.953376199999999,0.0,0.0
+20260831,Rio de Janeiro,State of Rio de Janeiro,Brazil,5.0,5.0,0.6,17.890106199999998,0.0,0.0
 20250901,Imbituba,State of Santa Catarina,Brazil,4.0,4.0,0.75,38.13189425,0.0,0.0
 20250901,Ituiutaba,State of Minas Gerais,Brazil,4.0,4.0,0.5,9.78234375,0.0,0.0
 20250901,Laguna,State of Santa Catarina,Brazil,4.0,4.0,0.75,19.758551,0.0,0.0
@@ -8690,18 +8662,7 @@
 20260829,Indaial,State of Santa Catarina,Brazil,4.0,4.0,0.0,40.23692725,1.0,0.0
 20260829,Porto Alegre,State of Rio Grande do Sul,Brazil,4.0,4.0,0.5,23.717114000000002,0.0,0.0
 20260830,Rio de Janeiro,State of Rio de Janeiro,Brazil,4.0,4.0,0.25,104.2896225,0.0,0.0
-20250831,(not set),(not set),India,3.0,3.0,0.0,12.580176333333334,0.0,0.0
-20250831,(not set),California,United States,3.0,3.0,0.0,8.519412666666666,0.0,0.0
-20250831,Anapolis,State of Goias,Brazil,3.0,3.0,0.3333333333333333,502.7859286666667,1.0,0.0
-20250831,Barra do Pirai,State of Rio de Janeiro,Brazil,3.0,3.0,0.3333333333333333,166.40274366666668,0.0,0.0
-20250831,Campinas,State of Sao Paulo,Brazil,3.0,3.0,0.6666666666666666,57.62591833333334,0.0,0.0
-20250831,Feira de Santana,State of Bahia,Brazil,3.0,3.0,0.0,38.01940366666667,0.0,0.0
-20250831,Guaramirim,State of Santa Catarina,Brazil,3.0,3.0,0.3333333333333333,73.91759900000001,0.0,0.0
-20250831,Joao Pessoa,State of Paraiba,Brazil,3.0,3.0,1.0,0.0,0.0,0.0
-20250831,Jundiai,State of Sao Paulo,Brazil,3.0,3.0,1.0,0.3804593333333333,0.0,0.0
-20250831,Porto Belo,State of Santa Catarina,Brazil,3.0,3.0,1.0,0.4015883333333334,0.0,0.0
-20250831,Santo Antonio da Patrulha,State of Rio Grande do Sul,Brazil,3.0,3.0,1.0,2.1490586666666665,0.0,0.0
-20250831,Vila Velha,State of Espirito Santo,Brazil,3.0,3.0,1.0,1.2218606666666667,0.0,0.0
+20260831,Balneario Camboriu,State of Santa Catarina,Brazil,4.0,4.0,1.0,1.6427175,0.0,0.0
 20250901,(not set),Virginia,United States,3.0,3.0,0.3333333333333333,17.761375333333334,0.0,0.0
 20250901,Campo Grande,State of Mato Grosso do Sul,Brazil,3.0,3.0,0.6666666666666666,0.9245513333333334,0.0,0.0
 20250901,Concordia,State of Santa Catarina,Brazil,3.0,3.0,0.0,240.21485399999997,1.0,0.0
@@ -11756,49 +11717,8 @@
 20260830,Braco do Norte,State of Santa Catarina,Brazil,3.0,3.0,0.3333333333333333,26.534215333333332,0.0,0.0
 20260830,Lagarto,State of Sergipe,Brazil,3.0,3.0,0.6666666666666666,7.118876666666666,0.0,0.0
 20260830,Urussanga,State of Santa Catarina,Brazil,3.0,3.0,0.6666666666666666,15.760577,0.0,0.0
-20250831,(not set),State of Para,Brazil,2.0,2.0,1.0,1.641148,0.0,0.0
-20250831,(not set),Virginia,United States,2.0,2.0,0.5,22.4401955,0.0,0.0
-20250831,Ahmedabad,Gujarat,India,2.0,2.0,0.0,8.852429,0.0,0.0
-20250831,Balneario Picarras,State of Santa Catarina,Brazil,2.0,2.0,0.0,5.29697,0.0,0.0
-20250831,Botucatu,State of Sao Paulo,Brazil,2.0,2.0,0.5,0.7801415,0.0,0.0
-20250831,Cachoeiro de Itapemirim,State of Espirito Santo,Brazil,2.0,2.0,0.5,12.119759499999999,0.0,0.0
-20250831,Campo Grande,State of Mato Grosso do Sul,Brazil,2.0,2.0,1.0,0.0,0.0,0.0
-20250831,Chapeco,State of Santa Catarina,Brazil,2.0,2.0,1.0,2.8973575,0.0,0.0
-20250831,Concordia,State of Santa Catarina,Brazil,2.0,2.0,0.5,3.2205105,0.0,0.0
-20250831,Coral Gables,Florida,United States,2.0,2.0,0.0,9.2958845,0.0,0.0
-20250831,Curitibanos,State of Santa Catarina,Brazil,2.0,2.0,1.0,0.0,0.0,0.0
-20250831,Dublin,County Dublin,Ireland,2.0,2.0,1.0,0.0,0.0,0.0
-20250831,Eunapolis,State of Bahia,Brazil,2.0,2.0,1.0,0.342753,0.0,0.0
-20250831,Garopaba,State of Santa Catarina,Brazil,2.0,2.0,1.0,4.276307,0.0,0.0
-20250831,Guarulhos,State of Sao Paulo,Brazil,2.0,2.0,1.0,1.803581,0.0,0.0
-20250831,Joanopolis,State of Sao Paulo,Brazil,2.0,2.0,1.0,0.0,0.0,0.0
-20250831,Lagarto,State of Sergipe,Brazil,2.0,2.0,1.0,0.0,0.0,0.0
-20250831,Lages,State of Santa Catarina,Brazil,2.0,2.0,1.0,4.744298,0.0,0.0
-20250831,Laguna,State of Santa Catarina,Brazil,2.0,2.0,1.0,0.0,0.0,0.0
-20250831,Lulea,Norrbotten County,Sweden,2.0,2.0,1.0,3.856062,0.0,0.0
-20250831,Macapa,State of Amapa,Brazil,2.0,2.0,0.0,18.8925095,1.0,0.0
-20250831,Monte Aprazivel,State of Sao Paulo,Brazil,2.0,2.0,1.0,0.0,0.0,0.0
-20250831,Montes Claros,State of Minas Gerais,Brazil,2.0,2.0,1.0,0.0,0.0,0.0
-20250831,Mossoro,State of Rio Grande do Norte,Brazil,2.0,2.0,1.0,4.5307435,0.0,0.0
-20250831,Natal,State of Rio Grande do Norte,Brazil,2.0,2.0,1.0,0.0,0.0,0.0
-20250831,Neu-Ulm,Bavaria,Germany,2.0,2.0,0.0,226.83395299999998,1.0,0.0
-20250831,Paranavai,State of Parana,Brazil,2.0,2.0,0.5,1.738932,0.0,0.0
-20250831,Passos,State of Minas Gerais,Brazil,2.0,2.0,1.0,0.0,0.0,0.0
-20250831,Penapolis,State of Sao Paulo,Brazil,2.0,2.0,0.5,0.0,0.0,0.0
-20250831,Petrolina,State of Pernambuco,Brazil,2.0,2.0,0.0,6.116532,0.0,0.0
-20250831,Ponta Grossa,State of Parana,Brazil,2.0,2.0,1.0,0.513797,0.0,0.0
-20250831,Porto Ferreira,State of Sao Paulo,Brazil,2.0,2.0,0.5,1.5715235,0.0,0.0
-20250831,Presidente Prudente,State of Sao Paulo,Brazil,2.0,2.0,1.0,0.740089,0.0,0.0
-20250831,Ribeirao Preto,State of Sao Paulo,Brazil,2.0,2.0,0.0,81.574638,0.0,0.0
-20250831,Rio de Janeiro,State of Rio de Janeiro,Brazil,2.0,2.0,0.5,6.832215499999999,0.0,0.0
-20250831,San Jose,California,United States,2.0,2.0,0.0,37.351065,0.0,0.0
-20250831,Sao Jose dos Pinhais,State of Parana,Brazil,2.0,2.0,0.5,176.964813,0.0,0.0
-20250831,Sombrio,State of Santa Catarina,Brazil,2.0,2.0,1.0,0.0,0.0,0.0
-20250831,Sorocaba,State of Sao Paulo,Brazil,2.0,2.0,0.5,19.1439625,0.0,0.0
-20250831,Taquara,State of Rio Grande do Sul,Brazil,2.0,2.0,1.0,5.6356915,0.0,0.0
-20250831,Teofilo Otoni,State of Minas Gerais,Brazil,2.0,2.0,1.0,0.0,0.0,0.0
-20250831,Turvo,State of Santa Catarina,Brazil,2.0,2.0,0.5,103.066083,0.0,0.0
-20250831,Yerevan,(not set),Armenia,2.0,2.0,1.0,0.0,0.0,0.0
+20260831,Belo Horizonte,State of Minas Gerais,Brazil,3.0,3.0,0.6666666666666666,5.486109666666667,0.0,0.0
+20260831,Cotia,State of Sao Paulo,Brazil,3.0,2.0,0.3333333333333333,4.090410666666666,0.0,0.0
 20250901,(not set),State of Parana,Brazil,2.0,2.0,0.5,5.305491,0.0,0.0
 20250901,Apucarana,State of Parana,Brazil,2.0,2.0,0.5,108.3766645,0.0,0.0
 20250901,Balneario Picarras,State of Santa Catarina,Brazil,2.0,2.0,0.5,13.8840585,0.0,0.0
@@ -19125,112 +19045,19 @@
 20260830,Jaragua do Sul,State of Santa Catarina,Brazil,2.0,2.0,0.0,111.4630815,0.0,0.0
 20260830,Maceio,State of Alagoas,Brazil,2.0,2.0,0.0,57.888379,0.0,0.0
 20260830,Uberaba,State of Minas Gerais,Brazil,2.0,2.0,0.5,58.539637500000005,0.0,0.0
-20250831,(not set),(not set),Brazil,1.0,1.0,0.0,2.845048,0.0,0.0
-20250831,(not set),(not set),Netherlands,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,(not set),(not set),United States,1.0,1.0,0.0,9.701122,0.0,0.0
-20250831,(not set),Federal District,Brazil,1.0,1.0,0.0,41.992261,0.0,0.0
-20250831,(not set),Iowa,United States,1.0,1.0,0.0,6.678746,0.0,0.0
-20250831,(not set),State of Parana,Brazil,1.0,1.0,1.0,4.351648,0.0,0.0
-20250831,(not set),State of Pernambuco,Brazil,1.0,1.0,0.0,73.026342,0.0,0.0
-20250831,Alegrete,State of Rio Grande do Sul,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Americana,State of Sao Paulo,Brazil,1.0,1.0,1.0,2.763851,0.0,0.0
-20250831,Aracaju,State of Sergipe,Brazil,1.0,1.0,0.0,65.845014,0.0,0.0
-20250831,Araxa,State of Minas Gerais,Brazil,1.0,1.0,1.0,6.112709,0.0,0.0
-20250831,Ashburn,Virginia,United States,1.0,1.0,0.0,18.053479,0.0,0.0
-20250831,Barbacena,State of Minas Gerais,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Barueri,State of Sao Paulo,Brazil,1.0,1.0,0.0,13.303713,0.0,0.0
-20250831,Bauru,State of Sao Paulo,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Brick Township,New Jersey,United States,1.0,1.0,0.0,0.931745,0.0,0.0
-20250831,Cabo Frio,State of Rio de Janeiro,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Campos Novos,State of Santa Catarina,Brazil,1.0,1.0,0.0,29.318483,0.0,0.0
-20250831,Cangucu,State of Rio Grande do Sul,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Caratinga,State of Minas Gerais,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Cataguases,State of Minas Gerais,Brazil,1.0,1.0,0.0,116.580275,0.0,0.0
-20250831,Colatina,State of Espirito Santo,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Cordoba,Cordoba Province,Argentina,1.0,1.0,0.0,23.427997,0.0,0.0
-20250831,Cristalina,State of Goias,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Delhi,Delhi,India,1.0,1.0,0.0,13.581968,0.0,0.0
-20250831,Divinopolis,State of Minas Gerais,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Dourados,State of Mato Grosso do Sul,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Fair Lawn,New Jersey,United States,1.0,1.0,0.0,1.240097,0.0,0.0
-20250831,Fort Worth,Texas,United States,1.0,1.0,0.0,0.91518,0.0,0.0
-20250831,Garca,State of Sao Paulo,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Garuva,State of Santa Catarina,Brazil,1.0,1.0,0.0,41.928543,0.0,0.0
-20250831,Goiania,State of Goias,Brazil,1.0,1.0,0.0,86.565175,0.0,0.0
-20250831,Governador Valadares,State of Minas Gerais,Brazil,1.0,1.0,0.0,39.471848,0.0,0.0
-20250831,Guarapari,State of Espirito Santo,Brazil,1.0,1.0,1.0,2.16918,0.0,0.0
-20250831,Guaruja,State of Sao Paulo,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Hyderabad,Telangana,India,1.0,1.0,0.0,532.234147,0.0,0.0
-20250831,Igarassu,State of Pernambuco,Brazil,1.0,1.0,0.0,166.185073,0.0,0.0
-20250831,Irati,State of Parana,Brazil,1.0,1.0,0.0,45.29629,0.0,0.0
-20250831,Itabaiana,State of Sergipe,Brazil,1.0,1.0,0.0,19.44125,0.0,0.0
-20250831,Itanhaem,State of Sao Paulo,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Itapetinga,State of Bahia,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Itapetininga,State of Sao Paulo,Brazil,1.0,1.0,0.0,11.728104,0.0,0.0
-20250831,Ituiutaba,State of Minas Gerais,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Jaboatao dos Guararapes,State of Pernambuco,Brazil,1.0,1.0,0.0,17.424018,0.0,0.0
-20250831,Jaguaruna,State of Santa Catarina,Brazil,1.0,1.0,0.0,9.659723,0.0,0.0
-20250831,Janesville,Wisconsin,United States,1.0,1.0,0.0,1.696141,0.0,0.0
-20250831,Jequie,State of Bahia,Brazil,1.0,1.0,0.0,12.942483,0.0,0.0
-20250831,Jose Bonifacio,State of Sao Paulo,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Juazeiro do Norte,Ceara,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Keenesburg,Colorado,United States,1.0,1.0,0.0,7.087954,0.0,0.0
-20250831,La Crosse,Wisconsin,United States,1.0,1.0,0.0,1.251365,0.0,0.0
-20250831,Lagoa Santa,State of Minas Gerais,Brazil,1.0,1.0,0.0,569.944843,0.0,0.0
-20250831,Lajeado,State of Rio Grande do Sul,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Linhares,State of Espirito Santo,Brazil,1.0,1.0,0.0,24.860074,0.0,0.0
-20250831,Lins,State of Sao Paulo,Brazil,1.0,1.0,1.0,9.439711,0.0,0.0
-20250831,Los Angeles,California,United States,1.0,1.0,0.0,6.463444,0.0,0.0
-20250831,Mafra,State of Santa Catarina,Brazil,1.0,1.0,0.0,9.255061,0.0,0.0
-20250831,Maraba,State of Para,Brazil,1.0,1.0,0.0,36.60671,0.0,0.0
-20250831,Maringa,State of Parana,Brazil,1.0,1.0,0.0,17.078284,0.0,0.0
-20250831,Meadville,Pennsylvania,United States,1.0,1.0,0.0,0.763692,0.0,0.0
-20250831,Mogi Guacu,State of Sao Paulo,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Monte Carmelo,State of Minas Gerais,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Moses Lake,Washington,United States,1.0,1.0,0.0,6.359799,0.0,0.0
-20250831,Mount Pleasant,Wisconsin,United States,1.0,1.0,0.0,1.472554,0.0,0.0
-20250831,Naaldwijk,South Holland,Netherlands,1.0,1.0,0.0,228.779491,0.0,0.0
-20250831,North Bergen,New Jersey,United States,1.0,1.0,0.0,1.011321,0.0,0.0
-20250831,Nova Friburgo,State of Rio de Janeiro,Brazil,1.0,1.0,1.0,2.889041,0.0,0.0
-20250831,Novo Gama,State of Goias,Brazil,1.0,1.0,0.0,24.154128,0.0,0.0
-20250831,Paracatu,State of Minas Gerais,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Parana,Entre Rios Province,Argentina,1.0,1.0,0.0,1.676616,0.0,0.0
-20250831,Patos,State of Paraiba,Brazil,1.0,1.0,1.0,2.046101,0.0,0.0
-20250831,Patos de Minas,State of Minas Gerais,Brazil,1.0,1.0,0.0,8.355639,0.0,0.0
-20250831,Petropolis,State of Rio de Janeiro,Brazil,1.0,1.0,0.0,6.450838,0.0,0.0
-20250831,Philadelphia,Pennsylvania,United States,1.0,1.0,0.0,1.348693,0.0,0.0
-20250831,Pirapora,State of Minas Gerais,Brazil,1.0,1.0,0.0,40.572065,0.0,0.0
-20250831,Pomerode,State of Santa Catarina,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Presidente Medici,State of Rondonia,Brazil,1.0,1.0,0.0,1007.208469,0.0,0.0
-20250831,Rio Largo,State of Alagoas,Brazil,1.0,1.0,0.0,58.174537,0.0,0.0
-20250831,Salvador,State of Bahia,Brazil,1.0,1.0,0.0,98.637668,0.0,0.0
-20250831,San Francisco,California,United States,1.0,1.0,0.0,12.678177,0.0,0.0
-20250831,Santa Cruz do Sul,State of Rio Grande do Sul,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Santa Rosa,State of Rio Grande do Sul,Brazil,1.0,1.0,1.0,1.237465,0.0,0.0
-20250831,Santana de Parnaiba,State of Sao Paulo,Brazil,1.0,1.0,0.0,23.373169,0.0,0.0
-20250831,Santos,State of Sao Paulo,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Sao Francisco do Sul,State of Santa Catarina,Brazil,1.0,1.0,0.0,1291.126573,0.0,0.0
-20250831,Sao Goncalo,State of Rio de Janeiro,Brazil,1.0,1.0,0.0,112.904534,0.0,0.0
-20250831,Sao Joao Batista,State of Santa Catarina,Brazil,1.0,1.0,1.0,4.110149,0.0,0.0
-20250831,Sao Joao da Boa Vista,State of Sao Paulo,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Sao Jose do Rio Preto,State of Sao Paulo,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Sao Leopoldo,State of Rio Grande do Sul,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Sao Luis,State of Maranhao,Brazil,1.0,1.0,0.0,7.250522,0.0,0.0
-20250831,Sao Mateus do Sul,State of Parana,Brazil,1.0,1.0,0.0,19.759569,0.0,0.0
-20250831,Simoes Filho,State of Bahia,Brazil,1.0,1.0,0.0,86.952619,0.0,0.0
-20250831,Sobral,Ceara,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Tatui,State of Sao Paulo,Brazil,1.0,1.0,0.0,297.440381,0.0,0.0
-20250831,Teixeira de Freitas,State of Bahia,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Teresina,State of Piaui,Brazil,1.0,1.0,1.0,5.501635,0.0,0.0
-20250831,Terra de Areia,State of Rio Grande do Sul,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Tirana,(not set),Albania,1.0,1.0,0.0,20.879222,0.0,0.0
-20250831,Tres Pontas,State of Minas Gerais,Brazil,1.0,1.0,1.0,9.779589,0.0,0.0
-20250831,Uberaba,State of Minas Gerais,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Varzea Grande,State of Mato Grosso,Brazil,1.0,1.0,0.0,27.539718,0.0,0.0
-20250831,Vicosa,State of Minas Gerais,Brazil,1.0,1.0,1.0,6.964983,0.0,0.0
-20250831,Volta Redonda,State of Rio de Janeiro,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
-20250831,Woodbury,New York,United States,1.0,1.0,0.0,1.38804,0.0,0.0
-20250831,Xangri-la,State of Rio Grande do Sul,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
+20260831,Ashburn,Virginia,United States,2.0,2.0,1.0,5.0961705,0.0,0.0
+20260831,Belem,State of Para,Brazil,2.0,2.0,0.0,45.152129,0.0,0.0
+20260831,Biguacu,State of Santa Catarina,Brazil,2.0,2.0,0.5,9.183189,0.0,0.0
+20260831,Flint Hill,Virginia,United States,2.0,2.0,0.0,20.136682,0.0,0.0
+20260831,Fortaleza,Ceara,Brazil,2.0,2.0,0.0,250.0638745,0.0,0.0
+20260831,Icara,State of Santa Catarina,Brazil,2.0,2.0,0.5,68.6215565,0.0,0.0
+20260831,Lages,State of Santa Catarina,Brazil,2.0,2.0,0.0,289.0431605,0.0,0.0
+20260831,Lavras,State of Minas Gerais,Brazil,2.0,2.0,0.5,30.511346,0.0,0.0
+20260831,Maringa,State of Parana,Brazil,2.0,2.0,0.5,53.6384155,0.0,0.0
+20260831,Phoenix,Arizona,United States,2.0,2.0,0.5,8.8323105,0.0,0.0
+20260831,Santo Andre,State of Sao Paulo,Brazil,2.0,2.0,0.0,21.4751655,0.0,0.0
+20260831,Tijucas,State of Santa Catarina,Brazil,2.0,1.0,0.5,7.6544695,0.0,0.0
+20260831,Tubarao,State of Santa Catarina,Brazil,2.0,2.0,0.5,18.221599,0.0,0.0
 20250901,(not set),(not set),Brazil,1.0,1.0,1.0,0.0,0.0,0.0
 20250901,(not set),(not set),United States,1.0,1.0,0.0,8.731548,0.0,0.0
 20250901,(not set),Iowa,United States,1.0,1.0,0.0,10.999272,0.0,0.0
@@ -45705,3 +45532,63 @@
 20260830,Timbo,State of Santa Catarina,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
 20260830,Tubarao,State of Santa Catarina,Brazil,1.0,1.0,0.0,56.022752,1.0,0.0
 20260830,Vacaria,State of Rio Grande do Sul,Brazil,1.0,1.0,1.0,6.378357,0.0,0.0
+20260831,(not set),Colorado,United States,1.0,1.0,1.0,0.0,0.0,0.0
+20260831,(not set),State of Parana,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
+20260831,(not set),State of Santa Catarina,Brazil,1.0,1.0,0.0,449.347472,0.0,0.0
+20260831,(not set),Virginia,United States,1.0,1.0,0.0,20.865297,0.0,0.0
+20260831,Amsterdam,North Holland,Netherlands,1.0,1.0,1.0,0.0,0.0,0.0
+20260831,Balneario Gaivota,State of Santa Catarina,Brazil,1.0,1.0,0.0,12.030911,0.0,0.0
+20260831,Barreiras,State of Bahia,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
+20260831,Barueri,State of Sao Paulo,Brazil,1.0,1.0,0.0,229.801962,0.0,0.0
+20260831,Brasilia,Federal District,Brazil,1.0,1.0,0.0,8.975738,0.0,0.0
+20260831,Brusque,State of Santa Catarina,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
+20260831,Buenos Aires,Buenos Aires,Argentina,1.0,1.0,0.0,62.762726,0.0,0.0
+20260831,Caraguatatuba,State of Sao Paulo,Brazil,1.0,1.0,0.0,10.356249,0.0,0.0
+20260831,Carapicuiba,State of Sao Paulo,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
+20260831,Caratinga,State of Minas Gerais,Brazil,1.0,1.0,0.0,37.184243,0.0,0.0
+20260831,Castanhal,State of Para,Brazil,1.0,1.0,0.0,1299.351847,0.0,0.0
+20260831,Chapeco,State of Santa Catarina,Brazil,1.0,1.0,1.0,9.436264,0.0,0.0
+20260831,Concordia,State of Santa Catarina,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
+20260831,Dublin,County Dublin,Ireland,1.0,1.0,1.0,0.0,0.0,0.0
+20260831,Faxinal,State of Parana,Brazil,1.0,1.0,0.0,135.425347,0.0,0.0
+20260831,Feira de Santana,State of Bahia,Brazil,1.0,1.0,0.0,48.113343,0.0,0.0
+20260831,Forquilhinha,State of Santa Catarina,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
+20260831,Franca,State of Sao Paulo,Brazil,1.0,1.0,1.0,4.902739,0.0,0.0
+20260831,Garuva,State of Santa Catarina,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
+20260831,Gravatai,State of Rio Grande do Sul,Brazil,1.0,1.0,0.0,18.176574,0.0,0.0
+20260831,Guaiba,State of Rio Grande do Sul,Brazil,1.0,1.0,0.0,14.473868,0.0,0.0
+20260831,Guarulhos,State of Sao Paulo,Brazil,1.0,1.0,0.0,664.665008,0.0,0.0
+20260831,Imbituba,State of Santa Catarina,Brazil,1.0,1.0,0.0,27.763569,0.0,0.0
+20260831,Itapema,State of Santa Catarina,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
+20260831,Jaboatao dos Guararapes,State of Pernambuco,Brazil,1.0,1.0,0.0,184.178336,0.0,0.0
+20260831,Joacaba,State of Santa Catarina,Brazil,1.0,1.0,0.0,10.079948,0.0,0.0
+20260831,Juiz de Fora,State of Minas Gerais,Brazil,1.0,1.0,1.0,3.541337,0.0,0.0
+20260831,Linhares,State of Espirito Santo,Brazil,1.0,1.0,0.0,17.077221,0.0,0.0
+20260831,Little Ferry,New Jersey,United States,1.0,1.0,0.0,41.698808,0.0,0.0
+20260831,Montes Claros,State of Minas Gerais,Brazil,1.0,1.0,0.0,28.792983,0.0,0.0
+20260831,Newark,New Jersey,United States,1.0,1.0,1.0,0.0,0.0,0.0
+20260831,Novo Horizonte,State of Sao Paulo,Brazil,1.0,1.0,1.0,9.946955,0.0,0.0
+20260831,Olinda,State of Pernambuco,Brazil,1.0,1.0,0.0,31.168514,0.0,0.0
+20260831,Patos,State of Paraiba,Brazil,1.0,1.0,0.0,21.224947,0.0,0.0
+20260831,Pelotas,State of Rio Grande do Sul,Brazil,1.0,1.0,0.0,80.102078,0.0,0.0
+20260831,Penha,State of Santa Catarina,Brazil,1.0,1.0,1.0,3.767538,0.0,0.0
+20260831,Pomerode,State of Santa Catarina,Brazil,1.0,1.0,1.0,5.260974,0.0,0.0
+20260831,Porto Seguro,State of Bahia,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
+20260831,Presidente Getulio,State of Santa Catarina,Brazil,1.0,1.0,0.0,174.034313,0.0,0.0
+20260831,Prineville,Oregon,United States,1.0,1.0,0.0,10.062345,0.0,0.0
+20260831,Rio Branco,State of Acre,Brazil,1.0,1.0,1.0,0.705837,0.0,0.0
+20260831,Rio Negrinho,State of Santa Catarina,Brazil,1.0,1.0,0.0,49.11427,0.0,0.0
+20260831,Santa Barbara d'Oeste,State of Sao Paulo,Brazil,1.0,1.0,0.0,32.38632,0.0,0.0
+20260831,Santo Amaro da Imperatriz,State of Santa Catarina,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
+20260831,Santos,State of Sao Paulo,Brazil,1.0,1.0,0.0,18.888659,0.0,0.0
+20260831,Sao Bernardo do Campo,State of Sao Paulo,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
+20260831,Sao Jose do Rio Preto,State of Sao Paulo,Brazil,1.0,1.0,0.0,46.254057,0.0,0.0
+20260831,Sao Luis,State of Maranhao,Brazil,1.0,1.0,0.0,385.493603,0.0,0.0
+20260831,Sertaozinho,State of Sao Paulo,Brazil,1.0,1.0,0.0,19.692063,0.0,0.0
+20260831,Sete Lagoas,State of Minas Gerais,Brazil,1.0,1.0,1.0,0.0,0.0,0.0
+20260831,Uberaba,State of Minas Gerais,Brazil,1.0,1.0,1.0,1.191476,0.0,0.0
+20260831,Urubici,State of Santa Catarina,Brazil,1.0,1.0,1.0,1.837349,0.0,0.0
+20260831,Valenca,State of Rio de Janeiro,Brazil,1.0,1.0,0.0,10.915558,0.0,0.0
+20260831,Van Horn,Texas,United States,1.0,1.0,1.0,7.3816,0.0,0.0
+20260831,Volta Redonda,State of Rio de Janeiro,Brazil,1.0,1.0,0.0,6.054463,0.0,0.0
+20260831,Wekiwa Springs,Florida,United States,1.0,1.0,0.0,32.756566,0.0,0.0
